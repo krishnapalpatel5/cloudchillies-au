@@ -1,0 +1,24 @@
+[28-Apr-2025 06:58:41 UTC] PHP Warning:  file_get_contents(countries.json): Failed to open stream: No such file or directory in /home/hjgs503jjky5/public_html/Cloud_C/test/home.php on line 3
+[28-Apr-2025 06:58:41 UTC] PHP Warning:  Undefined variable $option in /home/hjgs503jjky5/public_html/Cloud_C/test/home.php on line 829
+[28-Apr-2025 06:58:48 UTC] PHP Warning:  file_get_contents(countries.json): Failed to open stream: No such file or directory in /home/hjgs503jjky5/public_html/Cloud_C/test/home.php on line 3
+[28-Apr-2025 06:58:48 UTC] PHP Warning:  Undefined variable $option in /home/hjgs503jjky5/public_html/Cloud_C/test/home.php on line 829
+[28-Apr-2025 10:47:33 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 8
+[28-Apr-2025 10:47:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 8
+[28-Apr-2025 10:47:39 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 8
+[28-Apr-2025 10:47:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 8
+[28-Apr-2025 11:00:02 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 9
+[28-Apr-2025 11:00:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 9
+[28-Apr-2025 11:53:52 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 6
+[28-Apr-2025 11:53:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hjgs503jjky5/public_html/Cloud_C/test/formSubmit.php on line 6

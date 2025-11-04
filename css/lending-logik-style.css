@@ -1,0 +1,1742 @@
+.product-card {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border: 1px solid #c0eede;
+  background: #fff;
+  box-shadow: 0px 21px 6px 0px rgba(194, 193, 193, 0),
+    0px 13px 5px 0px rgba(194, 193, 193, 0.01),
+    0px 8px 5px 0px rgba(194, 193, 193, 0.05),
+    0px 3px 3px 0px rgba(194, 193, 193, 0.09),
+    0px 1px 2px 0px rgba(194, 193, 193, 0.1);
+}
+.product-card .header {
+  gap: 18px;
+  width: 60%;
+}
+
+.product-card .header h4 {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 700;
+}
+.product-card p {
+  font-size: 14px;
+}
+
+.product-list {
+  position: relative;
+  z-index: 1;
+}
+
+.yellow-text {
+  color: #ffd972;
+}
+
+.integrationLogo-home {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.integrationLogo-home ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 29px;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  /* margin: 0 auto; */
+  margin-bottom: 23px;
+}
+
+.titleDiscription {
+  font-size: 22px;
+  line-height: 33px;
+  color: #111827;
+  max-width: 1000px;
+  width: 100%;
+  margin: 11px auto 0;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.product-card.loan-card {
+  border: 0;
+  padding: 24px 0;
+  box-shadow: none;
+  background: none;
+  position: relative;
+  flex-direction: row;
+}
+
+.loan-type-list > div.d-flex {
+  flex-direction: column;
+  width: 100%;
+}
+.loan-type-list > div.d-flex:nth-child(1) {
+  width: 65%;
+}
+
+.loan-type-list.second > div.d-flex:nth-child(1) {
+  width: 118%;
+}
+
+.loan-type-list > div.d-flex > div,
+.loan-type-list.b > div {
+  display: flex;
+  font-size: 14px;
+  gap: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  margin-bottom: 12px;
+}
+
+.loan-type-list {
+  gap: 20px;
+  width: 100%;
+}
+
+.g-bg {
+  height: auto !important;
+}
+
+.r-bg {
+  height: auto !important;
+}
+
+.client-section .integrationLogo-home ul {
+  width: 100% !important;
+  /* margin: 0 auto; */
+  flex-wrap: nowrap;
+}
+
+.testi-video {
+  position: relative;
+}
+
+.client-details {
+  position: absolute;
+  bottom: 53px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+  /* max-width: none !important; */
+  margin: 0 auto;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+/* .client-slider .owl-stage-outer{
+  height: 326px;
+} */
+
+.remoteTeamInner-home {
+  border-radius: 12px;
+  border: 1px solid rgba(65, 137, 111, 0.38);
+  background: linear-gradient(313deg, #dff3ec 15.49%, #fff 56.28%);
+  padding-top: 18px;
+  padding-bottom: 44px;
+  position: relative;
+}
+
+.green-text {
+  color: var(--primary-color);
+}
+
+.companyLogo img {
+  width: 220px;
+}
+
+footer .container {
+  padding-top: 15px;
+}
+
+.lender-loan-wrap {
+  height: 425px;
+}
+.lender-loan-img {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+/* .section3:before {
+  background-image: url(../img/lending-logik-imgs/circle-bg-b.svg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: top left;
+  padding-top: 31px;
+  height: 751px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  top: -190px;
+} */
+
+.section3 {
+  padding-top: 55px;
+  padding-bottom: 50px;
+  background: linear-gradient(180deg, rgba(237, 243, 246, 0.53) 0%, #fff 100%);
+}
+
+.section3:after {
+  background: url(../img/lending-logik-imgs/client-section-bg.jpg);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  z-index: 0;
+}
+
+/* .section5:before {
+  background-image: url(../img/lending-logik-imgs/circle-bg.svg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: top left;
+  padding-top: 31px;
+  height: 751px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  top: -190px;
+} */
+
+.section5 {
+  padding-top: 30px;
+}
+
+@media (min-width: 120024) and (max-width: 1500px) {
+  .section3 {
+    padding-top: 57px;
+    padding-bottom: 50px;
+    margin-top: 36px;
+  }
+}
+
+.headerInner .logo-default,
+.headerHome .logo-white {
+  display: none;
+}
+.headerInner .logo-white,
+.headerHome .logo-default {
+  display: block;
+}
+
+.headerInner ul.menu > li > a,
+.headerInner ul.menu > li > span,
+.headerInner ul.menu > li > span > a {
+  color: #fff;
+}
+
+.headerInner ul.menu > li > span > a svg path,
+.headerInner ul.menu > li > span > svg path {
+  fill: #fff;
+}
+
+.headerInner .dropdownMenuInner .rightSubMenu ul li a {
+  color: var(--primary-text);
+}
+
+.headerInner.sticky-header ul li > a,
+.headerInner.sticky-header ul > li > span,
+.headerInner.sticky-header ul > li > span > a {
+  color: var(--primary-text) !important;
+}
+
+.headerInner.sticky-header ul.menu > li > span > a svg path,
+.headerInner.sticky-header ul.menu > li > span > svg path {
+  fill: var(--primary-text) !important;
+}
+
+.headerInner .navbar .container {
+  max-width: 1320px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.tick-list li {
+  background: url(../img/lending-logik-imgs/check.svg) no-repeat;
+  background-position: 0;
+  padding-left: 25px;
+  border: 0;
+}
+
+.btn-primary-outline {
+  border-radius: 100px;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.1s all ease-in;
+  padding: 0.875rem 1.5rem;
+  background: #fff;
+}
+
+.btn-primary-outline:hover {
+  background: #bdf1db;
+  transition: 0.2s all ease-in;
+  color: #056744;
+}
+
+.btn-primary-outline :hover img {
+  transform: translateX(10px);
+  transition: 0.2s all ease-in;
+}
+
+.ai-micro-sol {
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 20px;
+  background-size: cover;
+  background: url(../img/lending-logik-imgs/ai-microsol-bg.svg) no-repeat;
+  background-size: cover;
+  border: 1px #c0eede solid;
+}
+
+.ai-micro-sol .btn {
+  font-size: 14px !important;
+  padding: 12px 22px !important;
+}
+
+.ai-micro-sol li {
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+
+@media (min-width: 1500px) {
+  .ai-img img {
+    max-width: none !important;
+    margin-top: 30px;
+  }
+}
+.product-sec:before {
+  background: url(../img/lending-logik-imgs/banner-shapes.svg) no-repeat;
+  position: absolute;
+  content: "";
+  width: 340px;
+  height: 450px;
+  z-index: -1;
+  top: -200px;
+  left: 190px;
+}
+
+.product-sec {
+  border-radius: 16px 16px 0px 0px;
+  background: #fff;
+  max-width: 1384px;
+  position: relative;
+  background: url(../img/lending-logik-imgs/heading-bg.png) no-repeat;
+  /* z-index: 1; */
+  padding-top: 30px;
+  margin-top: -60px;
+}
+
+.product-sec-b {
+  margin-top: -170px;
+}
+
+.product-sec-b:before {
+  background: none;
+  position: absolute;
+  content: "";
+  width: 550px;
+  height: 450px;
+  z-index: -1;
+  top: -200px;
+  left: 50px;
+}
+
+@media (min-width: 991px) and (max-width: 1279px) {
+  #header .container,
+  .heroBanner .container {
+    max-width: 100%;
+    padding: 0px 18px;
+  }
+
+  #header.headerInner .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  #header .container {
+    max-width: 100%;
+  }
+  ul.navbar-nav li > a {
+    font-size: 12px;
+  }
+
+  .headerInner .logo-white,
+  .headerHome .logo-default {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  /* .mobileInfo img{
+  max-width: 40%;
+} */
+  .section3 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .section3:before {
+    top: -100px;
+  }
+  .servicesList > div {
+    font-size: 14px;
+  }
+  .servicesFooter img {
+    position: absolute;
+    right: -3px;
+    top: inherit;
+    width: 29%;
+  }
+
+  .section9 .left .title {
+    font-size: 24px;
+    line-height: 49px;
+    color: var(--primary-text);
+    margin-bottom: 19px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footerTop {
+    flex-direction: column;
+  }
+  .footerTop .footerBox2 {
+    margin-top: 20px;
+  }
+  section.section5 {
+    margin-top: 160px;
+  }
+  .section5 {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+}
+
+.prdct-box h4 {
+  color: var(--primary-text);
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.prdct-box h4 sup {
+  font-size: 20px;
+}
+
+.sub-section-title {
+  color: var(--primary-color);
+  font-size: 2.875rem;
+  font-weight: 700;
+  letter-spacing: -0.045rem;
+}
+
+.sub-section-title-b {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.045rem;
+}
+
+.prdct-box {
+  margin-bottom: 30px;
+}
+
+.section5Inner {
+  border-radius: 12px;
+  background-image: url(../img/lending-logik-imgs/sis-bg-big.png),
+    url(../img/lending-logik-imgs/sis-bg-big-2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left bottom;
+  margin-top: 40px;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #b0e9d4 100%)
+    1;
+  z-index: 1;
+}
+
+.integrationsContainer .btnGroup {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+}
+
+.lender-we-serve {
+  background: linear-gradient(13deg, #fff 52.88%, #e7faf6 89.99%);
+  position: relative;
+  padding-top: 40px;
+}
+
+.client-video {
+  background: linear-gradient(180deg, rgba(237, 243, 246, 0.53) 0%, #fff 100%);
+  position: relative;
+  padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .lender-we-serve::before {
+    content: "";
+    position: absolute;
+    background: url(../img/lending-logik-imgs/lend-circle-graphic.svg) no-repeat;
+    width: 567px;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    /* background-color: red; */
+    background-size: contain;
+    right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .lender-we-serve::before {
+    width: 100%;
+  }
+}
+
+.home-testimonials {
+  border-radius: 0.75rem;
+  background: linear-gradient(
+    180deg,
+    rgba(183, 228, 226, 0.59) 0%,
+    rgba(242, 251, 250, 0.59) 100%
+  );
+  position: relative;
+  z-index: 0;
+  max-width: 800px;
+}
+/* .home-testimonials::before {
+  background: url(../img/lending-logik-imgs/testi-bg.svg) no-repeat;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  top: 0;
+} */
+
+.home-testimonials .primary-text {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.client-section {
+  border-top: 1px solid #cbdcd5;
+  background: linear-gradient(23deg, #f3f8f6 16.5%, #ebfef6 101.44%);
+  padding-top: 20px;
+}
+
+.trustLogo img {
+}
+
+.para-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.para-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.help-para-section .sep {
+  display: flex;
+  align-items: center;
+}
+
+.help-para-section .sep::before {
+  content: "";
+  background-color: #ccc;
+  /* background-size: 30px; */
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: 30px;
+  z-index: -1;
+}
+
+.help-para-section .para-card:nth-child(1) {
+  width: 45%;
+}
+
+.help-para-section .para-card:nth-child(3) {
+  width: 55%;
+}
+
+.loan-type-list.a > div.d-flex:nth-child(1) {
+  width: 100%;
+}
+
+.leftInner p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.help-para-section .para-card .header {
+  height: 100px;
+}
+
+.help-para-section .para-card .loan-type-list {
+  height: 150px;
+}
+
+.full-slider.home-slider .item > .sliderItem > img {
+  /* width: 100%; */
+  object-fit: cover;
+  height: 100%;
+}
+
+.product-card.bdr-right:before {
+  content: "";
+  position: absolute;
+  background: rgba(48, 78, 105, 0.22);
+  width: 1px;
+  right: 0;
+  height: 120px;
+  top: 20px;
+}
+
+/* .product-card.bdr-right:before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, rgba(252, 253, 254, 0.13) 2.35%, rgba(48, 78, 105, 0.13) 51.66%, rgba(255, 255, 255, 0.13) 100%);
+  width: 2px;
+  right: 0;
+  height: 100px;
+} */
+
+.product-card.bdr-btm:after {
+  content: "";
+  position: absolute;
+  background: rgba(48, 78, 105, 0.22);
+  width: 96%;
+  height: 1px;
+  bottom: 0;
+}
+
+.bdr-btm:after {
+  content: "";
+  position: absolute;
+  background: rgba(48, 78, 105, 0.22);
+  width: 96%;
+  height: 1px;
+  bottom: 0;
+}
+
+.features-ai-right .points,
+.features-ai-left .points {
+  display: flex;
+  width: 271px;
+  align-items: center;
+  gap: 11.414px;
+  border-radius: 76.096px;
+  border: 1px solid #43b1cb;
+  background: #fff;
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.features .points span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.features .points {
+  display: flex;
+  width: 255px;
+  align-items: center;
+  gap: 11.414px;
+  border-radius: 76.096px;
+  border: 1px solid #43b1cb;
+  background: #fff;
+  margin-bottom: 7px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.features {
+  position: absolute;
+  bottom: 113px;
+  right: 0;
+}
+
+.ai-produts .features {
+  position: absolute;
+  top: 263px;
+  left: 50px;
+}
+
+.ai-produts .features .points span {
+  font-size: 13px;
+}
+
+.features-2 {
+  position: absolute;
+  bottom: 113px;
+  left: 0;
+}
+
+.comp-box {
+  margin-top: 50px;
+}
+
+.heroBanner.aiBanner {
+  background: url(../img/lending-logik-imgs/dots-pattern.svg) no-repeat;
+  height: 625px;
+}
+
+.heroBanner.aiBanner .hero-text {
+  margin-top: 112px;
+}
+
+.heroBanner.aiBanner .container {
+  background: url(../img/lending-logik-imgs/ai-for-lending-banner-bg.png)
+    no-repeat;
+  height: 625px;
+  mix-blend-mode: darken;
+}
+
+.ai-prdct-heading > div {
+  border-left: 3px var(--primary-color) solid;
+  background-color: #fff;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  display: inline-flex;
+  padding-left: 17px;
+  padding-right: 10px;
+}
+
+.ai-prdct-heading::before {
+  content: "";
+  background: linear-gradient(90deg, #42b0cb 0%, #1fc388 24.51%, #fff 96.85%);
+  /* background-size: 30px; */
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 30px;
+  z-index: 0;
+  top: 30px;
+}
+.prdct-box-list > li::before {
+  background: url(../img/lending-logik-imgs/tick-icon.svg) no-repeat;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+
+.prdct-box-list.ss-list > li::before {
+  background: url(../img/ss-banner-imgs/green-arrow.svg) no-repeat;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+
+.prdct-box-list > li {
+  list-style-position: inside;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.features-ai-right {
+  position: absolute;
+  bottom: 153px;
+  right: -10px;
+}
+
+.features-ai-left {
+  position: absolute;
+  bottom: 126px;
+  left: -10px;
+}
+
+.ai-prdct-heading {
+  margin-bottom: 70px !important;
+}
+
+.product-list-ai .row > .col-md-12 > .row > .col-md-12 {
+  margin-bottom: 75px;
+}
+
+.faq-btn {
+  border: 0 !important;
+}
+
+.product-sec-wrap {
+  position: relative;
+  padding-top: 60px;
+  z-index: 0;
+}
+
+.comp {
+  position: relative;
+  padding-top: 60px;
+}
+
+.product-sec-wrap::after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.37) 0%,
+    rgba(212, 240, 233, 0.56) 100%
+  );
+  height: 300px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.subsectionTitle {
+  font-size: clamp(1.5rem, 3.5vw, 2.625rem);
+  color: var(--primary-text);
+  line-height: 72px;
+}
+
+.integrationsContainer .title {
+  font-size: 20px;
+  color: var(--primary-text);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+body .navbar-expand-lg .navbar-nav .dropdown-menu.ai-lending-menu {
+  left: 0;
+  right: 0;
+}
+
+.rightSubMenu-wrap {
+  display: flex;
+}
+
+.rightSubMenu > ul > li > a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-drop-menu ul,
+.sub-drop-menu ul li {
+  padding-left: 0;
+}
+
+.sub-drop-menu ul li a {
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.sub-drop-menu ul li a img {
+  margin-right: 2px;
+  width: 16px;
+}
+
+.ai-lending-menu .rightSubMenu {
+  padding-left: 25px;
+}
+
+.rightSubMenu .accordion-button {
+  border-radius: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #a5cdf1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  color: var(--primary-text);
+  position: relative;
+  padding-right: 0;
+}
+
+.rightSubMenu .accordion-button a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rightSubMenu .accordion-button::after {
+  background: url(../img/lending-logik-imgs/down-arrow.svg) no-repeat;
+  top: 15px;
+  /* margin-top: 10px; */
+  position: absolute;
+  right: 0;
+}
+
+.rightSubMenu .accordion-button:not(.collapsed)::after {
+  background: url(../img/lending-logik-imgs/down-arrow.svg) no-repeat;
+  transform: var(--bs-accordion-btn-icon-transform);
+  background-position: 5px 5px;
+}
+
+.rightSubMenu .accordion-item {
+  background: none;
+  border: 0;
+}
+
+.rightSubMenu .accordion-body {
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.dropdown-menu.ai-lending-menu {
+  display: block !important;
+}
+
+#faqModal .modal-dialog {
+  max-width: 900px;
+}
+
+#faqModal .modal-header h1 {
+  text-align: center;
+  width: 100%;
+}
+
+#faqModal .modal-header .btn-close {
+  position: absolute;
+  right: 40px;
+}
+
+#faqModal h2.accordion-header button {
+  color: rgba(10, 18, 46, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid rgba(3, 45, 96, 0.15);
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 4px !important;
+  margin-bottom: 20px;
+}
+
+#faqModal .accordion-button::after {
+  background-color: #e6e7eb;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+#faqModal .accordion-flush .accordion-item {
+  border-bottom: 0;
+}
+
+#faqModal .modal-body {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.demo-btn {
+  width: 110px !important;
+}
+
+.section6 .owl-theme .owl-nav {
+  margin-top: 0 !important;
+}
+
+.storiesBtn .btn.btn-primary-outline {
+  outline: 2px #fff solid;
+}
+
+.storiesBtn .btn.btn-primary-outline:active {
+  background: #bdf1db;
+  transition: 0.2s all ease-in;
+  color: #056744;
+}
+
+.headerInner .dropdown-toggle::after,
+.headerInner .menu-dropdown span::after {
+  background-position-y: -29px;
+}
+
+.headerInner.sticky-header .dropdown-toggle::after,
+.headerInner.sticky-header .menu-dropdown span::after {
+  background-position-y: 39px;
+}
+
+@media (min-width: 1400px) {
+  .section9 .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .full-slider.home-slider .item {
+    height: 670px;
+  }
+
+  .sf-ai-img {
+    position: relative;
+    left: -80px;
+  }
+}
+
+.caption-title {
+  color: var(--Blue-Dark-Shade, #142e63);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  border-bottom: 4px var(--primary-color) solid;
+  margin-bottom: 32px;
+  flex-basis: revert-layer;
+  align-items: center;
+  align-self: flex-start;
+  padding-bottom: 14px;
+}
+
+.primary-color {
+  color: var(--primary-color) !important;
+}
+
+.ss-wrapper {
+  height: auto;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px #bde2d5 solid;
+  margin-bottom: 46px;
+  padding-bottom: 20px;
+  padding-top: 24px !important;
+}
+
+img.testi-shape {
+  width: auto;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 0;
+}
+
+img.testi-shape-btm {
+  width: auto;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  /* height: 139px; */
+}
+
+.client-video {
+  margin-bottom: 80px;
+}
+.ss-testimonials {
+  border-radius: 12px;
+  border: 1px solid #c0eede;
+  background: radial-gradient(
+    100.55% 189.03% at 37.09% -6.06%,
+    #fff 7.55%,
+    #edfff9 57.95%,
+    #92edcc 100%
+  );
+  /* height: 390px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.ss-testimonials.home-testimonials {
+  /* height: 350px; */
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.gray-text {
+  color: rgba(10, 18, 46, 0.6);
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.watch-btn {
+  border-right: 1px var(--primary-color) solid;
+  height: 75px;
+  padding-right: 15px;
+  margin-right: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.ss-integrations {
+  border-radius: 12px;
+  background: #f7faf9;
+}
+
+.text-blue {
+  color: var(--primary-text);
+}
+
+.prdct-box-list.vd-list > li::before {
+  background: url(../img/ss-banner-imgs/arrow-check.svg) no-repeat;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 26px;
+  left: 0;
+}
+.vd-box h1 {
+  color: var(--Teal-Green, #1fc388);
+  font-family: Montserrat;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.ss-testimonials.vd-box {
+  height: auto;
+  padding: 25px 35px !important;
+}
+
+.vd-box .vd-shape {
+  width: auto;
+  position: absolute;
+  right: 0 !important;
+  z-index: 0;
+  bottom: 0;
+  /* height: 139px; */
+}
+
+.ss-carousel {
+  background: linear-gradient(
+    0deg,
+    #e3f5ef 6.39%,
+    rgba(255, 255, 255, 0) 54.08%
+  );
+}
+
+.ss-carousel .storiesBox .bottom {
+  padding: 20px;
+  background: #fff;
+}
+
+.ss-carousel-wrap {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.client-intro h4 {
+  font-size: 28px;
+}
+.client-intro p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.lets-talk-home .tri-shape {
+  width: auto;
+  position: absolute;
+  right: 399px;
+  z-index: 0;
+  bottom: 2px;
+  width: 382px;
+  /* height: 280px; */
+  object-fit: cover;
+}
+
+.client-intro-section {
+  margin-top: -50px;
+}
+
+.circle-shape {
+  width: auto;
+  position: absolute;
+  right: 30px;
+  z-index: 0;
+  top: 0;
+  /* width: 382px; */
+}
+
+.storiesBox {
+  border: 1px solid rgba(3, 45, 96, 0.15);
+}
+
+.stroryImg {
+  border-bottom: 1px solid rgba(3, 45, 96, 0.15);
+}
+
+.hv-banner-img img {
+  margin-top: 134px;
+}
+
+.blend {
+  mix-blend-mode: darken;
+}
+
+.tech-logo {
+  position: relative;
+  padding-left: 38px;
+}
+
+.tech-logo::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 210px;
+  background: url(../img/lending-logik-imgs/green-shadow-l.svg) no-repeat;
+  left: -41px;
+  top: -20px;
+  z-index: -1;
+}
+.tech-logo::after {
+  content: "";
+  position: absolute;
+  width: 209px;
+  height: 210px;
+  background: url(../img/lending-logik-imgs/green-shadow-r.svg) no-repeat;
+  right: -71px;
+  top: -20px;
+  z-index: -1;
+}
+
+.credit-prdct-box {
+  border-radius: 0px 0px 72px 12px;
+  border: 1px solid #c0eede;
+  background: radial-gradient(
+    170.85% 162.66% at 50% 163.03%,
+    #fff 7.55%,
+    #edfff9 75.81%,
+    rgba(146, 237, 204, 0.47) 100%
+  );
+  height: 94%;
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-prdct-box h4 {
+  font-size: 22px;
+}
+
+.credit-prdct-box h4 a:hover {
+  color: var(--primary-color);
+}
+
+.credit-prdct-box li::before {
+  background: url(../img/lending-logik-imgs/blue-arrow.svg) no-repeat;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 4px;
+}
+.credit-prdct-box li {
+  list-style-position: inside;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.credit-prdct-box li a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.credit-prdct-box li a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.credit-prdct-box ul {
+  /* padding-left: 40px; */
+  width: 82%;
+  margin: 0 auto;
+}
+.cpb-img {
+  margin-top: -57px;
+}
+
+.btn-primary-outline.small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #f4fffb;
+}
+
+.btn-primary-outline.small:hover {
+  border: 2px solid var(--primary-color);
+  background: #dcfdf1;
+}
+
+.titleDiscription-b {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.tech-box h4 {
+  border-color: var(--primary-color) !important;
+}
+
+.tech-box img {
+  max-width: 90%;
+}
+
+.plus-add-icon {
+  position: relative;
+  top: 40px;
+}
+.mw-none {
+  max-width: none !important;
+}
+
+.ai-footer-icon {
+  left: 15px;
+  top: -10px;
+}
+
+.ai-footer-icon .plus-add-icon {
+  z-index: 1;
+  right: -28px;
+  top: 46px;
+}
+
+.tech-logo-footer {
+  position: relative;
+  padding-left: 38px;
+  background: url(../img/lending-logik-imgs/full-stack-footer-bg.png) no-repeat;
+  z-index: -1;
+  top: -24px;
+  left: -37px;
+  padding-left: 70px;
+  padding-top: 40px;
+}
+
+.tech-logo-footer h4 {
+  font-size: 20px;
+  border: 2px var(--primary-color) solid;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 2px 8px;
+  margin-top: -15px;
+  margin-left: 44px;
+  background: #fff;
+  margin-bottom: 14px;
+}
+
+.client-testi-box .watch-btn {
+  border-right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.client-testi-box {
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.capify-logo {
+  width: 132px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.heroBannerInnerPage-b .sucessStoryTitle {
+  color: #142e63 !important ;
+}
+.heroBannerInnerPage-container.ss-banner {
+  height: 580px;
+}
+
+.heroBannerInnerPage-container.ss-banner .right-img img {
+  margin-top: 75px;
+}
+
+img.contactBg-2 {
+  width: auto;
+  position: absolute;
+  right: 308px;
+  z-index: 0;
+  bottom: 0;
+}
+
+@media (min-width: 1025px) {
+  .hero-text {
+    margin-top: 45px;
+  }
+}
+
+p {
+  font-weight: 500;
+}
+
+/* ---top header navbar-- */
+
+.brand {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: var(--color-pink-500);
+}
+/* .header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  margin: 0 auto;
+  box-shadow: var(--shadow-medium);
+  background-color: var(--color-white-100);
+} */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+/* .menu-dropdown >span::after {
+  background-image: url(../img/menu-arrow.svg);
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  right: -14px;
+  top: 8px;
+} */
+
+@media screen and (max-width: 992px) {
+  .sticky-header {
+    backdrop-filter: none;
+  }
+
+  .ai-lending-menu .rightSubMenu {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .menu-dropdown > span::after {
+    height: 10px;
+    right: 20px;
+    top: 14px;
+  }
+  .menu-dropdown > span::after {
+    height: 19px;
+    right: 20px;
+    top: 11px;
+    width: 20px;
+  }
+  .menu-link {
+    position: relative;
+  }
+
+  .menu-link:after {
+    content: "";
+    background: url(../img/lending-logik-imgs/down-arrow.svg) no-repeat;
+    transform: var(--bs-accordion-btn-icon-transform);
+    background-position: 3px 2px;
+    position: absolute;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    box-shadow: var(--shadow-medium);
+    background-color: #fff;
+    transition: all 0.5s ease;
+    align-items: start;
+  }
+  .navbar.active {
+    left: 0rem;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.menu-item {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.nav-link {
+  color: var(--primary-text);
+}
+.menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.25rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: inherit;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--primary-text);
+  transition: all 0.1s ease-in-out;
+}
+.menu-link > i.bx {
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: inherit;
+}
+.menu-item a:hover,
+.menu-item span:hover {
+  outline: none;
+  color: var(--primary-color);
+}
+
+.menu-link a {
+  color: var(--primary-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1300px) {
+  .ai-cde {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .menu-dropdown:hover > .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .menu-item {
+    display: block;
+    margin: 0 auto;
+  }
+  .menu-link {
+    justify-content: space-between;
+    padding: 0.5rem 1.25rem;
+  }
+  .nav-link {
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+.navbar .menu {
+  margin-bottom: 0;
+}
+.submenu {
+  position: absolute;
+  top: 2.35rem;
+  left: -2rem;
+  min-width: 685px;
+  height: auto;
+  padding: 0 1rem 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+  border-radius: 0 0 0.25rem 0.25rem;
+  border-top: 2px solid var(--color-pink-400);
+  box-shadow: var(--shadow-medium);
+  background-color: var(--color-white-100);
+  transition: all 0.3s ease-in-out;
+}
+.submenu-item {
+  display: block;
+  margin-top: 0.75rem;
+}
+.submenu-link {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: inherit;
+  cursor: pointer;
+  color: var(--color-black-500);
+  transition: all 0.35s ease;
+}
+.submenu-link:hover {
+  outline: none;
+  color: var(--color-pink-500);
+}
+@media only screen and (max-width: 992px) {
+  .submenu {
+    position: relative;
+    top: -0.5rem;
+    left: 1.2rem;
+    min-width: 100%;
+    max-height: 0;
+    padding: 0px;
+    border: none;
+    outline: none;
+    opacity: 1;
+    overflow: hidden;
+    visibility: visible;
+    transform: translateY(0px);
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .dropdownMenuInner {
+    width: 90%;
+  }
+  .sub-drop-menu ul li a img {
+    margin-right: 2px;
+    width: 16px;
+    display: none;
+  }
+}
+.burger {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  user-select: none;
+  width: 1.6rem;
+  height: 1.15rem;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+}
+.burger-line {
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 100%;
+  height: 2.1px;
+  opacity: 1;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background: var(--primary-text);
+}
+
+.header1.headerInner .burger-line {
+  background-color: #fff;
+}
+
+.header1.headerInner.sticky-header .burger-line {
+  background: var(--primary-text);
+}
+
+.burger-line:nth-child(1) {
+  top: 0px;
+}
+.burger-line:nth-child(2) {
+  top: 0.5rem;
+  width: 70%;
+}
+.burger-line:nth-child(3) {
+  top: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .burger {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+@media only screen and (max-width: 992px) {
+  .overlay.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.loan-type-list.b {
+  width: auto;
+}
+
+.powered-by {
+  margin-top: 22px;
+}
+
+@media (min-width: 991px) {
+  .contact-btn {
+    margin-left: 40px;
+    margin-top: 40px;
+    position: relative;
+  }
+  .contact-btn::before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    width: 1px;
+    height: 111px;
+    left: -17px;
+    background: #2a7b9b;
+    background: linear-gradient(
+      180deg,
+      rgb(222 249 243) 0%,
+      rgb(197 243 230) 50%,
+      rgb(221 250 243) 100%
+    );
+  }
+
+  .help-para-section > div {
+    margin-left: -30px;
+  }
+}
+
+.link {
+  color: #1fc388;
+  text-decoration: none;
+}

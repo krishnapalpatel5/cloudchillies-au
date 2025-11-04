@@ -1,0 +1,1054 @@
+<?php
+    // Read the countries.json file
+    $countriesJson = file_get_contents('countries.json');
+
+    // Decode JSON data into PHP array
+    $countries = json_decode($countriesJson, true);
+    // Check if decoding was successful
+    if ($countries) {
+        $option = "";
+        foreach ($countries['countries'] as $country) {
+            $option .= '<option value="' . htmlspecialchars($country) . '">' . htmlspecialchars($country) . '</option>';
+        }
+    } else {
+        echo 'Unable to load countries.';
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Chillies Financial Services</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lending-logik-responsive.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+    function enableSubmitBtn() {
+        document.getElementById("submitBtn").disabled = false;
+    }
+
+    // Traccker code//
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-M4TFV8J1JQ');
+
+    //////////////////
+
+    (function(c, l, a, r, i, t, y) {
+        c[a] = c[a] || function() {
+            (c[a].q = c[a].q || []).push(arguments)
+        };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "rc32v9vz9w");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4TFV8J1JQ"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="mainBanner">
+        <header id="header" class="header1 headerInner  ">
+            <section class="container header-container pt-4">
+                <a href="index.html"><img src="img/logo.svg" alt="Logo" width="240"></a>
+            </section>
+        </header>
+
+        <section class="heroSection" id="homePage">
+            <div class="heroBanner">
+                <div class="container header-container">
+                    <div class="row">
+                        <div class="col-md-6 d-flex  flex-column justify-content-center left ">
+                            <div class="hero-text">
+                                <h1 class="line1 ">
+                                    <span class="bannerText1">13 Years</span>
+                                    <span class="bannerText2"> of Delivering Transformational Value to</span>
+                                    <span class="bannerText3">Australian Financial Companies</span>
+                                </h1>
+                                <h1 class="line2"><span class="primary-text">with</span></h1>
+                                <div class="d-flex powered-by">
+                                    <div>
+                                        <img src="img/ai-sf-logo.svg" class="sf-logo">
+                                        <!-- <img src="img/ai-sf-logo-mobile.png" class="mobile-b" > -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 heroright">
+                            <div class="servicesContainer text-center desktop ai-img">
+                                <img src="img/bannerImg.png" alt="logo">
+                            </div>
+                            <!-- <div class="mobile mobileInfo text-center">
+                                <img src="img/lending-banner-img.png">
+                            </div> -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <!------------------------------>
+            <!-- They Trust US -->
+            <!------------------------------>
+
+            <section class="client-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="sectionTitle text-center  mb-4">
+                                <span class="lightWeight"> They </span> <span class="bold">Trust Us</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="trustLogo ">
+                                        <ul class="d-flex align-items-center flex-wrap justify-content-center">
+                                            <li>
+                                                <img src="img/trust-us/smartGroup.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo2.png" alt="logo" class="capify-logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo1.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/compareClub.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo4.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo6.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo3.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/lifeInsurance.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/autopia.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo13.png" alt="logo">
+                                            </li>
+
+
+                                            <li>
+                                                <img src="img/trust-us/logo7.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo10.png" alt="logo">
+                                            </li>
+
+                                            <li>
+                                                <img src="img/trust-us/logo17.png" alt="logo" class="blend">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo21.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo22.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo16.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo19.png" alt="logo">
+                                            </li>
+
+                                            <li>
+                                                <img src="img/trust-us/flexEquip.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo14.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/paySmart.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/treysta.png" alt="logo" class="blend">
+                                            </li>
+
+                                            <li>
+                                                <img src="img/trust-us/logo20.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo15.png" alt="logo" class="blend">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/bullrun.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo9.png" alt="logo">
+                                            </li>
+
+                                            <li>
+                                                <img src="img/trust-us/cellulant.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/crcleBlack.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/homeVestors.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/nomupay.png" alt="logo" class="blend">
+                                            </li>
+
+                                            <li>
+                                                <img src="img/trust-us/pennCapital.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="img/trust-us/logo18.png" alt="logo" class="blend">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+            </section>
+
+        </section>
+    </div>
+    <section class="ai-powered-sol p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <div class="sectionTitle mb-5 text-start m-5">
+                        <span class="bold primary-text">AI Powered Solutions</span> <span class="lightWeight">For</span>
+                    </div>
+
+
+                    <div class="row ai-points-wrap">
+
+                        <div class="col-md-7">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex ai-points">
+                                        <img src="img/cd-icon.svg" alt="" srcset="">
+                                        <h2 class="bold text-start">Credit Decisioning</h2>
+                                    </div>
+                                    <div class="d-flex ai-points">
+                                        <img src="img/lm-icon.svg" alt="" srcset="">
+                                        <h2 class="bold text-start">Lender Matching</h2>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="d-flex ai-points">
+                                        <img src="img/sv-icon.svg" alt="" srcset="">
+                                        <h2 class="bold text-start">Statement Visualization</h2>
+                                    </div>
+                                    <div class="d-flex ai-points">
+                                        <img src="img/bda-icon.svg" alt="" srcset="">
+                                        <h2 class="bold text-start">Bad Debt Analysis </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="call-to-action ai d-flex align-items-center justify-content-between">
+
+                                <div class=" flex-column">
+                                    <h2 class="lightWeight text-start">Give Your Business an </h2>
+                                    <h2 class="bold text-start">Unf<span class="orangeText">AI</span>r Advantage</h2>
+                                </div>
+
+                                <a href="/ai-contact" class="btn btn-primary " data-bs-toggle="modal"
+                                    data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+                                                'event_category': 'CTA',
+                                                'event_label': 'CTA - Make AI Work'
+                                            });">Lets make AI work for you
+                                    <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
+
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+    </section>
+
+    <section class="sf-investment section position-relative">
+        <div class="circle-wave-shape">
+            <img src="img/circle-waves.svg" alt="">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xl-5 left">
+                    <div>
+                        <div class="sectionTitle mb-4">
+                            <span class="lightWeight"> Maximize Value from Your</span>
+                            <span class="bold">Salesforce</span>
+                            <span class="lightWeight">Investment</span>
+
+                        </div>
+                        <p class="text-start">Too many financial organizations invest in Salesforce-but never realize
+                            its full potential. From underutilized features to disconnected workflows- we help financial
+                            institutions get more from Salesforce, with solutions designed around how your business
+                            actually works.</p>
+
+                    </div>
+                    <div class="mt-3 sfp-logo">
+                        <img src="img/salesforcePartner.png" alt="salesforce partner" />
+                    </div>
+                </div>
+
+                <!-- Left side -->
+                <div class="col-md-12 col-xl-7">
+                    <h4 class="sub-sectionTitle mb-4 ">
+                        <span class="lightWeight"> Our </span><span class="bold">Salesforce Solution Offerings</span>
+                    </h4>
+                    </h4>
+                    <div class="row bdr-btm">
+                        <div class="col-md-6 pb-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/sf-icon-a.svg" alt="">
+                                    <div>
+                                        <h2 class="bold mb-0">Salesforce </h2>
+                                        <h2 class="bold mb-0">Consulting & Advisory</h2>
+                                    </div>
+                                </div>
+                                <p>
+                                    Helping you make informed architectural decisions that align Salesforce with your
+                                    lending, insurance, or wealth operations- no guesswork, just domain-aligned
+                                    guidance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pb-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/sf-icon-b.svg" alt="">
+                                    <h2 class="bold text-start">Salesforce Implementation</h2>
+                                </div>
+                                <p>
+                                    Helping you simplify onboarding, servicing, claims, or loan management with tailored
+                                    Salesforce-enabled process flows that reduce friction and improve outcomes.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 pb-4 pt-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/sf-icon-c.svg" alt="">
+                                    <h2 class="bold text-start">Salesforce
+                                        Development</h2>
+                                </div>
+                                <p>
+                                    Helping you design and build custom workflows, decision logic, and user interfaces
+                                    that reflect the way your finance teams actually operate — not how the default
+                                    system behaves.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pb-4 pt-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/sf-icon-d.svg" alt="">
+                                    <h2 class="bold text-start">Managed<br>
+                                        Services</h2>
+                                </div>
+                                <p>
+                                    Ensuring your continued wins after Salesforce implementation with streamlined loan
+                                    management journeys.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="call-to-action si d-flex align-items-center justify-content-between">
+
+                        <div class=" flex-column">
+                            <h2 class="bold text-start">
+                                <div><span class="lightWeight">Let’s unlock the</span> full potential of</div>
+                                <div> Salesforce <span class="lightWeight">for your business</span>
+                                </div>
+                            </h2>
+                        </div>
+
+                        <a href="/salesforce" class="btn btn-primary " data-bs-toggle="modal"
+                            data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+     'event_category': 'CTA', 'event_label': 'CTA - Show Me How' });">Show Me How
+                            <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section industries">
+
+        <div class="sectionTitle mb-4 text-center">
+            <span class="bold">Financial Companies</span><span class="lightWeight"> We Help</span>
+        </div>
+
+        <div class="industries-container ">
+            <div class="box box1">
+                <div class="box-content">
+                    <h5 class="mb-4">Lending</h5>
+                    <div class="box-img1">
+                        <img src="img/ind-1.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box box2">
+                <div class="box-content">
+                    <h5 class="mb-4">
+                        <div>Employee</div>
+                        <div> Benefits & Salary</div>
+                        <div>Packaging</div>
+                    </h5>
+                    <div class="box-img2">
+                        <img src="img/ind-2.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="box box3">
+                <div class="box-content">
+                    <h5 class="mb-4">Wealth
+                        Management</h5>
+                    <div class="box-img3">
+                        <img src="img/ind-3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="box box4">
+                <div class="box-content">
+                    <h5 class="mb-4">Fintech</h5>
+                    <div class="box-img4">
+                        <img src="img/ind-4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box box5">
+                <div class="box-content">
+                    <h5 class="mb-4">Insurance</h5>
+                    <div class="box-img5">
+                        <img src="img/ind-5.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box box6">
+                <div class="box-content">
+                    <h5 class="mb-4">Banking</h5>
+                    <div class="box-img6">
+                        <img src="img/ind-6.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="call-to-action fc d-flex align-items-center justify-content-between">
+
+                        <div class=" flex-column">
+                            <h2 class="bold text-start"><span class="lightWeight">Let's</span> Maximise the ROI <span
+                                    class="lightWeight">for your</span> Finance Business</h2>
+                        </div>
+
+                        <a href="/expert-contact" class="btn btn-primary " data-bs-toggle="modal"
+                            data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+     'event_category': 'CTA',
+     'event_label': 'CTA - Talk to Expert'
+   });">Talk
+                            to an Expert
+                            <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="section8-Inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 left " data-aos="fade-right" data-aos-delay="1000">
+                    <div class="clientTestiContainer">
+                        <div class="clientTestiInner">
+                            <div class="sectionTitle text-center">
+                                Clients <span class="bold">Love Us </span>
+                            </div>
+                            <div class="clientTestiSubHeading text-center">
+                                Don't just take our word for it
+                            </div>
+                            <div class="owl-carousel full-slider owl-theme p-0">
+
+                                <div class="item">
+                                    <div class="testiItem">
+                                        <div class="testiItemInner d-flex">
+                                            <div class="left">
+                                                <div class="modelTestimonial2">
+                                                    <img src="img/wayne-thumb.png" class="img-fluid testimonialCover"
+                                                        alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testiItem">
+                                        <div class="testiItemInner d-flex">
+                                            <div class="left">
+                                                <div class="modelTestimonial2">
+                                                    <img src="img/scott-preview.png" class="img-fluid testimonialCover"
+                                                        alt="" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="text-right"><img src="img/testiDot.svg" alt="img">
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="col-6 right offeringTalkBg" data-aos="fade-left" data-aos-delay="1000">
+                    <div><img src="img/testiDotTop.svg" class="talkContainerImg" alt="img"></div>
+                    <div class="talkContainer ss-container">
+
+                        <div class="sectionTitle text-center aboutHeading">
+                            Success <span class="bold">Stories</span>
+                        </div>
+
+                        <div class="owl-carousel full-slider1 owl-theme p-0">
+                            <div class="item">
+                                <div class="ss-img-container">
+                                    <div class="ss-img-inner position-relative">
+                                        <img src="img/ss-1.jpg" alt="img">
+                                        <div class="ss-img-inner-content">
+                                            Empowering Capify to extend Business Loans in Australia & UK with Salesforce
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="ss-img-container">
+                                    <div class="ss-img-inner position-relative">
+                                        <img src="img/ss-2.jpg" alt="img">
+                                        <div class="ss-img-inner-content">
+                                            Assisting Australian Business Credit to automate & give Rent Roll Loans &
+                                            Trail Book Loans with Salesforce
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="ss-img-container">
+                                    <div class="ss-img-inner position-relative">
+                                        <img src="img/ss-3.jpg" alt="img">
+                                        <div class="ss-img-inner-content">
+                                            Facilitating OZ Cash Loans’ underwriting & disbursal of Personal Loans with
+                                            Salesforce
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="ss-img-container">
+                                    <div class="ss-img-inner position-relative">
+                                        <img src="img/ss-4.jpg" alt="img">
+                                        <div class="ss-img-inner-content">
+                                            Enabling THN Capital to automate Lending Workflows with AI-powered Credit
+                                            Scoring with Salesforce
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="ss-img-container">
+                                    <div class="ss-img-inner position-relative">
+                                        <img src="img/ss-5.jpg" alt="img">
+                                        <div class="ss-img-inner-content">
+                                            Streamlining Loan Processing and Document Intelligence for Regents Capital
+                                            with Salesforce +AI
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section8">
+        <div class="container">
+            <div class="row">
+                <div class="sectionTitle text-center aos-init aos-animate mt-5 mb-5" data-aos="fade-up">
+                    <span class="lightWeight">Why Choose Us as</span>
+                    <span class="bold">Your Salesforce Partner?</span>
+                </div>
+                <div class="gridLayout">
+                    <div class="large grid1 aos-init aos-animate" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon1.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                100% <span class="semiBold">Finance-Focused</span> Salesforce Implementation Experts
+                            </div>
+                            <div class="no"><img src="img/one.svg"></div>
+                        </div>
+                    </div>
+                    <div class="small grid5 aos-init" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon2.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                <span class="semiBold">Trusted Salesforce Partner</span> with deep Platform Expertise
+                                for Financial Enterprises
+                            </div>
+                            <div class="no"><img src="img/five.svg"></div>
+                        </div>
+                    </div>
+                    <div class="small grid2 aos-init aos-animate" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon3.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                <span class="semiBold">20+ years</span> of experience Serving the Finance Sector
+                                Globally
+                            </div>
+                            <div class="no"><img src="img/two.svg"></div>
+                        </div>
+                    </div>
+                    <div class="large grid6 aos-init" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon4.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                Team of<span class="semiBold"> Certified Salesforce Experts</span> across core and
+                                Industry Clouds
+                            </div>
+                            <div class="no"><img src="img/six.svg"></div>
+                        </div>
+                    </div>
+                    <div class="large grid3 aos-init aos-animate" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon5.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                <span class="semiBold"> AI-Powered Solutions- </span>Purpose-Built for Financial
+                                Enterprises
+                            </div>
+                            <div class="no"><img src="img/three.svg"></div>
+                        </div>
+                    </div>
+                    <div class="small grid7 aos-init" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon6.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                <span class="semiBold">ISO 27001 Certified-</span> Enterprise-Grade Security by Design
+                            </div>
+                            <div class="no"><img src="img/seven.svg"></div>
+                        </div>
+                    </div>
+                    <div class="small grid4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon7.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                <span class="semiBold"> 100+ Salesforce Certifications-</span> Aligned with your Goals,
+                                from Strategy to Support
+                            </div>
+                            <div class="no"><img src="img/four.svg"></div>
+                        </div>
+                    </div>
+                    <div class="large grid8 aos-init" data-aos="fade-up">
+                        <div class="gridInner">
+                            <div class="gridTitle">
+                                <div class="icon"><img src="img/icon8.svg" alt="Icon"></div>
+                            </div>
+                            <div class="discription">
+                                <span class="semiBold">Flexible Engagement Models-</span> to Scale Salesforce Team
+                                up/down on Demand
+                            </div>
+                            <div class="no"><img src="img/eight.svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section9">
+        <div class="container contactUs">
+            <div class="row">
+                <div class="left col-md-7 pt-4">
+                    <div class="leftInner">
+                        <div class="title aos-init aos-animate" data-aos="fade-right">
+                            Let’s Talk About You
+                        </div>
+                        <div class="helpPara aos-init aos-animate" data-aos="fade-right">
+                            <div>For your Unique Finance Business</div>
+                            <div>let us build Cutting-Edge Tailored Solutions Powered by </div>
+                        </div>
+                        <img src="img/aiIcon.png" alt="icon">
+                        <div class="talkAbout d-flex align-items-center flex-wrap aos-init aos-animate mt-4"
+                            data-aos="fade-right">
+                            <a href="/contact" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+     'event_category': 'CTA',
+     'event_label': 'CTA - Contact Us Now'
+   });">Contact Us Now<img src="img/arrow-white.svg" alt="arrow icon" class="ml-2"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right aos-init aos-animate col-md-5" data-aos="zoom-in">
+                    <img src="img/talkPeople.png" alt="talk people">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-md-12 footerTop d-flex justify-content-between">
+                    <div class="footerBox1">
+                        <div class="map">
+                            <img src="img/map.png" alt="logo">
+                        </div>
+                        <div class="footerLeftLogo">
+                            <div class="companyLogo"> <img src="img/logo.svg" alt="logo"></div>
+                            <div class="details">
+                                <div class="emailDetails"><a href="mailto:info@cloudchillies.com"><img
+                                            src="img/email-id.svg" alt="email Image"></a></div>
+                                <div class="contactDetails">
+                                    <img src="img/call-Icon.svg" alt="call Icon">
+                                    <ul>
+
+                                        <li>+61-280-155-723</li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerBox2 d-flex align-items-center gap-4">
+                        <img src="img/iso-img.jpg" alt="salesforce partner">
+                        <img src="img/salesforce-partner.svg" alt="salesforce partner">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row copywrite" data-aos-delay="1300">
+                    <div class="copywriteInner">
+                        © Copyright 2023 <span class="bold">Lending Logik</span>. All Rights Reserved.
+                    </div>
+                </div> -->
+        </div>
+    </footer>
+    </footer>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog videoDialog">
+        <div class="modal-content">
+            <div class="modal-body videoContainer">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <iframe class="youtube-player" width="100%" height="500"
+                    src="https://www.youtube.com/embed/Cqtc9nutysw?enablejsapi=1" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="taylorModalLabel" aria-hidden="true">
+    <div class="modal-dialog videoDialog">
+        <div class="modal-content">
+            <div class="modal-body videoContainer">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <iframe class="youtube-player" width="100%" height="500"
+                    src="https://www.youtube.com/embed/u_7DddxfmBg?enablejsapi=1" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row mb-0" id="myForm" method="post">
+                    <div class="mb-3 col-md-12">
+                        <input type="text" class="form-control" id="fname" name="full_name" placeholder="Full Name*">
+                        <span class="error" id="fnameError">Please Enter valid name</span>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <input type="text" class="form-control" id="cname" name="company_name"
+                            placeholder="Company Name">
+                        <span class="error" id="cnameError">Please enter your company name </span>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <select id="country" name="country" class="form-select">
+                            <option>Select your country</option>
+                            <?php echo $option; ?>
+                        </select>
+                        <span class="error" id="countryError">Please select your country</span>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <input type="Email" class="form-control" id="email" name="email" placeholder="Email Address*">
+                        <span class="error" id="emailError">Please enter your valid email</span>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <input type="number" class="form-control" id="phone" name="phone_no"
+                            placeholder="Phone Number*">
+                        <span class="error" id="phoneError">Please enter valid Phone No</span>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <textarea class="form-control" name="question" id="question" placeholder="How can we help? "
+                            id="" style="height: 100px"></textarea>
+                        <span class="error" id="QuestionError">Please enter your query to proceed</span>
+                    </div>
+                    <input type="hidden" id="callingPageInput" name="callingPage" value="">
+                    <div class="mb-3 col-md-12">
+                        <div class="g-recaptcha" data-sitekey="6LdNSigrAAAAAG7cGMQ2tH_DV4tu6X2H0kwN_e9o"
+                            data-callback="enableSubmitBtn">
+                        </div>
+                        <span id="captchError" class="error">Please click the captcha checkbox</span>
+
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" id="submitBtn" class="btn btn-primary green w-100">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast align-items-center text-white border-0 position-fixed bottom-0 end-0 m-3" role="alert"
+    aria-live="assertive" aria-atomic="true" style="z-index: 1056;">
+    <div class="d-flex">
+        <div id="toast-message" class="toast-body">
+            <!-- Message will be inserted dynamically -->
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/contactModalScript.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+AOS.init({
+    disable: 'mobile',
+    duration: 1200,
+    once: true
+});
+
+//=====  WOW active
+
+new WOW().init();
+
+$(".full-slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: false,
+    autoPlaySpeed: 50000,
+    autoPlayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 1,
+        },
+        1000: {
+            items: 1,
+        },
+    },
+});
+
+$(".full-slider1").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    autoPlaySpeed: 50000,
+    autoPlayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 1,
+        },
+        1000: {
+            items: 1,
+        },
+    },
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const modals = document.querySelectorAll('.modal');
+
+    modals.forEach(modal => {
+        // Pause YouTube iframe when modal is hidden
+        modal.addEventListener('hidden.bs.modal', function() {
+            const iframes = modal.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                iframe.contentWindow.postMessage(
+                    '{"event":"command","func":"pauseVideo","args":""}', '*');
+            });
+        });
+
+        // Remove autoplay=1 on open (optional safety)
+        modal.addEventListener('show.bs.modal', function() {
+            const iframes = modal.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                let src = iframe.getAttribute('src');
+                if (src.includes("autoplay=1")) {
+                    iframe.setAttribute('src', src.replace("autoplay=1", "autoplay=0"));
+                }
+            });
+        });
+    });
+});
+</script>
+
+</html>
+<!------------------------------>
+<!-- Footer End -->
+<!------------------------------>'

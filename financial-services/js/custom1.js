@@ -1,0 +1,415 @@
+  $("a.read_more_btn").click(function () {
+      console.log("click event triggered");
+      var storyId = $(this).data("id");
+      if (storyId) {
+        $("form#downloadPdf #company-name").val(storyId);
+      }
+  });
+
+  $("#downloadPdf").on("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    let isValid = true; // renamed for clarity
+
+    let name = $("#downloadPdf").find("#fname").val().trim();
+    let email = $("#downloadPdf").find("#email").val().trim();
+    let company = $("#downloadPdf").find("#company-name").val().trim();
+
+    // Name validation
+    let namePattern = /^[a-zA-Z\s]+$/; // simple pattern for name
+    if (name === "" || !namePattern.test(name)) {
+      $("#downloadPdf").find("#fnameError").show();
+      isValid = false;
+    } else {
+      $("#downloadPdf").find("#fnameError").hide();
+    }
+
+    // Email validation
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (email === "" || !emailPattern.test(email)) {
+      $("#downloadPdf").find("#emailError").show();
+      isValid = false;
+    } else {
+      $("#downloadPdf").find("#emailError").hide();
+    }
+
+    // If everything is valid → AJAX + download
+    if (isValid) {
+    let formData = new FormData(this);
+    formData.append("subject", "download_pdf");
+    formData.append("company_name", company);
+
+    // Show loader and hide form
+    $("#downloadPdf").hide();
+    $("#form-loader").fadeIn();
+    $("#form-message").hide();
+
+    // Disable submit button
+    $("#downloadPdf button[type='submit']").prop('disabled', true);
+
+    // Add timeout handling
+    const timeout = 30000; // 30 seconds timeout
+    const ajaxPromise = $.ajax({
+        type: "POST",
+        url: "downloadpdf.php",
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(response) {
+            // Parse response if it's JSON
+            let result = response;
+            try {
+                result = JSON.parse(response);
+            } catch(e) {}
+
+            // Hide loader with fade
+            $("#form-loader").fadeOut();
+            
+            // Show success message
+            $("#form-message")
+                .removeClass('alert-danger')
+                .addClass('alert-success')
+                .html('Thank you! The Success Story has been sent to your email address. You should receive it shortly.')
+                .fadeIn();
+            
+            // Reset form
+            $("#downloadPdf")[0].reset();
+            
+            // Hide message and close modal after delay
+            setTimeout(() => {
+                $("#form-message").fadeOut();
+                $('#ss-model').modal('hide');
+                $('body').removeClass('modal-open').css({"overflow": "auto", "padding-right": "0px"});
+                $('.modal-backdrop').remove();
+                $("#downloadPdf").fadeIn();
+                // Re-enable submit button
+                $("#downloadPdf button[type='submit']").prop('disabled', false);
+            }, 2000);
+        },
+        error: function(xhr, status, error) {
+            // Hide loader
+            $("#form-loader").fadeOut();
+            $("#downloadPdf").fadeIn();
+            
+            // Show error message
+            $("#form-message")
+                .removeClass('alert-success')
+                .addClass('alert-danger')
+                .html('Error submitting form. Please try again.')
+                .fadeIn();
+            
+            // Re-enable submit button
+            $("#downloadPdf button[type='submit']").prop('disabled', false);
+            
+            console.error("AJAX Error:", error);
+        }
+    });
+
+    // Handle timeout
+    const timeoutPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject(new Error('Request timed out'));
+        }, timeout);
+    });
+
+    // Race between ajax and timeout
+    Promise.race([ajaxPromise, timeoutPromise])
+        .catch(error => {
+            if (error.message === 'Request timed out') {
+                $("#form-loader").fadeOut();
+                $("#downloadPdf").fadeIn();
+                $("#form-message")
+                    .removeClass('alert-success')
+                    .addClass('alert-danger')
+                    .html('Request is taking longer than expected. Please try again.')
+                    .fadeIn();
+                $("#downloadPdf button[type='submit']").prop('disabled', false);
+            }
+        });
+}
+  });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      console.log(headerHeight,"headerHeight======>")
+      
+      window.scrollTo({
+        top: targetElement.offsetTop - headerHeight,
+        behavior: 'smooth'
+      });
+    }
+  });
+}); 
+
+// mobile menu
+
+var hamburgerButton = document.getElementById("hamburgerButton");
+var overlay = document.getElementById("overlay");
+var closeButton = document.getElementById("closeButton");
+var body = document.body;
+
+// Function to remove menu-active class
+// function closeMenu() {
+//   body.classList.remove("menu-active");
+// }
+
+// hamburgerButton.addEventListener("click", function () {
+//   body.classList.add("menu-active");
+// });
+
+// closeButton.addEventListener("click", function () {
+//   closeMenu();
+// });
+
+// overlay.addEventListener("click", function (event) {
+//   // Check if the click occurred outside the closeButton
+//   if (!closeButton.contains(event.target)) {
+//     closeMenu();
+//   }
+// });
+
+// Add touch event for swiping on overlay
+var touchStartX = 0;
+var touchEndX = 0;
+
+overlay.addEventListener("touchstart", function (event) {
+  touchStartX = event.touches[0].clientX;
+});
+
+overlay.addEventListener("touchmove", function (event) {
+  touchEndX = event.touches[0].clientX;
+});
+
+overlay.addEventListener("touchend", function () {
+  // Check if the swipe distance is sufficient to trigger closing the menu
+  if (touchEndX - touchStartX > 1) {
+    closeMenu();
+  }
+});
+
+
+var header = document.getElementById("header");
+var scrollThreshold = 200; // Adjust this value to control when the header becomes sticky
+
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset >= scrollThreshold) {
+    header.classList.add("sticky-header");
+  } else {
+    header.classList.remove("sticky-header");
+  }
+});
+
+// add active class on menu
+$(document).ready(function () {
+  $('.navbar-nav li ul li').click(function(e) {
+
+      $('.navbar-nav li ul li').removeClass('active');
+
+      var $this = $(this);
+      if (!$this.hasClass('active')) {
+          $this.addClass('active');
+      }
+  });
+})
+
+$(document).ready(function() {
+  // Check if the device is a desktop based on media query
+  const isDesktop = window.matchMedia('(min-width: 991px)').matches;
+
+  // If it's a desktop, enable dropdown functionality
+  if (isDesktop) {
+    $('#navbarNav').on('click', function(e) {
+      $(this).find('.dropdown-menu').toggle();
+      e.stopPropagation();
+    });
+
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('#navbarNav').length) {
+        $('.dropdown-menu').hide();
+      }
+    });
+  }
+});
+
+
+$(".full-slider").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: false,
+  autoPlaySpeed: 50000,
+  autoPlayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
+
+// success story
+
+
+  var itemCount = $(".multiItem .item").length;
+  // console.log(itemCount,"item count ============>");
+  $(".multiItem").owlCarousel({
+    items: 1,
+    loop: itemCount > 3,
+    dots: false,
+    nav: true,
+    margin:40,
+    autoplay: itemCount > 3,
+    autoPlaySpeed: 50000,
+    autoPlayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  });
+
+  // saleforce partner of leading company
+  $(".partnerItem").owlCarousel({
+    items: 1,
+    loop: true,
+    dots: false,
+    nav: true,
+    loop: true,
+    margin:20,
+    autoplay: true,
+    autoPlaySpeed: 50000,
+    autoPlayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      900: {
+        items: 5,
+      },
+      1300: {
+        items: 7,
+      },
+    },
+  });
+
+  $(".logoSlider").owlCarousel({
+    items: 7,
+    loop: true,
+    dots: false,
+    nav: true,
+    margin:20,
+    autoplay: false,
+    autoPlaySpeed: 5000,
+    autoPlayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      900: {
+        items: 5,
+      },
+      1300: {
+        items: 7,
+      },
+    },
+  });
+  // stop on click menu
+
+
+  const navbarMenu = document.getElementById("navbar");
+const burgerMenu = document.getElementById("burger");
+const overlayMenu = document.querySelector(".overlay");
+
+// Show and Hide Navbar Function
+const toggleMenu = () => {
+   navbarMenu.classList.toggle("active");
+   overlayMenu.classList.toggle("active");
+};
+
+// Collapsible Mobile Submenu Function
+const collapseSubMenu = () => {
+   navbarMenu
+      .querySelector(".menu-dropdown.active .submenu")
+      .removeAttribute("style");
+   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+};
+
+// Toggle Mobile Submenu Function
+const toggleSubMenu = (e) => {
+   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+      e.preventDefault();
+      const menuDropdown = e.target.parentElement;
+
+      // If Dropdown is Expanded, then Collapse It
+      if (menuDropdown.classList.contains("active")) {
+         collapseSubMenu();
+      } else {
+         // Collapse Existing Expanded Dropdown
+         if (navbarMenu.querySelector(".menu-dropdown.active")) {
+            collapseSubMenu();
+         }
+
+         // Expanded the New Dropdown
+         menuDropdown.classList.add("active");
+         const subMenu = menuDropdown.querySelector(".submenu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+      }
+   }
+};
+
+// Fixed Resize Window Function
+const resizeWindow = () => {
+   if (window.innerWidth > 992) {
+      if (navbarMenu.classList.contains("active")) {
+         toggleMenu();
+      }
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+         collapseSubMenu();
+      }
+   }
+};
+
+function changeHeading(heading) {
+  let modalTitle = document.querySelector(".modal-title");
+  if (modalTitle) {
+      modalTitle.innerHTML = heading;
+  } else {
+      console.error("Element with class 'modal-title' not found");
+  }
+}
+
+
+
+
+// Initialize Event Listeners
+burgerMenu.addEventListener("click", toggleMenu);
+overlayMenu.addEventListener("click", toggleMenu);
+navbarMenu.addEventListener("click", toggleSubMenu);
+window.addEventListener("resize", resizeWindow);
+
+
+
+

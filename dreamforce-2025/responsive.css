@@ -1,0 +1,219 @@
+@media (min-width: 1350px) and (max-width: 1599px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .text-primary {
+    color: #003e88 !important;
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .cto-box h4 {
+    position: absolute;
+    width: 155px;
+    font-size: 30px;
+    z-index: 1;
+    left: 22px;
+    top: 22px;
+    font-weight: 700;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .cto-box {
+    height: 590px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .f-des {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .trail-hero img {
+    position: absolute;
+    top: -80px;
+    right: 0;
+  }
+
+  .text-primary {
+    font-size: 45px;
+  }
+
+  .cto-box .btnStarted {
+    border-radius: 14px;
+    /* white-space: pre-line; */
+    line-height: 23px;
+    font-size: 19px;
+  }
+
+  .wrap-layout .wrap-layout-b {
+    height: 245px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .event-section .col-md-9 {
+    width: 100%;
+  }
+
+  .event-section .col-md-3 {
+    width: 100%;
+  }
+
+  .trail-hero img {
+    position: relative;
+    top: 0;
+  }
+
+  .cta-a {
+    margin-top: 0;
+    height: auto;
+    background-size: cover;
+  }
+  .cto-box {
+    max-width: 440px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .trail-hero {
+    text-align: center;
+  }
+
+  .wrap-layout > div.d-flex {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .tour-box {
+    margin-bottom: 40px;
+  }
+
+  .cto-box .cto-img {
+    margin-left: auto;
+    right: 0;
+  }
+
+  .cto-box {
+    display: flex;
+  }
+
+  .cto-box h4 {
+    position: absolute;
+    width: 60%;
+    font-size: 35px;
+    z-index: 1;
+    left: 22px;
+    top: 22px;
+  }
+
+  .cta-a .btn-area {
+    flex-direction: column;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .iframe-container {
+    margin-bottom: 20px;
+  }
+
+  .wrap-layout .d-flex {
+    flex-direction: column;
+  }
+  .wrap-layout .wrap-layout-b {
+    height: 165px;
+  }
+
+  .countBx .countList > div {
+    max-width: 183px;
+    width: 100%;
+  }
+  .countList {
+    flex-wrap: wrap;
+  }
+  .wcu-btn {
+    flex-direction: column;
+  }
+  .footerTop {
+    flex-direction: column;
+  }
+  .tour-box > .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-panel {
+    width: min(890px, 80%);
+  }
+}
+
+@media (max-width: 767px) {
+  .cto-box {
+    height: 440px;
+  }
+
+  .trail-hero img {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  .cta-a .btn-area .btn,
+  .why-choose-us .btn {
+    white-space: normal;
+    line-height: 27px;
+    height: 90px;
+  }
+  .text-primary {
+    color: #003e88 !important;
+    font-size: 42px;
+  }
+  .iframe-container iframe {
+    width: 100%;
+    height: 290px;
+  }
+  .cto-box h4 {
+    font-size: 24px;
+  }
+
+  .overlay-panel {
+    width: min(400px, 100%);
+  }
+  .footerBox1 .map {
+    display: none;
+  }
+
+  .f-des {
+    font-size: 21px;
+  }
+  .countBx .countList > div {
+    border-left: 0;
+  }
+  .countBx .countList > div {
+    border-left: 0;
+    padding: 0;
+    width: 40%;
+  }
+}
