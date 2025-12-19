@@ -31,15 +31,26 @@
                     </div>
                     <input type="hidden" id="callingPageInput" name="callingPage" value="">
                     <input type="hidden" id="modalSectionInput" name="section">
+                      <!-- Anti-bot Honeypot -->
+                    <input type="text" name="website_url_fake" id="website_url_fake" style="display:none !important;">
+
+                    <!-- Anti-bot Timestamp -->
+                    <input type="hidden" id="form_start_time" name="form_start_time">
                     <div class="mb-4 col-md-12 position-relative">
 
                         <div id="html_element"></div>
 
                         <span id="captchError" class="error">Please click the captcha checkbox</span>
                     </div>
-                    <div class="col-md-12">
+                     <div class="col-md-12">
+                        
                         <button type="submit" id="submitBtn"
-                            class="btn btn-primary green w-100 btnStarted">Submit</button>
+                            class="btn btn-primary green w-100 btnStarted">
+                            <span id="submitBtnText">Submit</span>
+                            <div id="submitBtnSpinner" class="spinner-border spinner-border-sm ms-2" role="status" style="display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </button>
                     </div>
                 </form>
             </div>

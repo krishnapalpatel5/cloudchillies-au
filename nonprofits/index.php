@@ -34,9 +34,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Chillies Nonprofits</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lending-logik-responsive.css">
     <!-- <link rel="stylesheet" type="text/css"
@@ -229,7 +229,7 @@
                                     </p>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn "
+                                        <a href="#contactUsPopup" class="btn btnStarted read_more_btn "
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="obk">Read More
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25"
@@ -278,7 +278,7 @@
                                     </p>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn "
+                                        <a href="#contactUsPopup" class="btn btnStarted read_more_btn "
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="caritas">Read
                                             More
                                             <span>
@@ -330,7 +330,7 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn "
+                                        <a href="#contactUsPopup" class="btn btnStarted read_more_btn "
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="raise">Read
                                             More
                                             <span>
@@ -381,7 +381,7 @@
 
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn "
+                                        <a href="#contactUsPopup" class="btn btnStarted read_more_btn "
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="pope">Read
                                             More
                                             <span>
@@ -432,7 +432,7 @@
 
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn "
+                                        <a href="#contactUsPopup" class="btn btnStarted read_more_btn "
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="mnd">Read
                                             More
                                             <span>
@@ -591,7 +591,7 @@
                         </div>
 
                         <a href="/salesforce" class="btn btn-primary " data-bs-toggle="modal"
-                            data-bs-target="#contactModal">Show Me How
+                            data-bs-target="#contactUsPopup">Show Me How
                             <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
                         </a>
                     </div>
@@ -663,7 +663,7 @@
                         </div>
 
                         <a href="/salesforce" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                            data-bs-target="#contactModal">Contact Us
+                            data-bs-target="#contactUsPopup">Contact Us
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
                                 fill="none">
                                 <path d="M11.5664 6.7124L22.0224 17.1684L11.5664 27.6245" stroke="white"
@@ -784,7 +784,7 @@
                                 </div>
 
                                 <a href="/ai-contact" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                                    data-bs-target="#contactModal">Learn More
+                                    data-bs-target="#contactUsPopup">Learn More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
                                         fill="none">
                                         <path d="M11.5664 6.7124L22.0224 17.1684L11.5664 27.6245" stroke="white"
@@ -1171,7 +1171,7 @@
                         </div>
                         </h2>
                         <a href="" class="btn btnStarted  position-relative" data-bs-toggle="modal"
-                            data-bs-target="#contactModal">Show Me
+                            data-bs-target="#contactUsPopup">Show Me
                             How
                             <img src="img/arrow-white.png" alt="arrow icon" class="ml-2">
                         </a>
@@ -1379,7 +1379,7 @@
                         <div class="talkAbout d-flex align-items-center flex-wrap aos-init aos-animate mt-4"
                             data-aos="fade-right">
                             <a href="/contact" class="btn btn-primary btnStarted" data-bs-toggle="modal"
-                                style="font-size: 22px !important;" data-bs-target="#contactModal">Talk to Our
+                                style="font-size: 22px !important;" data-bs-target="#contactUsPopup">Talk to Our
                                 Nonprofits Experts
 
                                 <img src="img/users-group.png" alt="" srcset="">
@@ -1486,103 +1486,7 @@
 </div>
 
 
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form class="row mb-0" id="myForm" method="post">
-                    <div class="mb-4 col-md-12 position-relative">
-                        <input type="text" class="form-control" id="fname" name="full_name" placeholder="Full Name*">
-                        <span class="error" id="fnameError">Please enter valid name</span>
-                    </div>
-                    <div class="mb-4 col-md-12 position-relative">
-                        <input type="Email" class="form-control" id="email" name="email" placeholder="Work Email*">
-                        <span class="error" id="emailError">Please enter your valid email</span>
-                    </div>
-                    <div class="mb-4 col-md-12 position-relative">
-                        <input type="number" class="form-control" id="phone" name="phone_no"
-                            placeholder="Phone Number*">
-                        <span class="error" id="phoneError">Please enter valid Phone No</span>
-                    </div>
-                    <div class="mb-4 col-md-12 position-relative">
-                        <textarea class="form-control" name="question" id="question" placeholder="How can we help? (Optional)"
-                            id="" style="height: 100px"></textarea>
-                        <span class="error" id="QuestionError">Please enter your query to proceed</span>
-                    </div>
-                    <input type="hidden" id="callingPageInput" name="callingPage" value="">
-                    <div class="mb-4 col-md-12 position-relative">
-                        <div class="g-recaptcha" data-sitekey="6LePgc4rAAAAALyCV_jDBpjZmUa-LRtOcK_GqBpz"
-                            data-callback="enableSubmitBtn">
-                        </div>
-                        <span id="captchError" class="error">Please click the captcha checkbox</span>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="submit" id="submitBtn" class="btn btn-primary green w-100">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<!-- SS modal -->
-<div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-        <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title" id="exampleModalLabel">
-                    <span class="title-highlight">Download Success Story</span>
-                </h5>
-                <button type="button" class="btn-close rounded-circle" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body pt-2">
-                <p class="modal-subtitle mb-4">Please fill in your details to access the success story</p>
-
-                <div id="form-message" class="alert" style="display: none;"></div>
-
-                <div id="form-loader" class="loader-container" style="display: none;">
-                    <div class="spinner-wrapper">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                        <p class="loading-text">Please wait for a while, we are processing your request.</p>
-                    </div>
-                </div>
-
-                <form class="row g-3" method="post" id="downloadPdf" action="javascript:void(0);">
-                    <div class="col-md-12 form-floating">
-                        <input type="text" class="form-control custom-input" id="fname" name="name"
-                            placeholder="Full Name*">
-                        <label for="fname">Full Name*</label>
-                        <span class="error" id="fnameError">Please enter valid name</span>
-                    </div>
-
-                    <div class="col-md-12 form-floating">
-                        <input type="text" class="form-control custom-input" id="email" name="company_email"
-                            placeholder="Company Email*">
-                        <label for="email">Company Email*</label>
-                        <span class="error" id="emailError">Please enter valid email</span>
-                    </div>
-
-                    <input type="hidden" value="" id="company-name">
-
-                    <div class="col-12 mt-4">
-                        <button type="submit" id="submitBtn" class="btn btn-primary w-100 btnStarted ">
-                            <span class="btn-text">Download</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+<?php include '../component/contact-modal.php'; ?>
 
 <!-- Toast Notification -->
 <div id="toast" class="toast align-items-center text-white border-0 position-fixed bottom-0 end-0 m-3" role="alert"
@@ -1598,14 +1502,14 @@
 
 
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
-<script src="js/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="../js/jquery-3.6.4.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/contactModalScript.js"></script>
+<script src="../js/contactModalScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="../js/wow.min.js"></script>
 <script>
 AOS.init({
     disable: 'mobile',

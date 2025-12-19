@@ -1,18 +1,45 @@
+function showFormLoader(show) {
+  const loader = document.getElementById("form-loader");
+  const submitBtnText = document.getElementById("submitBtnText");
+  const submitBtnSpinner = document.getElementById("submitBtnSpinner");
+  
+  if (show) {
+    // Show loader
+    if (loader) loader.style.display = "block";
+    if (submitBtnText) submitBtnText.textContent = "Processing...";
+    if (submitBtnSpinner) submitBtnSpinner.style.display = "inline-block";
+  } else {
+    // Hide loader
+    if (loader) loader.style.display = "none";
+    if (submitBtnText) submitBtnText.textContent = "Submit";
+    if (submitBtnSpinner) submitBtnSpinner.style.display = "none";
+  }
+}
+
 function showToaster(color, message) {
   var toaster = document.getElementById("toaster");
 
-  // Set dynamic color and message
+  // Check if toaster element exists
+  if (!toaster) {
+    console.warn("Toaster element not found, falling back to alert");
+    return;
+  }
 
+  // Set dynamic color and message
   toaster.classList.add("open");
   $("#toaster").css({ backgroundColor: color });
   $("#msg").text(message);
 
   setTimeout(function () {
-    toaster.classList.remove("open");
+    if (toaster && toaster.classList) {
+      toaster.classList.remove("open");
+    }
   }, 3000);
 }
 
 function populateCountriesforContactModal() {
+  console.log("i am ruunnnnnnnning");
+
   $.getJSON("countries.json", function (data) {
     var states = data["countries"];
     var selectState = $("#country");
@@ -55,11 +82,14 @@ $(document).ready(function () {
     // 1. Reset form first
     let form = modal.querySelector("form");
     if (form) form.reset();
-    populateCountriesforContactModal();
+    // populateCountriesforContactModal();
 
     let button = event.relatedTarget; // Button that triggered the modal
     let subject = button.getAttribute("data-subject");
     let section = button.getAttribute("data-section");
+
+    console.log("Subject:", subject);
+    console.log("Section:", section);
 
     let subjectInput = modal.querySelector("#callingPageInput");
     if (subjectInput) {
@@ -78,6 +108,7 @@ $(document).ready(function () {
     }
 
     let sectionInput = modal.querySelector("#modalSectionInput");
+    console.log("Section Input:", sectionInput);
     if (sectionInput) {
       try {
         if ("value" in sectionInput) sectionInput.value = section;
@@ -107,7 +138,7 @@ $(document).ready(function () {
           if (document.getElementById("html_element")) {
             try {
               contactCaptchaWidget = grecaptcha.render("html_element", {
-                sitekey: "6Ldz9b4rAAAAALbxtDvN0FFyVVgCyAGnjNDxKdul",
+                sitekey: "6LetXv0rAAAAALmgRme6MDqlaruUz-QNWhev0FUp",
               });
             } catch (e) {}
           }
@@ -117,6 +148,18 @@ $(document).ready(function () {
       // ignore captcha errors
     }
   });
+
+  // Also handle modal close/hide events to ensure proper cleanup
+  $('#contactUsPopup').on('hidden.bs.modal', function () {
+      // Force cleanup any remaining backdrop
+      $('.modal-backdrop').remove();
+      $('body').removeClass('modal-open').css({
+          'overflow': '',
+          'padding-right': ''
+      });
+      $('#submitBtn').prop('disabled', false);
+  });
+
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const NamePattern = /^[A-Za-z]{2,}(?: [A-Za-z]+)*$/; // At least 2 chars, no double spaces, no trailing/leading spaces
   const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
@@ -227,7 +270,15 @@ $(document).ready(function () {
 
   $("#myForm").submit(function (event) {
     event.preventDefault();
-    document.getElementById("submitBtn").disabled = true;
+    
+    // Show loader and disable button
+    showFormLoader(true);
+    
+    // Check if submit button exists
+    var submitBtn = document.getElementById("submitBtn");
+    if (submitBtn) {
+      submitBtn.disabled = true;
+    }
     let fn = checkElement("fname", "fnameError", NamePattern);
     //let cn = checkElement("cname", "cnameError", NamePattern);
     let email = checkElement("email", "emailError", emailPattern);
@@ -244,6 +295,15 @@ $(document).ready(function () {
       ? subjectElem.value || subjectElem.innerText || ""
       : "";
 
+    field_column = [
+      "full_name",
+      "company_name",
+      "email",
+      "phone_no",
+      "country",
+      "question",
+    ];
+
     // Serialize form data
     if (fn && email && mn && response) {
       var formData = $(this).serializeArray(); // Converts form data into an array
@@ -253,9 +313,7 @@ $(document).ready(function () {
       formData.push({ name: "subject", value: subject });
       $.ajax({
         type: "POST",
-        //url: "http://20.20.20.204/
-        // -2025/formSubmit.php",
-        url: "https://cloudchillies.com.au/formSubmit.php",
+        url: "http://localhost/cloudchillies-au/formSubmit.php",
         dataType: "json",
         data: formData,
         success: function (response) {
@@ -268,6 +326,8 @@ $(document).ready(function () {
               console.error("Failed to parse response:", e);
             }
           }
+
+          console.log("Response from server:", res);
 
           // Check if the response indicates success
           if (res && res.success === true) {
@@ -289,12 +349,27 @@ $(document).ready(function () {
               // ignore
             }
 
-            // Close modal and reset form
+            $("#myForm")[0].reset();
+
+            // Hide loader
+            showFormLoader(false);
+
+            // Close modal properly and clean up backdrop
             $("#contactUsPopup").modal("hide");
-            document.getElementById("submitBtn").disabled = false;
+
+            // Re-enable submit button
+            var submitBtn = document.getElementById("submitBtn");
+            if (submitBtn) {
+              submitBtn.disabled = false;
+            }
           } else {
             // Error case: handle validation errors
-            document.getElementById("submitBtn").disabled = false;
+            showFormLoader(false);
+            
+            var submitBtn = document.getElementById("submitBtn");
+            if (submitBtn) {
+              submitBtn.disabled = false;
+            }
 
             // Show error message
             const errorMessage =
@@ -333,7 +408,12 @@ $(document).ready(function () {
           }
         },
         error: function (xhr, status, error) {
-          document.getElementById("submitBtn").disabled = false;
+          showFormLoader(false);
+          
+          var submitBtn = document.getElementById("submitBtn");
+          if (submitBtn) {
+            submitBtn.disabled = false;
+          }
 
           // Try to parse error response if available
           let errorMessage =
@@ -380,9 +460,45 @@ $(document).ready(function () {
         },
       });
     } else {
-      document.getElementById("submitBtn").disabled = false;
+      showFormLoader(false);
+      
+      var submitBtn = document.getElementById("submitBtn");
+      if (submitBtn) {
+        submitBtn.disabled = false;
+      }
 
       showToaster("#dc3545", "Please fill all Details properly");
     }
   });
 });
+
+// Add CSS for loader
+const loaderStyle = document.createElement('style');
+loaderStyle.textContent = `
+  .loader-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .spinner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .loading-text {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+  }
+`;
+document.head.appendChild(loaderStyle);

@@ -196,7 +196,7 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn "
+                                        <a  class="btn btnStarted read_more_btn "
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="capify">Read More
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25"
@@ -242,7 +242,7 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn"
+                                        <a  class="btn btnStarted read_more_btn"
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="regents">Read
                                             More
                                             <span>
@@ -289,7 +289,7 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn"
+                                        <a  class="btn btnStarted read_more_btn"
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="smart-group">Read
                                             More
                                             <span>
@@ -336,7 +336,7 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a href="#contactModal" class="btn btnStarted read_more_btn"
+                                        <a  class="btn btnStarted read_more_btn"
                                             data-bs-toggle="modal" data-bs-target="#ss-model" data-id="abc">Read
                                             More
                                             <span>
@@ -750,7 +750,7 @@
                                 </div>
 
                                 <a href="/ai-contact" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                                    data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+                                    data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
                                                 'event_category': 'CTA',
                                                 'event_label': 'CTA - Make AI Work'
                                             });">Lets make AI work for you
@@ -889,7 +889,7 @@
                         </div>
 
                         <a href="/salesforce" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                            data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+                            data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA', 'event_label': 'CTA - Show Me How' });">Show Me How
                             <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
                         </a>
@@ -987,7 +987,7 @@
                         </div>
 
                         <a href="/expert-contact" class="btn btn-primary btnStarted talkTo" data-bs-toggle="modal"
-                            data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+                            data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA',
      'event_label': 'CTA - Talk to Expert'
    });">Talk
@@ -1915,7 +1915,7 @@
                         <div class="talkAbout d-flex align-items-center flex-wrap aos-init aos-animate mt-4"
                             data-aos="fade-right">
                             <a href="/contact" class="btn btn-primary btnStarted" data-bs-toggle="modal"
-                                data-bs-target="#contactModal" onclick="gtag('event', 'cta_click', {
+                                data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA',
      'event_label': 'CTA - Contact Us Now'
    });">Contact Us Now
@@ -1930,7 +1930,7 @@
             </div>
         </div>
     </section>
-
+    
 
 
     <footer>
@@ -2021,55 +2021,10 @@
 </div>
 
 
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form class="row mb-0" id="myForm" method="post">
-                    <div class="mb-4 col-md-12 position-relative">
-                        <input type="text" class="form-control" id="fname" name="full_name" placeholder="Full Name*">
-                        <span class="error" id="fnameError">Please enter valid name</span>
-                    </div>
-                    
-                    <div class="mb-4 col-md-12 position-relative">
-                        <input type="Email" class="form-control" id="email" name="email" placeholder="Work Email*">
-                        <span class="error" id="emailError">Please enter your valid email</span>
-                    </div>
-                    <div class="mb-4 col-md-12 position-relative">
-                        <input type="number" class="form-control" id="phone" name="phone_no"
-                            placeholder="Phone Number*">
-                        <span class="error" id="phoneError">Please enter valid Phone No</span>
-                    </div>
-                    <div class="mb-4 col-md-12 position-relative">
-                        <textarea class="form-control" name="question" id="question" placeholder="How can we help? (Optional)"
-                            id="" style="height: 100px"></textarea>
-                        <span class="error" id="QuestionError">Please enter your query to proceed</span>
-                    </div>
-                    <input type="hidden" id="callingPageInput" name="callingPage" value="">
-                    <div class="mb-4 col-md-12 position-relative">
-                        <div class="g-recaptcha" data-sitekey="6LePgc4rAAAAALyCV_jDBpjZmUa-LRtOcK_GqBpz"
-                            data-callback="enableSubmitBtn">
-                        </div>
-                        <span id="captchError" class="error">Please click the captcha checkbox</span>
-
-                    </div>
-                    <div class="col-md-12">
-                        <button type="submit" id="submitBtn"
-                            class="btn btn-primary green w-100 btnStarted">Submit</button>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-</div>
+<?php include '../component/contact-modal.php'; ?>
 
 <!-- SS modal -->
+ 
 <!-- SS modal -->
 <div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
@@ -2143,7 +2098,7 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/contactModalScript.js"></script>
+<script src="../js/contactModalScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/wow.min.js"></script>
 <script>

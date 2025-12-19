@@ -332,7 +332,7 @@ $(document).ready(function() {
 $(".full-slider").owlCarousel({
   loop: true,
   margin: 10,
-  nav: flase,
+  nav: false,
   autoplay: false,
   autoPlaySpeed: 50000,
   autoPlayTimeout: 5000,

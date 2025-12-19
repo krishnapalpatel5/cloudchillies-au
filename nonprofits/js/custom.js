@@ -170,7 +170,7 @@ window.addEventListener("scroll", function () {
     const timeout = 30000; // 30 seconds timeout
     const ajaxPromise = $.ajax({
         type: "POST",
-        url: "downloadpdf.php",
+        url: "../downloadpdf.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -342,7 +342,7 @@ $(document).ready(function() {
 $(".full-slider").owlCarousel({
   loop: true,
   margin: 10,
-  nav: flase,
+  nav: false,
   autoplay: false,
   autoPlaySpeed: 50000,
   autoPlayTimeout: 5000,
