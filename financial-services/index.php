@@ -22,9 +22,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Chillies Financial Services</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lending-logik-responsive.css">
     <link rel="stylesheet" type="text/css"
@@ -749,8 +749,8 @@
                                     <h2 class="bold text-start">Unf<span class="orangeText">AI</span>r Advantage</h2>
                                 </div>
 
-                                <a href="/ai-contact" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                                    data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
+                                <a href="/ai-contact" class="btn btn-primary btnStarted" data-bs-toggle="modal"
+                                    data-bs-target="#contactUsPopup" data-subject="Financial Services Page" data-section="Lets make AI work for you" onclick="gtag('event', 'cta_click', {
                                                 'event_category': 'CTA',
                                                 'event_label': 'CTA - Make AI Work'
                                             });">Lets make AI work for you
@@ -889,7 +889,7 @@
                         </div>
 
                         <a href="/salesforce" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
+                            data-bs-target="#contactUsPopup" data-subject="Finicial Service Page" data-section="Let's unlock the full potential of Salesforce for your business" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA', 'event_label': 'CTA - Show Me How' });">Show Me How
                             <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
                         </a>
@@ -900,7 +900,6 @@
     </section>
 
     <section class="section industries">
-
         <div class="sectionTitle mb-4 text-center">
             <span class="bold">Financial Companies</span><span class="lightWeight"> We Help</span>
         </div>
@@ -987,7 +986,8 @@
                         </div>
 
                         <a href="/expert-contact" class="btn btn-primary btnStarted talkTo" data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
+                            data-bs-target="#contactUsPopup" data-subject="Finicial Service Page" data-section="Talk
+                            to an Expert" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA',
      'event_label': 'CTA - Talk to Expert'
    });">Talk
@@ -1003,139 +1003,6 @@
 
     </section>
 
-    <!-- <section class="section8-Inner" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 left " data-aos="fade-right" data-aos-delay="1000">
-                    <div class="clientTestiContainer">
-                        <div class="clientTestiInner">
-                            <div class="sectionTitle text-center">
-                                Clients <span class="bold">Love Us </span>
-                            </div>
-                            <div class="clientTestiSubHeading text-center">
-                                Don't just take our word for it
-                            </div>
-                            <div class="owl-carousel full-slider owl-theme p-0">
-
-                                <div class="item">
-                                    <div class="testiItem">
-                                        <div class="testiItemInner d-flex">
-                                            <div class="left">
-                                                <div class="modelTestimonial2">
-                                                    <img src="img/wayne-thumb.png" class="img-fluid testimonialCover"
-                                                        alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="item">
-                                    <div class="testiItem">
-                                        <div class="testiItemInner d-flex">
-                                            <div class="left">
-                                                <div class="modelTestimonial2">
-                                                    <img src="img/scott-preview.png" class="img-fluid testimonialCover"
-                                                        alt="" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
-                        <div class="text-right"><img src="img/testiDot.svg" alt="img">
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-
-                <div class="col-6 right offeringTalkBg" data-aos="fade-left" data-aos-delay="1000">
-                    <div><img src="img/testiDotTop.svg" class="talkContainerImg" alt="img"></div>
-                    <div class="talkContainer ss-container">
-
-                        <div class="sectionTitle text-center aboutHeading">
-                            Success <span class="bold">Stories</span>
-                        </div>
-
-                        <div class="owl-carousel full-slider1 owl-theme p-0">
-                            <div class="item">
-                                <div class="ss-img-container">
-                                    <div class="ss-img-inner position-relative">
-                                        <img src="img/ss-1.jpg" alt="img">
-                                        <div class="ss-img-inner-content">
-                                            Empowering Capify to extend Business Loans in Australia & UK with Salesforce
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="ss-img-container">
-                                    <div class="ss-img-inner position-relative">
-                                        <img src="img/ss-2.jpg" alt="img">
-                                        <div class="ss-img-inner-content">
-                                            Assisting Australian Business Credit to automate & give Rent Roll Loans &
-                                            Trail Book Loans with Salesforce
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="ss-img-container">
-                                    <div class="ss-img-inner position-relative">
-                                        <img src="img/ss-3.jpg" alt="img">
-                                        <div class="ss-img-inner-content">
-                                            Facilitating OZ Cash Loans’ underwriting & disbursal of Personal Loans with
-                                            Salesforce
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="ss-img-container">
-                                    <div class="ss-img-inner position-relative">
-                                        <img src="img/ss-4.jpg" alt="img">
-                                        <div class="ss-img-inner-content">
-                                            Enabling THN Capital to automate Lending Workflows with AI-powered Credit
-                                            Scoring with Salesforce
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="ss-img-container">
-                                    <div class="ss-img-inner position-relative">
-                                        <img src="img/ss-5.jpg" alt="img">
-                                        <div class="ss-img-inner-content">
-                                            Streamlining Loan Processing and Document Intelligence for Regents Capital
-                                            with Salesforce +AI
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Testimonial Videos -->
     <section class="sectionSix section">
@@ -1169,21 +1036,6 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-
-
-
-
-                    <!-- <div class="item">
-                        <div class="iframe-container">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=QR1xhig9XDEKflAb"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div> -->
-
-
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -1368,10 +1220,6 @@
 
 
                 </div>
-                <!-- <div class="storiesBtn text-center">
-                <a href="./success-stories" class="btn btn-primary-outline ">View All Success Stories <img
-                        src="img/lending-logik-imgs/arrow-green.svg" class="ms-2"></a>
-            </div> -->
             </div>
 
 
@@ -1413,115 +1261,6 @@
 
     </section>
 
-
-
-
-    <!-- <section class="section8">
-        <div class="container">
-            <div class="row">
-                <div class="sectionTitle text-center aos-init aos-animate  mb-5" data-aos="fade-up">
-                    <span class="lightWeight">Why Choose Us as</span>
-                    <span class="bold">Your Salesforce Partner?</span>
-                </div>
-                <div class="gridLayout">
-                    <div class="large grid1 aos-init aos-animate" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon1.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                100% <span class="semiBold">Finance-Focused</span> Salesforce Implementation Experts
-                            </div>
-                            <div class="no"><img src="img/one.svg"></div>
-                        </div>
-                    </div>
-                    <div class="small grid5 aos-init" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon2.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                <span class="semiBold">Trusted Salesforce Partner</span> with deep Platform Expertise
-                                for Financial Enterprises
-                            </div>
-                            <div class="no"><img src="img/five.svg"></div>
-                        </div>
-                    </div>
-                    <div class="small grid2 aos-init aos-animate" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon3.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                <span class="semiBold">20+ years</span> of experience Serving the Finance Sector
-                                Globally
-                            </div>
-                            <div class="no"><img src="img/two.svg"></div>
-                        </div>
-                    </div>
-                    <div class="large grid6 aos-init" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon4.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                Team of<span class="semiBold"> Certified Salesforce Experts</span> across core and
-                                Industry Clouds
-                            </div>
-                            <div class="no"><img src="img/six.svg"></div>
-                        </div>
-                    </div>
-                    <div class="large grid3 aos-init aos-animate" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon5.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                <span class="semiBold"> AI-Powered Solutions- </span>Purpose-Built for Financial
-                                Enterprises
-                            </div>
-                            <div class="no"><img src="img/three.svg"></div>
-                        </div>
-                    </div>
-                    <div class="small grid7 aos-init" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon6.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                <span class="semiBold">ISO 27001 Certified-</span> Enterprise-Grade Security by Design
-                            </div>
-                            <div class="no"><img src="img/seven.svg"></div>
-                        </div>
-                    </div>
-                    <div class="small grid4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon7.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                <span class="semiBold"> 100+ Salesforce Certifications-</span> Aligned with your Goals,
-                                from Strategy to Support
-                            </div>
-                            <div class="no"><img src="img/four.svg"></div>
-                        </div>
-                    </div>
-                    <div class="large grid8 aos-init" data-aos="fade-up">
-                        <div class="gridInner">
-                            <div class="gridTitle">
-                                <div class="icon"><img src="img/icon8.svg" alt="Icon"></div>
-                            </div>
-                            <div class="discription">
-                                <span class="semiBold">Flexible Engagement Models-</span> to Scale Salesforce Team
-                                up/down on Demand
-                            </div>
-                            <div class="no"><img src="img/eight.svg"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
 
     <!-- clients Achievement Section -->
@@ -1633,12 +1372,7 @@
                 <div class="sectionTitle text-center aos-init aos-animate  mb-5" data-aos="fade-up">
                     <span class="lightWeight">Why Choose Us as Your </span> <span class="bold text-gradient">Salesforce
                         Partner?
-
-
                 </div>
-
-
-
                 <div class="wrap-layout">
                     <div class="d-flex flex-column a">
                         <div class="d-flex">
@@ -1930,7 +1664,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
     <footer>
@@ -2026,7 +1760,7 @@
 <!-- SS modal -->
  
 <!-- SS modal -->
-<div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
         <div class="modal-content">
             <div class="modal-header border-0 pb-0">
@@ -2077,7 +1811,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Toast Notification -->
 <div id="toast" class="toast align-items-center text-white border-0 position-fixed bottom-0 end-0 m-3" role="alert"
@@ -2093,14 +1827,14 @@
 
 
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
-<script src="js/jquery-3.6.4.min.js"></script>
+<script src="../js/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="../js/contactModalScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="../js/wow.min.js"></script>
 <script>
 AOS.init({
     disable: 'mobile',

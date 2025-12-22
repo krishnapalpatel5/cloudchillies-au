@@ -653,17 +653,14 @@
                     </div>
 
                     <div class="call-to-action si b d-flex align-items-center justify-content-between">
-
                         <div class=" flex-column">
                             <h2 class="bold text-start">
                                 <div><span class="lightWeight"> See How </span> It Can Work for You</div>
-
-
                             </h2>
                         </div>
 
                         <a href="/salesforce" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup">Contact Us
+                            data-bs-target="#contactUsPopup" data-subject="Non-profit Page" data-section="Contact us">Contact Us
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
                                 fill="none">
                                 <path d="M11.5664 6.7124L22.0224 17.1684L11.5664 27.6245" stroke="white"
@@ -784,16 +781,13 @@
                                 </div>
 
                                 <a href="/ai-contact" class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                                    data-bs-target="#contactUsPopup">Learn More
+                                    data-bs-target="#contactUsPopup" subject="Non-profit Page" data-section="Learn more">Learn More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
                                         fill="none">
                                         <path d="M11.5664 6.7124L22.0224 17.1684L11.5664 27.6245" stroke="white"
                                             stroke-width="3.70531" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
                                 </a>
-
-
                             </div>
                         </div>
                     </div>
@@ -1171,8 +1165,7 @@
                         </div>
                         </h2>
                         <a href="" class="btn btnStarted  position-relative" data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup">Show Me
-                            How
+                            data-bs-target="#contactUsPopup" data-subject="Non-profit Page" data-section="Show Me How">Show Me How
                             <img src="img/arrow-white.png" alt="arrow icon" class="ml-2">
                         </a>
                     </div>

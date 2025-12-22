@@ -43,7 +43,7 @@
 
                                 <div class="d-flex banner-btn">
                                     <a href="/contact" class="btn btnStarted  position-relative" data-bs-toggle="modal"
-                                        data-bs-target="#contactUsPopup">
+                                        data-bs-target="#contactUsPopup" data-subject="About Us Page" data-section="Hero Section">
                                         Talk to Our Salesforce Specialist
                                         <img src="<?php echo $base_url?>img/arrow-white.png" alt="arrow icon"
                                             class="ml-2">

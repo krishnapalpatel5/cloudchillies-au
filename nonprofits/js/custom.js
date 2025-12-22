@@ -275,25 +275,7 @@ var overlay = document.getElementById("overlay");
 var closeButton = document.getElementById("closeButton");
 var body = document.body;
 
-// Function to remove menu-active class
-// function closeMenu() {
-//   body.classList.remove("menu-active");
-// }
 
-// hamburgerButton.addEventListener("click", function () {
-//   body.classList.add("menu-active");
-// });
-
-// closeButton.addEventListener("click", function () {
-//   closeMenu();
-// });
-
-// overlay.addEventListener("click", function (event) {
-//   // Check if the click occurred outside the closeButton
-//   if (!closeButton.contains(event.target)) {
-//     closeMenu();
-//   }
-// });
 
 // Add touch event for swiping on overlay
 var touchStartX = 0;
@@ -361,7 +343,6 @@ $(".full-slider").owlCarousel({
 });
 
 // success story
-
 
   var itemCount = $(".multiItem .item").length;
   // console.log(itemCount,"item count ============>");
