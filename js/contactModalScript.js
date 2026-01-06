@@ -38,8 +38,7 @@ function showToaster(color, message) {
 }
 
 function populateCountriesforContactModal() {
-  console.log("i am ruunnnnnnnning");
-
+  
   $.getJSON("countries.json", function (data) {
     var states = data["countries"];
     var selectState = $("#country");
@@ -79,6 +78,8 @@ $(document).ready(function () {
   $("#contactUsPopup").on("show.bs.modal", function (event) {
     let modal = this;
 
+    $(".modal-backdrop").show();
+    
     // 1. Reset form first
     let form = modal.querySelector("form");
     if (form) form.reset();
@@ -152,7 +153,7 @@ $(document).ready(function () {
   // Also handle modal close/hide events to ensure proper cleanup
   $('#contactUsPopup').on('hidden.bs.modal', function () {
       // Force cleanup any remaining backdrop
-      $('.modal-backdrop').remove();
+      $('.modal-backdrop').hide();
       $('body').removeClass('modal-open').css({
           'overflow': '',
           'padding-right': ''

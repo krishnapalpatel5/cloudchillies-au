@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
@@ -99,7 +99,7 @@
                 <div class="burger" id="burger">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
-                    <span class="burger-line"></span>.99
+                    <span class="burger-line"></span>
                 </div>
 
                 <span class="overlay"></span>
@@ -749,7 +749,7 @@
                                     <h2 class="bold text-start">Unf<span class="orangeText">AI</span>r Advantage</h2>
                                 </div>
 
-                                <a href="/ai-contact" class="btn btn-primary btnStarted" data-bs-toggle="modal"
+                                <a class="btn btn-primary btnStarted" data-bs-toggle="modal"
                                     data-bs-target="#contactUsPopup" data-subject="Financial Services Page" data-section="Lets make AI work for you" onclick="gtag('event', 'cta_click', {
                                                 'event_category': 'CTA',
                                                 'event_label': 'CTA - Make AI Work'
@@ -888,11 +888,11 @@
                             </h2>
                         </div>
 
-                        <a href="/salesforce" class="btn btn-primary btnStarted " data-bs-toggle="modal"
+                        <button class="btn btn-primary btnStarted " data-bs-toggle="modal"
                             data-bs-target="#contactUsPopup" data-subject="Finicial Service Page" data-section="Let's unlock the full potential of Salesforce for your business" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA', 'event_label': 'CTA - Show Me How' });">Show Me How
                             <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -990,8 +990,7 @@
                             to an Expert" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA',
      'event_label': 'CTA - Talk to Expert'
-   });">Talk
-                            to an Expert
+   });">Talk to an Expert
                             <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
                         </a>
                     </div>
@@ -1760,7 +1759,7 @@
 <!-- SS modal -->
  
 <!-- SS modal -->
-<!-- <div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
         <div class="modal-content">
             <div class="modal-header border-0 pb-0">
@@ -1811,7 +1810,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- Toast Notification -->
 <div id="toast" class="toast align-items-center text-white border-0 position-fixed bottom-0 end-0 m-3" role="alert"
@@ -1826,12 +1825,10 @@
 </div>
 
 
-<!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
 <script src="../js/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/custom.js" defer></script>
 <script src="../js/contactModalScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/wow.min.js"></script>
@@ -1846,47 +1843,6 @@ AOS.init({
 
 new WOW().init();
 
-$(".full-slider").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: false,
-    autoPlaySpeed: 50000,
-    autoPlayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 1,
-        },
-        1000: {
-            items: 1,
-        },
-    },
-});
-
-$(".full-slider1").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: true,
-    autoPlaySpeed: 50000,
-    autoPlayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 1,
-        },
-        1000: {
-            items: 1,
-        },
-    },
-});
 
 $(".home-banner").owlCarousel({
     loop: true,
