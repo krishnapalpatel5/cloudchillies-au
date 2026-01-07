@@ -314,7 +314,7 @@ $(document).ready(function () {
       formData.push({ name: "subject", value: subject });
       $.ajax({
         type: "POST",
-        url: "http://localhost/cloudchillies-au/formSubmit.php",
+        url: "https://cloudchillies.com.au/formSubmit.php",
         dataType: "json",
         data: formData,
         success: function (response) {
