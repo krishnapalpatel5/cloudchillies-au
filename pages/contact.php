@@ -339,10 +339,10 @@
                             <h3>Phone</h3>
                             <div>
                                 <table cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
+                                    <!-- <tr>
                                         <td> USA: </td>
                                         <td> +1 732 654 9056</td>
-                                    </tr>
+                                    </tr> -->
                                     <tr>
                                         <td> Australia: </td>
                                         <td> +61 280 155 723</td>

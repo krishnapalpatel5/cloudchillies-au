@@ -409,11 +409,11 @@ if (is_rate_limited($MAX_REQUESTS_PER_MINUTE)) {
                 if (is_suspicious_email($name, $email)) {
                     $mail->addAddress('piyush.chourey@mindruby.com'); 
                     }else{
-                                    // $mail->addAddress('shishir@cloudchillies.com');
-                                    // $mail->addAddress('sateesh@cloudchillies.com');
-                                    // $mail->addAddress('narendra@cloudchillies.com');
-                                    $mail->addAddress('yogesh.joshi@mindruby.com');
-                                    $mail->addAddress('pankaj.patidar@mindruby.com'); 
+                                    $mail->addAddress('shishir@cloudchillies.com');
+                                    $mail->addAddress('sateesh@cloudchillies.com');
+                                    $mail->addAddress('narendra@cloudchillies.com');
+                                    // $mail->addAddress('yogesh.joshi@mindruby.com');
+                                    // $mail->addAddress('pankaj.patidar@mindruby.com'); 
                     }
 
 
