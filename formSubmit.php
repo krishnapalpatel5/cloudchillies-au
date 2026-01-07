@@ -1,4 +1,5 @@
 <?php
+
 // Enable error reporting for debugging
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
@@ -410,7 +411,8 @@ if (is_rate_limited($MAX_REQUESTS_PER_MINUTE)) {
                                     // $mail->addAddress('shishir@cloudchillies.com');
                                     // $mail->addAddress('sateesh@cloudchillies.com');
                                     // $mail->addAddress('narendra@cloudchillies.com');
-                                    $mail->addAddress('yogesh.joshi@mindruby.com'); 
+                                    $mail->addAddress('yogesh.joshi@mindruby.com');
+                                    $mail->addAddress('pankaj.patidar@mindruby.com'); 
                     }
 
 

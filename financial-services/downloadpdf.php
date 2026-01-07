@@ -94,11 +94,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
     // -------------------------
      $companyMail = clone $mail; // clone PHPMailer object
      $companyMail->isHTML(true);
-     $companyMail->addAddress('shishir@cloudchillies.com'); 
-     $companyMail->addAddress('sateesh@cloudchillies.com'); 
-     $companyMail->addAddress('narendra@cloudchillies.com'); 
-     $companyMail->addAddress('rashmi@cloudchillies.com'); 
-     //$companyMail->addAddress('manish.kotia@mindruby.com'); 
+    //  $companyMail->addAddress('shishir@cloudchillies.com'); 
+    //  $companyMail->addAddress('sateesh@cloudchillies.com'); 
+    //  $companyMail->addAddress('narendra@cloudchillies.com'); 
+    //  $companyMail->addAddress('rashmi@cloudchillies.com'); 
+     $companyMail->addAddress('pankaj.patidar@mindruby.com'); 
           
     $companyMail->Subject = "Download Success Story form submission - Cloud Chillies(Fintech) $origin_from";
     $companyMail->Body    = $companyTemplate; // your form HTML details
