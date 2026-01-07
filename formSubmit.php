@@ -12,6 +12,7 @@ if (session_status() === PHP_SESSION_NONE) {
     // error_log("Session already exists in formSubmit.php");
 
 }
+
 // Set secure headers
 header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; font-src 'self' https: data:;");
 header("X-Content-Type-Options: nosniff");

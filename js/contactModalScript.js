@@ -2,7 +2,7 @@ function showFormLoader(show) {
   const loader = document.getElementById("form-loader");
   const submitBtnText = document.getElementById("submitBtnText");
   const submitBtnSpinner = document.getElementById("submitBtnSpinner");
-  
+
   if (show) {
     // Show loader
     if (loader) loader.style.display = "block";

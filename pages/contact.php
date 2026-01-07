@@ -227,11 +227,9 @@
     .social-link:hover {
         transform: translateY(-3px);
     }
-
-    .info-content table tr td {
-        padding: 5px;
-    }
-
+.info-content table tr td{
+    padding: 5px;
+}
     @media (max-width: 992px) {
         .contact-grid {
             grid-template-columns: 1fr;
@@ -256,28 +254,25 @@
             background: #fff;
         }
     }
-
-    @media (max-width: 767px) {
-        .contact-form {
-            padding: 16px;
-        }
-
-        .contact-grid {
-            display: flex;
-            grid-template-columns: none;
-            flex-direction: column;
-        }
+  @media (max-width: 767px) {
+         .contact-form {
+        padding: 16px;
     }
-
-    @media (max-width: 667px) {
-        .contact-form button#submitBtn {
-            width: 100% !important;
-        }
-
-        .contact-info {
-            width: 100%;
-        }
+    .contact-grid {
+        display: flex;
+        grid-template-columns: none;
+        flex-direction: column;
     }
+}
+@media (max-width: 667px) {
+    .contact-form button#submitBtn {
+        width: 100% !important;
+    }
+    .contact-info {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 
@@ -344,10 +339,10 @@
                             <h3>Phone</h3>
                             <div>
                                 <table cellpadding="0" cellspacing="0" border="0">
-                                    <!-- <tr>
+                                    <tr>
                                         <td> USA: </td>
                                         <td> +1 732 654 9056</td>
-                                    </tr> -->
+                                    </tr>
                                     <tr>
                                         <td> Australia: </td>
                                         <td> +61 280 155 723</td>
@@ -365,7 +360,7 @@
                         </div>
                         <div class="info-content">
                             <h3>Email</h3>
-                            <p>info@cloudchillies.com.au</p>
+                            <p>info@cloudchillies.com</p>
                         </div>
                     </div>
 
@@ -422,9 +417,21 @@
                         </div>
                         <input type="hidden" id="callingPageInput" value="Contact page" name="pagename">
                         <input type="hidden" value="Contact us" id="modalSectionInput" name="section">
+                         <!-- Anti-bot Honeypot -->
+                    <input type="text" name="website_url_fake" id="website_url_fake" style="display:none !important;">
+
+                    <!-- Anti-bot Timestamp -->
+                    <input type="hidden" id="form_start_time" name="form_start_time">
                         <div class="col-md-12">
+            
+                            
                             <button type="submit" id="submitBtn"
-                                class="btn btn-primary green w-100 btnStarted">Submit</button>
+                                class="btn btn-primary green w-100 btnStarted">
+                                <span id="submitBtnText">Submit</span>
+                                <div id="submitBtnSpinner" class="spinner-border spinner-border-sm ms-2" role="status" style="display: none;">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
                         </div>
                     </form>
 
@@ -465,5 +472,10 @@
 
 
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("form_start_time").value = Math.floor(Date.now() / 1000);
+});
+</script>
 
 </html>
