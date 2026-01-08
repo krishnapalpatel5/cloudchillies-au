@@ -781,7 +781,7 @@
                                 </li>
                             </ul>
                             <button class="exploreBtn d-flex" data-bs-toggle="modal"
-                                data-bs-target="#contactUsPopup">Explore <span><svg xmlns="http://www.w3.org/2000/svg"
+                                data-bs-target="#contactUsPopup" data-subject="Home Page" data-section="Other Industries">Explore <span><svg xmlns="http://www.w3.org/2000/svg"
                                         width="15" height="13" viewBox="0 0 15 13" fill="none">
                                         <path
                                             d="M7.29297 0.292969C7.68349 -0.0975555 8.31651 -0.0975555 8.70703 0.292969L13.957 5.54297L14.0254 5.61914C14.3457 6.01191 14.3231 6.59093 13.957 6.95703L8.70703 12.207C8.31652 12.5975 7.68348 12.5975 7.29297 12.207C6.90246 11.8165 6.90248 11.1835 7.29297 10.793L10.8359 7.25H1C0.44774 7.25 4.08113e-05 6.80225 0 6.25C0 5.69772 0.447715 5.25 1 5.25H10.8359L7.29297 1.70703C6.90246 1.31652 6.90248 0.683496 7.29297 0.292969Z"
