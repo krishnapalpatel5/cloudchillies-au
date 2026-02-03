@@ -412,6 +412,7 @@ if (is_rate_limited($MAX_REQUESTS_PER_MINUTE)) {
                                     $mail->addAddress('shishir@cloudchillies.com');
                                     $mail->addAddress('sateesh@cloudchillies.com');
                                     $mail->addAddress('narendra@cloudchillies.com');
+                                    /$mail->addAddress('rashmi@mindruby.com');
                                     // $mail->addAddress('yogesh.joshi@mindruby.com');
                                     // $mail->addAddress('pankaj.patidar@mindruby.com'); 
                     }
