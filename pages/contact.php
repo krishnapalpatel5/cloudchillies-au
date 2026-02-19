@@ -227,9 +227,11 @@
     .social-link:hover {
         transform: translateY(-3px);
     }
-.info-content table tr td{
-    padding: 5px;
-}
+
+    .info-content table tr td {
+        padding: 5px;
+    }
+
     @media (max-width: 992px) {
         .contact-grid {
             grid-template-columns: 1fr;
@@ -254,25 +256,28 @@
             background: #fff;
         }
     }
-  @media (max-width: 767px) {
-         .contact-form {
-        padding: 16px;
-    }
-    .contact-grid {
-        display: flex;
-        grid-template-columns: none;
-        flex-direction: column;
-    }
-}
-@media (max-width: 667px) {
-    .contact-form button#submitBtn {
-        width: 100% !important;
-    }
-    .contact-info {
-        width: 100%;
-    }
-}
 
+    @media (max-width: 767px) {
+        .contact-form {
+            padding: 16px;
+        }
+
+        .contact-grid {
+            display: flex;
+            grid-template-columns: none;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 667px) {
+        .contact-form button#submitBtn {
+            width: 100% !important;
+        }
+
+        .contact-info {
+            width: 100%;
+        }
+    }
     </style>
 </head>
 
@@ -304,16 +309,6 @@
             </div>
         </section>
     </div>
-
-    <!-- <header class="contact-header">
-        <div class="container">
-            <div class="header-content" data-aos="fade-up">
-                <h1 class="header-title">Get in Touch</h1>
-                <p class="header-subtitle">Have questions? We'd love to hear from you. Send us a message and we'll
-                    respond as soon as possible.</p>
-            </div>
-        </div>
-    </header> -->
 
     <section class="contact-section">
         <div class="container">
@@ -386,16 +381,16 @@
 
                     <h2 class="form-title">Send us a Message</h2>
 
-                    <form class="row mb-0" method="post" id="myForm" action="javascript:void(0);">
+                    <form class="row mb-0" method="post" id="myForm" action="javascript:void(0);"
+                        data-subject="Contact us Page" data-section="contact form">
                         <div class="mb-3 col-md-12 position-relative">
                             <input type="text" class="form-control" id="fname" name="full_name"
                                 placeholder="Full Name*">
                             <span class="error" id="fnameError">Please enter valid name</span>
                         </div>
-                        
+
                         <div class="mb-3 col-md-12 position-relative">
-                            <input type="Email" class="form-control" id="email" name="email"
-                                placeholder="Work Email*">
+                            <input type="Email" class="form-control" id="email" name="email" placeholder="Work Email*">
                             <span class="error" id="emailError">Please enter your valid email</span>
                         </div>
                         <div class="mb-3 col-md-12 position-relative">
@@ -404,8 +399,8 @@
                             <span class="error" id="phoneError">Please enter valid Phone No</span>
                         </div>
                         <div class="mb-3 col-md-12 position-relative">
-                            <textarea class="form-control" name="question" id="question" placeholder="How can we help? (Optional)"
-                                id="" style="height: 100px"></textarea>
+                            <textarea class="form-control" name="question" id="question"
+                                placeholder="How can we help? (Optional)" id="" style="height: 100px"></textarea>
                             <span class="error" id="QuestionError">Please enter your query to proceed </span>
                         </div>
                         <input type="hidden" id="callingPageInput" name="callingPage" value="">
@@ -417,18 +412,17 @@
                         </div>
                         <input type="hidden" id="callingPageInput" value="Contact page" name="pagename">
                         <input type="hidden" value="Contact us" id="modalSectionInput" name="section">
-                         <!-- Anti-bot Honeypot -->
-                    <input type="text" name="website_url_fake" id="website_url_fake" style="display:none !important;">
+                        <!-- Anti-bot Honeypot -->
+                        <input type="text" name="website_url_fake" id="website_url_fake"
+                            style="display:none !important;">
 
-                    <!-- Anti-bot Timestamp -->
-                    <input type="hidden" id="form_start_time" name="form_start_time">
+                        <!-- Anti-bot Timestamp -->
+                        <input type="hidden" id="form_start_time" name="form_start_time">
                         <div class="col-md-12">
-            
-                            
-                            <button type="submit" id="submitBtn" data-subject="Contact us Page" data-section="contact form"
-                                class="btn btn-primary green w-100 btnStarted">
+                            <button type="submit" id="submitBtn" class="btn btn-primary green w-100 btnStarted">
                                 <span id="submitBtnText">Submit</span>
-                                <div id="submitBtnSpinner" class="spinner-border spinner-border-sm ms-2" role="status" style="display: none;">
+                                <div id="submitBtnSpinner" class="spinner-border spinner-border-sm ms-2" role="status"
+                                    style="display: none;">
                                     <span class="visually-hidden">Loading...</span>
                                 </div>
                             </button>

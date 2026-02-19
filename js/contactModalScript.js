@@ -333,11 +333,11 @@ $(document).ready(function () {
           // Check if the response indicates success
           if (res && res.success === true) {
             // Success case: show success message and close modal
-            showToaster(
-              "#198754",
-              res.message ||
-                "Thanks for getting in touch! We'll be in touch with you soon."
-            );
+            // showToaster(
+            //   "#198754",
+            //   res.message ||
+            //     "Thanks for getting in touch! We'll be in touch with you soon."
+            // );
 
             // Reset captcha if available
             try {
@@ -362,6 +362,14 @@ $(document).ready(function () {
             var submitBtn = document.getElementById("submitBtn");
             if (submitBtn) {
               submitBtn.disabled = false;
+            }
+                   // Redirect to thank-you page (or use server-provided redirect_url)
+            try {
+              const redirectTarget = 'https://cloudchillies.com/pages/thank-you.php';
+              // small delay so user sees the toaster briefly
+              setTimeout(function () { window.location.href = redirectTarget; }, 700);
+            } catch (e) {
+              console.warn('Redirect failed:', e);
             }
           } else {
             // Error case: handle validation errors
