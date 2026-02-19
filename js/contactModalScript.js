@@ -365,7 +365,7 @@ $(document).ready(function () {
             }
                    // Redirect to thank-you page (or use server-provided redirect_url)
             try {
-              const redirectTarget = 'https://cloudchillies.com/pages/thank-you.php';
+              const redirectTarget = 'https://cloudchillies.com.au/pages/thank-you.php';
               // small delay so user sees the toaster briefly
               setTimeout(function () { window.location.href = redirectTarget; }, 700);
             } catch (e) {
