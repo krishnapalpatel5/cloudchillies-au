@@ -11,14 +11,12 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
+
  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQW28EFT1K"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
- 
-  gtag('config', 'G-VQW28EFT1K');
+gtag('event', 'conversion', {
+  'send_to': 'AW-17533579353/CONVERSION_LABEL'
+});
 </script>
 
 <!-- Event snippet for Submit lead form conversion page

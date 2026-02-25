@@ -3,18 +3,16 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17533579353"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17533579353');
-    </script>
+<!-- gtag manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJWN5J5QGF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+ 
+gtag('config', 'G-MJWN5J5QGF');  
+gtag('config', 'AW-17533579353');
+</script>
 
     <?php
 

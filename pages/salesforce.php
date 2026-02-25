@@ -4,17 +4,16 @@
 <head>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17533579353"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17533579353');
-    </script>
+<!-- gtag manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJWN5J5QGF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+ 
+gtag('config', 'G-MJWN5J5QGF');  
+gtag('config', 'AW-17533579353');
+</script>
 
     <?php
 
@@ -687,7 +686,7 @@
                                     </div>
                                     <div>
                                         <h3>Nonprofit Cloud</h3>
-                                        <p>Lending, onboarding, and compliance-streamlined and secure</p>
+                                        <p>Manage programs, donors, and impact from one connected platform</p>
                                     </div>
                                 </div>
 
@@ -696,7 +695,7 @@
                                     </div>
                                     <div>
                                         <h3>Sales Cloud</h3>
-                                        <p>Track leads, deals, and performance with powerful sales tools </p>
+                                        <p>Track leads, deals, and performance with powerful sales tools</p>
                                     </div>
                                 </div>
 
@@ -704,9 +703,9 @@
                                     <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-d.svg" alt="icon1">
                                     </div>
                                     <div>
-                                        <h3>Tableau CRM</h3>
+                                        <h3>Tableau & CRM Analytics</h3>
                                         <p>Dashboards your team will actually use — from donor trends to lending
-                                            performance </p>
+                                            performance</p>
                                     </div>
                                 </div>
 
@@ -725,19 +724,35 @@
                                     </div>
                                     <div>
                                         <h3>MuleSoft & Integrations</h3>
-                                        <p class="mb-0">Connect Salesforce with your other systems-ERPs, accounting
-                                            tools,
-                                            CRMs, websites </p>
+                                        <p class="mb-0">Connect Salesforce with your other systems — ERPs, accounting tools, CRMs, websites</p>
+
+                                    </div>
+                                </div>
+ 				                <div class="card-box">
+                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-cloud.svg" alt="icon1">
+                                    </div>
+                                    <div>
+                                        <h3>Data Cloud</h3>
+                                        <p>Unify customer data in real time — power insights, segmentation, and smarter decisions</p>
 
                                     </div>
                                 </div>
 
-                                <div class="card-box tab-show">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-a.svg" alt="icon1">
+                                <div class="card-box">
+                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-experience.svg" alt="icon1">
                                     </div>
                                     <div>
-                                        <h3>Financial Services Cloud</h3>
-                                        <p>Lending, onboarding, and compliance-streamlined and secure</p>
+                                        <h3>Experience Cloud</h3>
+                                        <p class="mb-0">Build connected digital experiences — portals, communities, and self-service made simple</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-box tab-show">
+                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-k.svg" alt="icon1">
+                                    </div>
+                                    <div>
+                                        <h3>AppExchange Add-ons</h3>
+                                        <p>We help you find the right third-party tools and set them up properly</p>
                                     </div>
                                 </div>
 
@@ -757,11 +772,11 @@
 
                             <section class="tech-feature">
                                 <div class="card-box tab-hide">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-a.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-k.svg" alt="icon1">
                                     </div>
                                     <div>
-                                        <h3>Financial Services Cloud</h3>
-                                        <p>Lending, onboarding, and compliance-streamlined and secure</p>
+                                        <h3>AppExchange Add-ons</h3>
+                                        <p>We help you find the right third-party tools and set them up properly</p>
                                     </div>
                                 </div>
 

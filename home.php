@@ -3,18 +3,16 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17533579353"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17533579353');
-    </script>
+    <!-- gtag manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJWN5J5QGF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+ 
+gtag('config', 'G-MJWN5J5QGF');  
+gtag('config', 'AW-17533579353');
+</script>
 
 
     <!--  google analytics code comes here  -->
@@ -800,8 +798,8 @@
     <!------------------------------>
     <!-- Client Love Us Start -->
     <!------------------------------>
-    <section class="sectionSix">
-        <div class="container-fluid">
+   <section class="sectionSix" id="Caritas">
+        <div class="container-fluid" id="clientLoveUs">
             <div class="row">
                 <div class="sectionFiveHeading text-center mb-3"><span class="lightWeight">Clients</span><span
                         class="text-gradient"> Love Us</span></div>
@@ -810,6 +808,12 @@
             <div class="row clientSlider">
                 <div class="owl-carousel clientFeeback owl-theme p-0">
 
+                 
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/v5Ju3rcgh0s" title="Caritas Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -819,8 +823,6 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-
-
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -879,8 +881,6 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
