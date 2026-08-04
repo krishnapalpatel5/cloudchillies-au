@@ -31,10 +31,10 @@ gtag('config', 'AW-17533579353');
                             <div class="hero-text home-content">
                                 <h1 class="home-title-inner f-56 aiHeroBannerTitle">
                                     <span class="text-gradient"> 20+ Years</span>
-                                    of Salesforce <span> & AI Expertise, Powering Revenue Growth Across
-                                        <span class="text-gradient">Australian</span> Enterprises</span>
+                                    of Salesforce, Snowflake & AI Expertise, Powering Revenue Growth Across
+                                        <span class="text-gradient">Australian</span> Enterprises
                                 </h1>
-                                <p class="mb-5">
+                                <p class="mb-4">
                                     A trusted force in scalable innovation, delivering impact through human-centred
                                     solutions and deep technical excellence.
                                 </p>
@@ -51,7 +51,7 @@ gtag('config', 'AW-17533579353');
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-6">
-                            <img src="<?php echo $base_url?>img/aboutUsHeroBanner.png" alt="hero image"
+                            <img src="<?php echo $base_url?>img/aboutUsHeroBanner.webp" alt="hero image"
                                 class="img-fluid" />
                         </div>
                     </div>
@@ -65,7 +65,7 @@ gtag('config', 'AW-17533579353');
     <!------------------------------>
     <!-- Awards -->
     <!------------------------------>
-    <div class="container-fluid logoBx b">
+     <div class="container-fluid logoBx b">
         <div class="row">
             <div class="col-md-12">
                 <div class="d-flex">
@@ -78,7 +78,7 @@ gtag('config', 'AW-17533579353');
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/d-50.png">
+                                        <img src="<?php echo $base_url?>img/awards/d-50.webp" alt="CloudChillies Deloitte Technology Fast 50 award recognition badge">
                                     </div>
 
                                     <div class="no-of-times">
@@ -88,7 +88,7 @@ gtag('config', 'AW-17533579353');
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/d-500.png">
+                                        <img src="<?php echo $base_url?>img/awards/d-500.webp" alt="CloudChillies Deloitte Technology Fast 500 award recognition badge">
                                     </div>
                                     <div class="no-of-times">
                                         5 Times
@@ -96,7 +96,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/lsu.png">
+                                        <img src="<?php echo $base_url?>img/awards/lsu.webp" alt="CloudChillies LSU100 recognition logo">
                                     </div>
 
                                     <div class="no-of-times">
@@ -105,7 +105,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/njtc.png">
+                                        <img src="<?php echo $base_url?>img/awards/njtc.webp" alt="CloudChillies NJTC technology council membership logo">
                                     </div>
                                     <div class="no-of-times">
                                         1 Time
@@ -113,7 +113,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/mp.png">
+                                        <img src="<?php echo $base_url?>img/awards/mp.webp" alt="CloudChillies Madhya Pradesh startup recognition badge">
                                     </div>
                                     <div class="no-of-times">
                                         2 Times
@@ -122,23 +122,31 @@ gtag('config', 'AW-17533579353');
                                 <div class="award-box position-relative">
 
 
-                                    <img src="<?php echo $base_url?>img/awards/iso.jpg" style="width:200px;">
+                                    <img src="<?php echo $base_url?>img/awards/iso.webp" style="width:200px;" alt="CloudChillies ISO certified company badge">
 
 
                                 </div>
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/sf-partner.png" style="width:100px;">
+                                        <img src="<?php echo $base_url?>img/awards/sf-partner.webp"
+                                            style="width:100px;" alt="CloudChillies Salesforce partner certification logo">
 
                                     </div>
 
 
 
                                 </div>
+
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/d-50.png">
+                                        <img src="<?php echo $base_url?>img/snf-partner-logo.webp" style="width:110px;" alt="CloudChillies Snowflake certified partner logo">
+                                    </div>
+                                </div>
+
+                                <div class="award-box position-relative">
+                                    <div class="awrd-img">
+                                        <img src="<?php echo $base_url?>img/awards/d-50.webp" alt="CloudChillies Deloitte Technology Fast 50 award recognition badge">
                                     </div>
 
                                     <div class="no-of-times">
@@ -148,7 +156,7 @@ gtag('config', 'AW-17533579353');
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/d-500.png">
+                                        <img src="<?php echo $base_url?>img/awards/d-500.webp" alt="CloudChillies Deloitte Technology Fast 500 award recognition badge">
                                     </div>
                                     <div class="no-of-times">
                                         5 Times
@@ -156,7 +164,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/lsu.png">
+                                        <img src="<?php echo $base_url?>img/awards/lsu.webp" alt="CloudChillies LSU partner recognition logo">
                                     </div>
 
                                     <div class="no-of-times">
@@ -165,7 +173,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/njtc.png">
+                                        <img src="<?php echo $base_url?>img/awards/njtc.webp" alt="CloudChillies NJTC technology council membership logo">
                                     </div>
                                     <div class="no-of-times">
                                         1 Time
@@ -173,7 +181,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/mp.png">
+                                        <img src="<?php echo $base_url?>img/awards/mp.webp" alt="CloudChillies Madhya Pradesh startup recognition badge">
                                     </div>
                                     <div class="no-of-times">
                                         2 Times
@@ -182,14 +190,15 @@ gtag('config', 'AW-17533579353');
                                 <div class="award-box position-relative">
 
 
-                                    <img src="<?php echo $base_url?>img/awards/iso.jpg" style="width:200px;">
+                                    <img src="<?php echo $base_url?>img/awards/iso.webp" style="width:200px;" alt="CloudChillies ISO certified company badge">
 
 
                                 </div>
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/sf-partner.png" style="width:100px;">
+                                        <img src="<?php echo $base_url?>img/awards/sf-partner.webp"
+                                            style="width:100px;" alt="CloudChillies Salesforce partner certification logo">
 
                                     </div>
 
@@ -198,7 +207,18 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/d-50.png">
+                                        <img src="<?php echo $base_url?>img/snf-partner-logo.webp" style="width:100px;" alt="CloudChillies Snowflake certified partner logo">
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="award-box position-relative">
+                                    <div class="awrd-img">
+                                        <img src="<?php echo $base_url?>img/awards/d-50.webp" alt="CloudChillies Deloitte Technology Fast 50 award recognition badge">
                                     </div>
 
                                     <div class="no-of-times">
@@ -208,7 +228,7 @@ gtag('config', 'AW-17533579353');
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/d-500.png">
+                                        <img src="<?php echo $base_url?>img/awards/d-500.webp" alt="CloudChillies Deloitte Technology Fast 500 award recognition badge">
                                     </div>
                                     <div class="no-of-times">
                                         5 Times
@@ -216,7 +236,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/lsu.png">
+                                        <img src="<?php echo $base_url?>img/awards/lsu.webp" alt="CloudChillies LSU partner recognition logo">
                                     </div>
 
                                     <div class="no-of-times">
@@ -225,7 +245,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/njtc.png">
+                                        <img src="<?php echo $base_url?>img/awards/njtc.webp" alt="CloudChillies NJTC technology council membership logo">
                                     </div>
                                     <div class="no-of-times">
                                         1 Time
@@ -233,7 +253,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/mp.png">
+                                        <img src="<?php echo $base_url?>img/awards/mp.webp" alt="CloudChillies Madhya Pradesh startup recognition badge">
                                     </div>
                                     <div class="no-of-times">
                                         2 Times
@@ -242,20 +262,25 @@ gtag('config', 'AW-17533579353');
                                 <div class="award-box position-relative">
 
 
-                                    <img src="<?php echo $base_url?>img/awards/iso.jpg" style="width:200px;">
+                                    <img src="<?php echo $base_url?>img/awards/iso.webp" style="width:200px;" alt="CloudChillies ISO certified company badge">
 
 
                                 </div>
 
                                 <div class="award-box position-relative">
                                     <div class="awrd-img">
-                                        <img src="<?php echo $base_url?>img/awards/sf-partner.png" style="width:100px;">
+                                        <img src="<?php echo $base_url?>img/awards/sf-partner.webp"
+                                            style="width:100px;" alt="CloudChillies Salesforce partner certification logo">
 
                                     </div>
-
-
-
                                 </div>
+
+                                <div class="award-box position-relative">
+                                    <div class="awrd-img">
+                                        <img src="<?php echo $base_url?>img/snf-partner-logo.webp" style="width:110px;" alt="CloudChillies Snowflake certified partner logo">
+                                    </div>
+                                </div>
+
                             </div>
 
 
@@ -320,7 +345,7 @@ gtag('config', 'AW-17533579353');
                         </div>
                         <div class="teamExperience">
                             <ul>
-                                <li class="d-flex gap-2">
+                                <li class="d-flex align-items-center gap-2">
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
                                         fill="none">
@@ -333,7 +358,7 @@ gtag('config', 'AW-17533579353');
                                     </svg> <span><span class="bold">30+ years</span> of enterprise IT
                                         experience</span>
                                 </li>
-                                <li class="d-flex gap-2">
+                                <li class="d-flex align-items-center gap-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
                                         fill="none">
                                         <path
@@ -344,7 +369,7 @@ gtag('config', 'AW-17533579353');
                                             stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg> <span><span class="bold">Ex-Infosys </span>leaders</span>
                                 </li>
-                                <li class="d-flex gap-2">
+                                <li class="d-flex align-items-center gap-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
                                         fill="none">
                                         <path
@@ -543,6 +568,154 @@ gtag('config', 'AW-17533579353');
                 </div>
             </div>
         </div>
+         <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-offring snflk">
+
+                        <!-- Right side -->
+                        <div class="service-left b">
+                            <img src="<?php echo $base_url?>img/tech-snowflake-hero-a.webp" alt="CloudChillies Snowflake data cloud platform hero image" />
+                        </div>
+
+
+                        <!-- Left side -->
+                        <div class="service-right abt-service-right">
+                            <div class="mainHeading abt">
+                                <span class="lightWeight">Our</span> <span class="bold text-gradient">
+                                    Core Snowflake Service Offerings</span>
+                            </div>
+
+                            <div class="row snflk-s-service">
+
+                                <div class="col-lg-6 col-sm-12 md-mb-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon1.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Snowflake Data Foundation & Adoption</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-sm-12 md-mb-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon2.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Data Stack Modernization</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 md-mb-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon3.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Snowflake Migration</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-sm-12 md-mb-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon8.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Enterprise Analytics & BI</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 md-mb-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon4.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Salesforce + Snowflake Intelligence </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 md-mb-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon5.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">AI & Predictive Intelligence </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 md-mb-4 bdr-btm-0">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon6.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Data Governance, Security & Cost Control</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 md-mb-4 bdr-btm-0">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 sm-flex-wrap">
+                                        <div class="snowflakeLeft">
+                                            <img src="<?php echo $base_url?>img/sbflk-icon7.svg" alt="snowflake image"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="snowflakeRight">
+                                            <div class="d-flex items-center gap-3 flex-column">
+                                                <div class="title">Managed Snowflake Services</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -643,6 +816,28 @@ gtag('config', 'AW-17533579353');
             </div>
             <div class="row clientSlider">
                 <div class="owl-carousel clientFeeback owl-theme p-0">
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/bxDlPhTMGEQ?si=E5ccjETouaxRnu1S"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/G2lQODLUJOM?si=bidtizyVJrAGRV8A"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -656,17 +851,28 @@ gtag('config', 'AW-17533579353');
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/dnCH_qoqaAo?si=2RM6crqZFKUVlRrd"
+                                src="https://www.youtube.com/embed/v5Ju3rcgh0s?si=_x8kG9RnYeCfLvtG"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VBegos8PdiU?si=xy052w6cUZGBBvbx"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
 
+
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=QR1xhig9XDEKflAb"
+                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=qbXB1dJCwvxQqqs2"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -682,6 +888,17 @@ gtag('config', 'AW-17533579353');
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/NfQBeDdTZmQ?si=C0zLXsBvApbNnlUb"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -1132,11 +1349,11 @@ gtag('config', 'AW-17533579353');
         <div class="container countBx">
             <div class="row">
                 <div class="sectionTitle text-center aos-init aos-animate mt-5 mb-5" data-aos="fade-up">
-                    <span class="lightWeight">Why Choose Us as Your </span> <span class="bold text-gradient">Salesforce
+                    <span class="lightWeight">Why Choose Us as Your </span> <span class="bold text-gradient">Technology
                         Partner?
                 </div>
 
-                <div class="countList d-flex mb-5">
+                <!-- <div class="countList d-flex mb-5">
                     <div class="count1">
                         <div class="number">
                             200+
@@ -1185,9 +1402,9 @@ gtag('config', 'AW-17533579353');
                             Projects Delivered
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="wrap-layout">
+                 <div class="wrap-layout">
                     <div class="d-flex flex-column a">
                         <div class="d-flex">
                             <div class="wrap-layout-area wrap-layout-1" data-aos="fade-up">
@@ -1197,9 +1414,8 @@ gtag('config', 'AW-17533579353');
                                             Sector-Focused Experts
                                         </div>
                                         <p>
-                                            Specialized Salesforce teams for Finance & Nonprofits-no
-                                            one-size-fits-all
-                                            solutions.
+                                            Specialized teams for Finance & Nonprofits & other industries -no
+                                            one-size-fits-all solutions.
                                         </p>
 
                                     </div>
@@ -1248,7 +1464,7 @@ gtag('config', 'AW-17533579353');
                             <div class="gridInner flex-row">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        100+ Salesforce Certifications
+                                        200+ Certifications and Trusted Salesforce & Snowflake Partners
                                     </div>
                                     <p>
                                         From architecture to support certified pros aligned with your goals.
@@ -1302,7 +1518,7 @@ gtag('config', 'AW-17533579353');
                             <div class="gridInner">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        Trusted Salesforce Partner
+                                        Trusted Salesforce & Snowflake Partner
                                     </div>
                                     <p>
                                         Proven track record with purpose-aligned tech for finance and social impact
@@ -1332,8 +1548,7 @@ gtag('config', 'AW-17533579353');
                                         Certified Implementation Teams
                                     </div>
                                     <p>
-                                        Expert consultants across Sales, Service, Financial Services, and Nonprofit
-                                        Clouds.
+                                        Expert consultants across Salesforce Cloud, Snowflake & Other Technologies.
                                     </p>
 
                                 </div>
@@ -1406,8 +1621,7 @@ gtag('config', 'AW-17533579353');
                                         Flexible Engagement Models
                                     </div>
                                     <p>
-                                        Scale your Salesforce team up/down with our dedicated or shared resource
-                                        models.
+                                        Scale your team up/down with our dedicated or shared resource models.
                                     </p>
 
                                 </div>
@@ -1463,15 +1677,17 @@ gtag('config', 'AW-17533579353');
                 <div class="d-flex">
                     <div class="left pt-4">
                         <div class="leftInner">
-                            <div class="title">
-                                Let's make Salesforce work harder for you
+                           <div class="title">
+                                Let's make Salesforce+ Snowflake+ AI work harder for you
                             </div>
                             <div class="helpPara ">
-                                <div>We don't believe in one-size-fits-all platforms. Let's design a Salesforce + AI
-                                    solution that makes your work easier, smarter, and more impactful.</div>
+                                 <div>For your Unique Business</div>
+                                <div>let us build Cutting-Edge Tailored Solutions Powered by</div>
+                                <!-- <div>We don't believe in one-size-fits-all platforms. Let's design a Salesforce + AI
+                                    solution that makes your work easier, smarter, and more impactful.</div> -->
                             </div>
-                            <div><img src="<?php echo $base_url?>img/ai-sf-footer.png" alt="icon" class="img-fluid"
-                                    class="ai-sf-logo-footer">
+                            <div> <img src="<?php echo $base_url?>img/salesforce_snowflake_ai.svg" alt="icon"
+                                    class="salesforce Snowflake AI logo">
                             </div>
 
                             <div class="talkAbout d-flex align-items-center flex-wrap aos-init mt-4">
@@ -1488,7 +1704,7 @@ gtag('config', 'AW-17533579353');
                     </div>
 
                     <div class="right">
-                        <img src="<?php echo $base_url?>img/talkPeople.png" alt="talk people" class="img-fluid" />
+                        <img src="<?php echo $base_url?>img/snowflake_contactUs.webp" alt="talk people">
                     </div>
                 </div>
             </div>

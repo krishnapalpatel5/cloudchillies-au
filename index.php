@@ -44,6 +44,8 @@ else if($currentPageWithoutPhp == 'about-us')
 $currentnav ='aboutus';
 else if($currentPageWithoutPhp == 'salesforce')
     $currentnav ='Salesforce';
+else if($currentPageWithoutPhp == 'snowflake')
+    $currentnav ='Snowflake';
 else if($currentPageWithoutPhp == 'contact')
     $currentnav ='contact';
 // Debug output for localhost
@@ -80,6 +82,8 @@ break;
  
  
 case '/salesforce':include("./" . $addHomeInUrl . 'pages/salesforce.php');
+break;
+case '/snowflake':include("./" . $addHomeInUrl . 'pages/snowflake.php');
 break;
  
 case '/ai':include("./" . $addHomeInUrl . 'pages/ai.php');

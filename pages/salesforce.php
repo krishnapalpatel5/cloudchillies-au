@@ -4,26 +4,26 @@
 <head>
 
     <!-- Google tag (gtag.js) -->
-<!-- gtag manager -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJWN5J5QGF"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
- 
-gtag('config', 'G-MJWN5J5QGF');  
-gtag('config', 'AW-17533579353');
-</script>
+    <!-- gtag manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJWN5J5QGF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJWN5J5QGF');
+        gtag('config', 'AW-17533579353');
+    </script>
 
     <?php
 
     include("./" . $addHomeInUrl . "/header.php")
-    ?>
+        ?>
 
     <div class="position-relative">
 
         <div class="banner-shap">
-            <img src="<?php echo $base_url?>img/banner-shade.png" alt="">
+            <img src="<?php echo $base_url ?>img/banner-shade.png" alt="">
         </div>
         <section class="heroSection salesforceBanner" id="homePage">
             <div class="heroBanner pt-4 heroBanner-inner">
@@ -53,7 +53,7 @@ gtag('config', 'AW-17533579353');
                                         data-bs-target="#contactUsPopup" data-subject="Salesforce"
                                         data-section="Salesforce Banner - Talk to Specialist">
                                         Talk to a Salesforce Specialist
-                                        <img src="<?php echo $base_url?>img/arrow-white.png" alt="arrow icon"
+                                        <img src="<?php echo $base_url ?>img/arrow-white.png" alt="arrow icon"
                                             class="ml-2">
 
                                     </a>
@@ -66,7 +66,7 @@ gtag('config', 'AW-17533579353');
 
 
                                 <div class="servicesContainer desktop sf-img">
-                                    <img src="<?php echo $base_url?>img/sf-banner-img.png">
+                                    <img src="<?php echo $base_url ?>img/sf-banner-img.webp">
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@ gtag('config', 'AW-17533579353');
             <!-- They Trust US -->
             <!------------------------------>
 
-            <section class="client-section">
+            <!-- <section class="client-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 ">
@@ -94,127 +94,134 @@ gtag('config', 'AW-17533579353');
                                     <div class="trustLogo ">
                                         <ul class="d-flex align-items-center flex-wrap justify-content-center">
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/smartGroup.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/smartGroup.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo2.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo2.png" alt="logo"
                                                     class="capify-logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo1.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo1.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/compareClub.png"
+                                                <img src="<?php echo $base_url ?>img/trust-us/compareClub.png"
                                                     alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo4.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo4.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo6.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo6.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo3.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo3.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/lifeInsurance.png"
+                                                <img src="<?php echo $base_url ?>img/trust-us/lifeInsurance.png"
                                                     alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/autopia.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/autopia.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo13.png" alt="logo">
-                                            </li>
-
-
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo7.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo10.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo13.png" alt="logo">
                                             </li>
 
+
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo17.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo7.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo10.png" alt="logo">
+                                            </li>
+
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo17.png" alt="logo"
                                                     class="blend">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo21.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo21.png" alt="logo"
                                                     style="mix-blend-mode: darken;">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo22.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo22.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo16.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo16.png" alt="logo">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo19.png" alt="logo">
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo19.png" alt="logo">
                                             </li>
 
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/flexEquip.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/flexEquip.png" alt="logo"
                                                     style="mix-blend-mode: darken;">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo14.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo14.png" alt="logo"
                                                     style="mix-blend-mode: darken;">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/paySmart.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/paySmart.png" alt="logo"
                                                     style="mix-blend-mode: darken;">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/treysta.png" alt="logo"
-                                                    class="blend">
-                                            </li>
-
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo20.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo15.png" alt="logo"
-                                                    class="blend">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/bullrun.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo9.png" alt="logo">
-                                            </li>
-
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/cellulant.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/crcleBlack.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/homeVestors.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/nomupay.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/treysta.png" alt="logo"
                                                     class="blend">
                                             </li>
 
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/pennCapital.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo20.png" alt="logo"
                                                     style="mix-blend-mode: darken;">
                                             </li>
                                             <li>
-                                                <img src="<?php echo $base_url?>img/trust-us/logo18.png" alt="logo"
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo15.png" alt="logo"
+                                                    class="blend">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/bullrun.png" alt="logo">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo9.png" alt="logo">
+                                            </li>
+
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/cellulant.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/crcleBlack.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/homeVestors.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/nomupay.png" alt="logo"
+                                                    class="blend">
+                                            </li>
+
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/pennCapital.png" alt="logo"
+                                                    style="mix-blend-mode: darken;">
+                                            </li>
+                                            <li>
+                                                <img src="<?php echo $base_url ?>img/trust-us/logo18.png" alt="logo"
                                                     class="blend">
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-            </section>
+            </section> -->
         </section>
+    </div>
+    <!------------------------------>
+    <!-- They Trust US -->
+    <!------------------------------>
+
+    <div class="container-fluid logoBx">
+        <?php include 'component/client-logo-slider.php'; ?>
     </div>
 
     <!------------------------------>
@@ -238,7 +245,7 @@ gtag('config', 'AW-17533579353');
     <div class="container-fluid serviceBx-b position-relative">
 
         <div class="so-triangle-shape">
-            <img src="<?php echo $base_url?>img/triangle-shape.png" alt="">
+            <img src="<?php echo $base_url ?>img/triangle-shape.png" alt="">
         </div>
 
         <div class="container">
@@ -251,7 +258,7 @@ gtag('config', 'AW-17533579353');
                                 <div class="col-md-6">
                                     <div class="so-box so-box-inner">
                                         <div class="d-flex sf-points gap-4">
-                                            <img src="<?php echo $base_url?>img/home_page/multicloud.svg" alt="">
+                                            <img src="<?php echo $base_url ?>img/home_page/multicloud.svg" alt="">
                                             <div>
                                                 <h2 class="bold">Implementation</h2>
                                             </div>
@@ -269,7 +276,7 @@ gtag('config', 'AW-17533579353');
                                 <div class="col-md-6">
                                     <div class="so-box so-box-inner">
                                         <div class="d-flex sf-points gap-4">
-                                            <img src="<?php echo $base_url?>img/home_page/salesforceIntegrations.svg"
+                                            <img src="<?php echo $base_url ?>img/home_page/salesforceIntegrations.svg"
                                                 alt="">
                                             <h2 class="bold text-start">Integrations</h2>
                                         </div>
@@ -286,7 +293,7 @@ gtag('config', 'AW-17533579353');
                                 <div class="col-md-6">
                                     <div class="so-box so-box-inner">
                                         <div class="d-flex sf-points gap-4">
-                                            <img src="<?php echo $base_url?>img/home_page/salesforceDevelopment.svg"
+                                            <img src="<?php echo $base_url ?>img/home_page/salesforceDevelopment.svg"
                                                 alt="">
                                             <h2 class="bold text-start">Development</h2>
                                         </div>
@@ -303,7 +310,7 @@ gtag('config', 'AW-17533579353');
                                 <div class="col-md-6">
                                     <div class="so-box so-box-inner">
                                         <div class="d-flex sf-points gap-4">
-                                            <img src="<?php echo $base_url?>img/home_page/manageService.svg" alt="">
+                                            <img src="<?php echo $base_url ?>img/home_page/manageService.svg" alt="">
                                             <h2 class="bold text-start">Managed Services</h2>
                                         </div>
                                         <h4>Flexible, proactive support that evolves with your business.</h4>
@@ -317,16 +324,33 @@ gtag('config', 'AW-17533579353');
                                     </div>
                                 </div>
 
-                                <div class="col-md-12">
-                                    <div class="so-box d-flex flex-column gap-3">
+                                <div class="col-md-6">
+                                    <div class="so-box d-flex flex-column so-box-inner">
                                         <div class="d-flex sf-points gap-4">
-                                            <img src="<?php echo $base_url?>img/home_page/salesforceDevelopment.svg"
-                                                alt="">
+                                            <img src="<?php echo $base_url ?>img/home_page/salesforceDevelopment.svg"
+                                                alt="CloudChillies Salesforce development for enterprise data and crm management and integration">
                                             <h2 class="bold text-start">AppExchange Development</h2>
                                         </div>
+                                        <h4>Your product idea, live on the AppExchange.</h4>
                                         <p class="mb-0">
-                                            Bringing Your Ideas to Life on Salesforce AppExchange - Ideation,
-                                            Wireframing, Development, Testing, Packaging, Publishing.
+                                            We bring your vision to life with end-to-end support: ideation, wireframing,
+                                            security review, development, testing, and listing.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="so-box d-flex flex-column  so-box-inner">
+                                        <div class="d-flex sf-points gap-4">
+                                            <img src="<?php echo $base_url ?>img/home_page/sf-snflk-icon.svg"
+                                                alt="CloudChillies Salesforce and Snowflake integration for secure data flows">
+                                            <h2 class="bold text-start">Salesforce + Snowflake</h2>
+                                        </div>
+                                        <h4>Where CRM Meets Data Intelligence.</h4>
+                                        <p class="mb-0">
+                                            We connect Salesforce with Snowflake to create a single source of truth
+                                            across sales, finance, marketing, and operations — enabling advanced
+                                            analytics, AI, and real-time decision-making.
                                         </p>
                                     </div>
                                 </div>
@@ -334,7 +358,7 @@ gtag('config', 'AW-17533579353');
                         </div>
                         <!-- Right side -->
                         <div class="service-left so-sf-hero">
-                            <img src="<?php echo $base_url?>img/so-inner-img.png" />
+                            <img src="<?php echo $base_url ?>img/so-inner-img.png" />
                         </div>
                     </div>
                 </div>
@@ -428,7 +452,7 @@ gtag('config', 'AW-17533579353');
     <section class="section4 position-relative">
 
         <div class="aif-sf-triangle">
-            <img src="<?php echo $base_url?>img/ai-sf-triangle-shape.png" alt="">
+            <img src="<?php echo $base_url ?>img/ai-sf-triangle-shape.png" alt="">
         </div>
         <div class="container sectionInner1">
             <div class="row">
@@ -448,7 +472,7 @@ gtag('config', 'AW-17533579353');
                 <div class="col-md-12">
                     <div class="d-flex">
                         <div class="section4Left">
-                            <img src="<?php echo $base_url?>img/home_page/agent.svg" alt="agentforce logo" />
+                            <img src="<?php echo $base_url ?>img/home_page/agent.svg" alt="agentforce logo" />
                             <div class="leftpara">Smart, Salesforce-core Agent workspace powered by AI</div>
                             <div class="d-flex">
                                 <div class="leftSide">
@@ -491,13 +515,14 @@ gtag('config', 'AW-17533579353');
                                 </div>
                                 <div class="rightSide">
                                     <div class="robotoImg">
-                                        <img src="<?php echo $base_url?>img/home_page/roboto.png" alt="roboto" />
+                                        <img src="<?php echo $base_url ?>img/home_page/roboto.png" alt="roboto" />
                                     </div>
                                 </div>
                             </div>
                             <div class="mt-2 leftpara">For Your Execution-ready Frontline</div>
                             <button class="btn btn-primary btnStarted" data-bs-toggle="modal"
-                                data-bs-target="#contactUsPopup"  data-subject="Salesforce Page" data-section="AI with Salesforce">Let’s build your Agentforce POC <span>
+                                data-bs-target="#contactUsPopup" data-subject="Salesforce Page"
+                                data-section="AI with Salesforce">Let’s build your Agentforce POC <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52"
                                         fill="none">
                                         <path
@@ -510,7 +535,7 @@ gtag('config', 'AW-17533579353');
                         <div class="section4Right">
                             <section class="features">
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/home_page/icon1.svg"
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/home_page/icon1.svg"
                                             alt="icon1">
                                     </div>
                                     <div>
@@ -520,7 +545,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/home_page/icon2.svg"
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/home_page/icon2.svg"
                                             alt="icon1">
                                     </div>
                                     <div>
@@ -530,7 +555,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/home_page/icon3.svg"
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/home_page/icon3.svg"
                                             alt="icon1">
                                     </div>
                                     <div>
@@ -540,7 +565,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/home_page/icon4.svg"
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/home_page/icon4.svg"
                                             alt="icon1">
                                     </div>
                                     <div>
@@ -550,7 +575,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/home_page/icon5.svg"
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/home_page/icon5.svg"
                                             alt="icon1">
                                     </div>
                                     <div>
@@ -561,7 +586,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/home_page/icon5.svg"
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/home_page/icon5.svg"
                                             alt="icon1">
                                     </div>
                                     <div>
@@ -644,7 +669,7 @@ gtag('config', 'AW-17533579353');
     <!-- Cloud Tech Start -->
     <!------------------------------>
 
-    <div class="container-fluid cloud-tech-section">
+    <!-- <div class="container-fluid cloud-tech-section">
 
 
         <div class="servicesHeadingBx">
@@ -668,12 +693,12 @@ gtag('config', 'AW-17533579353');
             <div class="row">
                 <div class="col-md-12">
                     <div class="service-offring so-inner">
-                        <!-- Left side -->
+                       
                         <div class="tech-left">
 
                             <section class="features tech-feature">
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-a.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-a.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Financial Services Cloud</h3>
@@ -682,7 +707,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-b.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-b.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Nonprofit Cloud</h3>
@@ -691,7 +716,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-c.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-c.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Sales Cloud</h3>
@@ -700,7 +725,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-d.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-d.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Tableau & CRM Analytics</h3>
@@ -710,7 +735,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-e.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-e.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Marketing Cloud & Pardot</h3>
@@ -720,7 +745,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-f.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-f.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>MuleSoft & Integrations</h3>
@@ -728,8 +753,8 @@ gtag('config', 'AW-17533579353');
 
                                     </div>
                                 </div>
- 				                <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-cloud.svg" alt="icon1">
+                                 <div class="card-box">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-cloud.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Data Cloud</h3>
@@ -739,7 +764,7 @@ gtag('config', 'AW-17533579353');
                                 </div>
 
                                 <div class="card-box">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-experience.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-experience.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>Experience Cloud</h3>
@@ -748,7 +773,7 @@ gtag('config', 'AW-17533579353');
                                     </div>
                                 </div>
                                 <div class="card-box tab-show">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-k.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-k.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>AppExchange Add-ons</h3>
@@ -759,20 +784,20 @@ gtag('config', 'AW-17533579353');
                             </section>
 
                         </div>
-                        <!-- Right side -->
+                     
                         <div class="tech-right tech-sf-hero">
-                            <img src="<?php echo $base_url?>img/tech-sf-hero.png" />
+                            <img src="<?php echo $base_url ?>img/tech-sf-hero.png" />
                         </div>
                     </div>
 
 
                     <div class="service-offring so-inner">
-                        <!-- Left side -->
+                   
                         <div class="tech-left-b">
 
                             <section class="tech-feature">
                                 <div class="card-box tab-hide">
-                                    <div class="icon"><img src="<?php echo $base_url?>img/cd-icon-k.svg" alt="icon1">
+                                    <div class="icon"><img src="<?php echo $base_url ?>img/cd-icon-k.svg" alt="icon1">
                                     </div>
                                     <div>
                                         <h3>AppExchange Add-ons</h3>
@@ -786,7 +811,7 @@ gtag('config', 'AW-17533579353');
                             </section>
 
                         </div>
-                        <!-- Right side -->
+                      
                         <div class="tech-right-b tech-sf-hero">
                             <div class="innerSection d-flex cta-type-a">
                                 <div class="lightWeight left small">Unlock the <span class="bold">Full Potential
@@ -812,7 +837,7 @@ gtag('config', 'AW-17533579353');
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     <!------------------------------>
     <!-- Client Love Us Start -->
@@ -829,12 +854,22 @@ gtag('config', 'AW-17533579353');
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/dnCH_qoqaAo?si=2RM6crqZFKUVlRrd"
+                                src="https://www.youtube.com/embed/G2lQODLUJOM?si=bidtizyVJrAGRV8A"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/v5Ju3rcgh0s?si=_x8kG9RnYeCfLvtG"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -847,7 +882,7 @@ gtag('config', 'AW-17533579353');
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=QR1xhig9XDEKflAb"
+                                src="https://www.youtube.com/embed/VBegos8PdiU?si=xy052w6cUZGBBvbx"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -857,16 +892,7 @@ gtag('config', 'AW-17533579353');
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/Z4TTjm6lz7g?si=IXpPMLcR_HwbXjX3"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="iframe-container">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/GCGEs6DdkHY?si=7KQkEN7cRUvLPPIG"
+                                src="https://www.youtube.com/embed/bxDlPhTMGEQ?si=E5ccjETouaxRnu1S"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -876,7 +902,7 @@ gtag('config', 'AW-17533579353');
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/b9COwfiylxA?si=lXRByMRr1piOmr40"
+                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=qbXB1dJCwvxQqqs2"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -893,8 +919,8 @@ gtag('config', 'AW-17533579353');
     <!------------------------------>
 
     <?php
-include 'component/successstories-home.php';  // includes success-stories-home.php here
-?>
+    include 'component/successstories-home.php';  // includes success-stories-home.php here
+    ?>
 
 
     <!------------------------------>
@@ -916,7 +942,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                         </p>
                         <div class="ben-result dark-blue bold">
                             <span class="lightWeight">Up to </span> 70% <img
-                                src="<?php echo $base_url?>img/arrow-down.png" alt="">
+                                    src="<?php echo $base_url ?>img/arrow-down.png" alt="">
                         </div>
 
                     </div>
@@ -927,7 +953,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                         </p>
                         <div class="ben-result dark-blue bold">
                             <span class="lightWeight">Up to </span> 20% <img
-                                src="<?php echo $base_url?>img/arrow-down.png" alt="">
+                                    src="<?php echo $base_url ?>img/arrow-down.png" alt="">
                         </div>
                     </div>
                     <div class="items">
@@ -937,7 +963,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                         </p>
                         <div class="ben-result dark-blue bold">
                             <span class="lightWeight">Up to </span> 83% <img
-                                src="<?php echo $base_url?>img/arrow-up.png" alt="">
+                                    src="<?php echo $base_url ?>img/arrow-up.png" alt="">
                         </div>
                     </div>
                     <div class="items">
@@ -947,7 +973,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                         </p>
                         <div class="ben-result dark-blue bold">
                             <span class="lightWeight">Up to </span> 30% <img
-                                src="<?php echo $base_url?>img/arrow-down.png" alt="">
+                                    src="<?php echo $base_url ?>img/arrow-down.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -967,7 +993,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                         </p>
 
                                     </div>
-                                    <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                    <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                                             viewBox="0 0 60 60" fill="none">
@@ -995,7 +1021,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                         <p>Proven delivery across diverse industries — from scale-ups to enterprise ops.
                                         </p>
                                     </div>
-                                    <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                    <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="63"
                                             viewBox="0 0 64 63" fill="none">
@@ -1018,7 +1044,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                         support.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="55" viewBox="0 0 54 55"
                                         fill="none">
@@ -1042,7 +1068,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                         matters.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63"
                                         fill="none">
@@ -1073,7 +1099,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                         relationships.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
                                         fill="none">
@@ -1148,7 +1174,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                         protection.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61"
                                         fill="none">
@@ -1174,7 +1200,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                                     </p>
 
                                 </div>
-                                <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="45" viewBox="0 0 44 45"
                                         fill="none">
@@ -1226,10 +1252,11 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                             Let's Get Salesforce Working for You
                         </div>
                         <div class="helpPara bold">
-                            <div>Not sure where to start? Already part-way in? Wherever </div>
-                            <div>you are in your Salesforce journey, we're ready to help.</div>
+                            <div>For your Unique Business</div>
+                            <div>let us build Cutting-Edge Tailored Solutions Powered by</div>
                         </div>
-                        <img src="<?php echo $base_url?>img/ai-sf-footer.png" alt="icon" class="ai-sf-logo-footer">
+                        <img src="<?php echo $base_url ?>img/salesforce_snowflake_ai.svg" alt="icon"
+                            class="ai-sf-logo-footer">
 
                         <div class="talkAbout d-flex align-items-center flex-wrap aos-init mt-4">
                             <a href="/contact" class="btn  btnStarted" data-bs-toggle="modal"
@@ -1247,7 +1274,7 @@ include 'component/successstories-home.php';  // includes success-stories-home.p
                 </div>
 
                 <div class="right col-md-5">
-                    <img src="<?php echo $base_url?>img/talkPeople.png" alt="talk people">
+                    <img src="<?php echo $base_url ?>img/snowflake_contactUs.webp" alt="talk people">
                 </div>
 
 

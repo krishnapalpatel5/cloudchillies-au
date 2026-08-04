@@ -56,8 +56,12 @@
                     </div>
                 </div>
                 <div class="footerBox2 d-flex align-items-center gap-4">
-                    <img src="<?php echo $base_url?>img/iso-img.jpg" alt="salesforce partner">
-                    <img src="<?php echo $base_url?>img/salesforce-partner.png" alt="salesforce partner">
+                    <img src="<?php echo $base_url?>img/iso-img.webp"
+                        alt="Cloud Chillies ISO27001 certified proving enterprise graded security standards.">
+                    <img src="<?php echo $base_url?>img/snf-partner-logo.webp"
+                        alt="Cloud Chilies is snowflake ai data cloud service partner ">
+                    <img style="width:120px;" src="<?php echo $base_url?>img/sf-partner-logo.png"
+                        alt="CloudChillies is a salesforce partner providing end to end solutions">
                 </div>
             </div>
         </div>

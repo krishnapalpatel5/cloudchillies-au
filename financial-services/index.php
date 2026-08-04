@@ -1,18 +1,18 @@
 <?php
-    // Read the countries.json file
-    $countriesJson = file_get_contents('countries.json');
+// Read the countries.json file
+$countriesJson = file_get_contents('countries.json');
 
-    // Decode JSON data into PHP array
-    $countries = json_decode($countriesJson, true);
-    // Check if decoding was successful
-    if ($countries) {
-        $option = "";
-        foreach ($countries['countries'] as $country) {
-            $option .= '<option value="' . htmlspecialchars($country) . '">' . htmlspecialchars($country) . '</option>';
-        }
-    } else {
-        echo 'Unable to load countries.';
+// Decode JSON data into PHP array
+$countries = json_decode($countriesJson, true);
+// Check if decoding was successful
+if ($countries) {
+    $option = "";
+    foreach ($countries['countries'] as $country) {
+        $option .= '<option value="' . htmlspecialchars($country) . '">' . htmlspecialchars($country) . '</option>';
     }
+} else {
+    echo 'Unable to load countries.';
+}
 ?>
 
 <!DOCTYPE html>
@@ -33,43 +33,39 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
-    
+
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-    function enableSubmitBtn() {
-        document.getElementById("submitBtn").disabled = false;
-    }
+        function enableSubmitBtn() {
+            document.getElementById("submitBtn").disabled = false;
+        }
 
-    // Traccker code//
+        // Traccker code//
 
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-M4TFV8J1JQ');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-M4TFV8J1JQ');
 
-    //////////////////
+        //////////////////
 
-    (function(c, l, a, r, i, t, y) {
-        c[a] = c[a] || function() {
-            (c[a].q = c[a].q || []).push(arguments)
-        };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "rc32v9vz9w");
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "rc32v9vz9w");
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4TFV8J1JQ"></script>
-
-
-
-
 
 </head>
 
@@ -82,7 +78,7 @@
             </section>
         </header> -->
 
-        <?php echo $currentnav?>
+        <?php echo $currentnav ?>
 
         <header id="header" class="header1 ">
 
@@ -109,6 +105,10 @@
 
                         <li class="menu-item">
                             <a class="nav-link" href="https://cloudchillies.com.au/salesforce">Salesforce</a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="nav-link" href="https://cloudchillies.com.au/snowflake">Snowflake</a>
                         </li>
 
                         <li class="menu-item">
@@ -158,7 +158,7 @@
                                     <h1 class="line2"><span class="primary-text bold">with</span></h1>
                                     <div class="d-flex powered-by">
                                         <div>
-                                            <img src="img/ai-sf-logo.png">
+                                            <img src="img/homeBannerLogo.svg">
                                             <!-- <img src="img/ai-sf-logo-mobile.png" class="mobile-b" > -->
                                         </div>
                                     </div>
@@ -196,8 +196,8 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a  class="btn btnStarted read_more_btn "
-                                            data-bs-toggle="modal" data-bs-target="#ss-model" data-id="capify">Read More
+                                        <a class="btn btnStarted read_more_btn " data-bs-toggle="modal"
+                                            data-bs-target="#ss-model" data-id="capify">Read More
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25"
                                                     viewBox="0 0 15 25" fill="none">
@@ -242,8 +242,8 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a  class="btn btnStarted read_more_btn"
-                                            data-bs-toggle="modal" data-bs-target="#ss-model" data-id="regents">Read
+                                        <a class="btn btnStarted read_more_btn" data-bs-toggle="modal"
+                                            data-bs-target="#ss-model" data-id="regents">Read
                                             More
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25"
@@ -289,8 +289,8 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a  class="btn btnStarted read_more_btn"
-                                            data-bs-toggle="modal" data-bs-target="#ss-model" data-id="smart-group">Read
+                                        <a class="btn btnStarted read_more_btn" data-bs-toggle="modal"
+                                            data-bs-target="#ss-model" data-id="smart-group">Read
                                             More
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25"
@@ -336,8 +336,8 @@
                                     </h1>
 
                                     <div class="d-flex powered-by">
-                                        <a  class="btn btnStarted read_more_btn"
-                                            data-bs-toggle="modal" data-bs-target="#ss-model" data-id="abc">Read
+                                        <a class="btn btnStarted read_more_btn" data-bs-toggle="modal"
+                                            data-bs-target="#ss-model" data-id="abc">Read
                                             More
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25"
@@ -516,155 +516,103 @@
             <!-- They Trust US -->
             <!------------------------------>
 
-            <section class="client-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <div class="sectionTitle text-center  mb-4">
-                                <span class="lightWeight"> They </span> <span class="bold">Trust Us</span>
+            <div class="container-fluid logoBx">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex">
+                            <div class="trustTitle">
+                                <span class="lightWeight"> They </span> <span class="bold text-gradient">Trust Us</span>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="trustLogo ">
-                                        <ul class="d-flex align-items-center flex-wrap justify-content-center">
-                                            <li>
-                                                <img src="img/trust-us/smartGroup.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo2.png" alt="logo" class="capify-logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo1.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/compareClub.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo4.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo6.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo3.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/lifeInsurance.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/autopia.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo13.png" alt="logo">
-                                            </li>
+                            <div class="logoList">
+                                <div class="marquee">
+                                    <div class="marquee-content">
 
-
-                                            <li>
-                                                <img src="img/trust-us/logo7.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo10.png" alt="logo">
-                                            </li>
-
-                                            <li>
-                                                <img src="img/trust-us/logo17.png" alt="logo" class="blend">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo21.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo22.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo16.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo19.png" alt="logo">
-                                            </li>
-
-                                            <li>
-                                                <img src="img/trust-us/flexEquip.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo14.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/paySmart.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/treysta.png" alt="logo" class="blend">
-                                            </li>
-
-                                            <li>
-                                                <img src="img/trust-us/logo20.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo15.png" alt="logo" class="blend">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/bullrun.png" alt="logo">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo9.png" alt="logo">
-                                            </li>
-
-                                            <li>
-                                                <img src="img/trust-us/cellulant.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/crcleBlack.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/homeVestors.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/nomupay.png" alt="logo" class="blend">
-                                            </li>
-
-                                            <li>
-                                                <img src="img/trust-us/pennCapital.png" alt="logo"
-                                                    style="mix-blend-mode: darken;">
-                                            </li>
-                                            <li>
-                                                <img src="img/trust-us/logo18.png" alt="logo" class="blend">
-                                            </li>
-                                        </ul>
+                                        <img src="img/trust-us/smartGroup.png" alt="logo">
+                                        <img src="img/trust-us/logo2.png" alt="logo">
+                                        <img src="img/trust-us/logo1.png" alt="logo">
+                                        <img src="img/trust-us/compareClub.png" alt="logo">
+                                        <img src="img/trust-us/logo4.png" alt="logo">
+                                        <img src="img/trust-us/logo6.png" alt="logo">
+                                        <img src="img/trust-us/logo3.png" alt="logo">
+                                        <img src="img/trust-us/lifeInsurance.png" alt="logo">
+                                        <img src="img/trust-us/autopia.png" alt="logo">
+                                        <img src="img/trust-us/logo13.png" alt="logo">
+                                        <img src="img/trust-us/logo7.png" alt="logo">
+                                        <img src="img/trust-us/logo10.png" alt="logo">
+                                        <img src="img/trust-us/logo17.png" alt="logo">
+                                        <img src="img/trust-us/logo21.png" alt="logo">
+                                        <img src="img/trust-us/logo22.png" alt="logo">
+                                        <img src="img/trust-us/logo16.png" alt="logo">
+                                        <img src="img/trust-us/logo19.png" alt="logo">
+                                        <img src="img/trust-us/flexEquip.png" alt="logo">
+                                        <img src="img/trust-us/logo14.png" alt="logo">
+                                        <img src="img/trust-us/paySmart.png" alt="logo">
+                                        <img src="img/trust-us/treysta.png" alt="logo">
+                                        <img src="img/trust-us/logo20.png" alt="logo">
+                                        <img src="img/trust-us/logo15.png" alt="logo">
+                                        <img src="img/trust-us/logo24.png" alt="logo">
+                                        <img src="img/trust-us/cellulant.png" alt="logo">
+                                        <img src="img/trust-us/crcleBlack.png" alt="logo">
+                                        <img src="img/trust-us/homeVestors.png" alt="logo">
+                                        <img src="img/trust-us/nomupay.png" alt="logo">
+                                        <img src="img/trust-us/pennCapital.png" alt="logo">
+                                        <img src="img/trust-us/logo18.png" alt="logo">
+                                        <!-- Duplicate logos for seamless loop -->
+                                        <img src="img/trust-us/smartGroup.png" alt="logo">
+                                        <img src="img/trust-us/logo2.png" alt="logo">
+                                        <img src="img/trust-us/logo1.png" alt="logo">
+                                        <img src="img/trust-us/compareClub.png" alt="logo">
+                                        <img src="img/trust-us/logo4.png" alt="logo">
+                                        <img src="img/trust-us/logo6.png" alt="logo">
+                                        <img src="img/trust-us/logo3.png" alt="logo">
+                                        <img src="img/trust-us/lifeInsurance.png" alt="logo">
+                                        <img src="img/trust-us/autopia.png" alt="logo">
+                                        <img src="img/trust-us/logo13.png" alt="logo">
+                                        <img src="img/trust-us/logo7.png" alt="logo">
+                                        <img src="img/trust-us/logo10.png" alt="logo">
+                                        <img src="img/trust-us/logo17.png" alt="logo">
+                                        <img src="img/trust-us/logo21.png" alt="logo">
+                                        <img src="img/trust-us/logo22.png" alt="logo">
+                                        <img src="img/trust-us/logo16.png" alt="logo">
+                                        <img src="img/trust-us/logo19.png" alt="logo">
+                                        <img src="img/trust-us/flexEquip.png" alt="logo">
+                                        <img src="img/trust-us/logo14.png" alt="logo">
+                                        <img src="img/trust-us/paySmart.png" alt="logo">
+                                        <img src="img/trust-us/treysta.png" alt="logo">
+                                        <img src="img/trust-us/logo20.png" alt="logo">
+                                        <img src="img/trust-us/logo15.png" alt="logo">
+                                        <img src="img/trust-us/logo24.png" alt="logo">
+                                        <img src="img/trust-us/cellulant.png" alt="logo">
+                                        <img src="img/trust-us/crcleBlack.png" alt="logo">
+                                        <img src="img/trust-us/homeVestors.png" alt="logo">
+                                        <img src="img/trust-us/nomupay.png" alt="logo">
+                                        <img src="img/trust-us/pennCapital.png" alt="logo">
+                                        <img src="img/trust-us/logo18.png" alt="logo">
                                     </div>
                                 </div>
-            </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </div>
     <section class="ai-powered-sol p-5 position-relative">
-
         <div class="container position-relative z-2">
             <div class="row">
                 <div class="col-md-12 text-center">
-
                     <div class="sectionTitle mb-3 text-start">
                         <span class="bold primary-text text-gradient">Leverage AI,</span> <span
                             class="lightWeight">That</span> <span class="bold primary-text ">Solve What Matters Most to
                             Financial Services</span>
                     </div>
-
                     <div class="ai-powered-description">
                         From credit approvals to risk analysis, we help financial institutions apply AI where it truly
                         delivers — reducing manual efforts, increasing accuracy, and scaling smarter decisions.
                     </div>
-
-
                     <div class="row ai-points-wrap">
-
                         <div class="col-md-8">
-
                             <!-- <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex ai-points">
@@ -737,9 +685,7 @@
 
 
                         </div>
-
                     </div>
-
                     <div class="row">
                         <div class="col-md-12">
                             <div class="call-to-action ai d-flex align-items-center justify-content-between">
@@ -748,34 +694,23 @@
                                     <h2 class="lightWeight text-start">Give Your Business an </h2>
                                     <h2 class="bold text-start">Unf<span class="orangeText">AI</span>r Advantage</h2>
                                 </div>
-
                                 <a class="btn btn-primary btnStarted" data-bs-toggle="modal"
-                                    data-bs-target="#contactUsPopup" data-subject="Financial Services Page" data-section="Lets make AI work for you" onclick="gtag('event', 'cta_click', {
+                                    data-bs-target="#contactUsPopup" data-subject="Financial Services Page"
+                                    data-section="Lets make AI work for you" onclick="gtag('event', 'cta_click', {
                                                 'event_category': 'CTA',
                                                 'event_label': 'CTA - Make AI Work'
                                             });">Lets make AI work for you
                                     <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
-
                                 </a>
-
-
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
-
             </div>
         </div>
-
         <div class="ai-powered-img">
-            <img src="img/ai-sol-bg.jpg" alt="">
+            <img src="img/ai-sol-bg.webp" alt="">
         </div>
-
-
-
     </section>
 
     <section class="sf-investment section position-relative">
@@ -889,13 +824,171 @@
                         </div>
 
                         <button class="btn btn-primary btnStarted " data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup" data-subject="Finicial Service Page" data-section="Let's unlock the full potential of Salesforce for your business" onclick="gtag('event', 'cta_click', {
+                            data-bs-target="#contactUsPopup" data-subject="Finicial Service Page"
+                            data-section="Let's unlock the full potential of Salesforce for your business" onclick="gtag('event', 'cta_click', {
      'event_category': 'CTA', 'event_label': 'CTA - Show Me How' });">Show Me How
                             <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container snlk-s-offerings">
+            <div class="row">
+                <div class="col-md-12 col-xl-5 left">
+                    <div>
+                        <div class="sectionTitle mb-4">
+                            <span class="lightWeight"> Maximize Value from Your</span>
+                            <span class="bold">Snowflake </span>
+                            <span class="lightWeight">Investment</span>
+
+                        </div>
+                        <p class="text-start">Too many financial institutions invest in modern data platforms but
+                            struggle to turn data into actionable insight. From fragmented data sources to slow
+                            reporting cycles — we help fintech teams get real value from Snowflake with solutions built
+                            around how financial data actually flows.
+                        </p>
+
+                    </div>
+                    <div class="mt-3 sfp-logo">
+                        <img src="img/snowflake-pt-logo.webp" alt="snowflake partner" />
+                    </div>
+                </div>
+
+                <!-- Left side -->
+                <div class="col-md-12 col-xl-7">
+                    <h4 class="sub-sectionTitle mb-4 ">
+                        <span class="lightWeight"> Our </span><span class="bold">Snowflake Solution Offerings</span>
+                    </h4>
+                    </h4>
+                    <div class="row bdr-btm">
+                        <div class="col-md-6 pb-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/snflk-icon1.svg"
+                                        alt="CloudChillies Snowflake data integration service icon 1">
+                                    <div>
+                                        <h2 class="bold mb-0">Snowflake </h2>
+                                        <h2 class="bold mb-0">Consulting & Advisory</h2>
+                                    </div>
+                                </div>
+                                <p>
+                                    Helping you design a data architecture that aligns with lending, payments,
+                                    insurance, or wealth operations — no guesswork, just domain-driven guidance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pb-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/snflk-icon2.svg"
+                                        alt="CloudChillies Snowflake implementation service icon 2">
+                                    <h2 class="bold text-start">Snowflake Implementation</h2>
+                                </div>
+                                <p>
+                                    Build scalable, secure Snowflake environments tailored for financial data — from
+                                    ingestion and modeling to governance and analytics readiness.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row bdr-btm">
+                        <div class="col-md-6 pb-4 pt-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/snflk-icon3.svg"
+                                        alt="CloudChillies Snowflake data engineering and integration service icon 3">
+                                    <h2 class="bold text-start">Data Engineering & Integration
+                                    </h2>
+                                </div>
+                                <p>
+                                    Connect Snowflake with CRMs, core banking systems, APIs, and third-party data
+                                    sources — ensuring seamless, reliable data pipelines across your ecosystem.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pb-4 pt-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/snflk-icon4.svg"
+                                        alt="CloudChillies Snowflake analytics and reporting service icon 4">
+                                    <h2 class="bold text-start">Analytics & Reporting</h2>
+                                </div>
+                                <p>
+                                    Enable real-time financial reporting, portfolio insights, and executive dashboards —
+                                    so your teams can make faster, data-driven decisions.
+
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 pb-4 pt-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/snflk-icon5.svg"
+                                        alt="CloudChillies Snowflake governance, security, and compliance service icon 5">
+                                    <h2 class="bold text-start">Governance, Security & Compliance</h2>
+                                </div>
+                                <p>
+                                    Implement role-based access, data masking, auditability, and compliance frameworks
+                                    designed for regulated industries like fintech.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pb-4 pt-4">
+                            <div class="so-box">
+                                <div class="d-flex sf-points gap-4 mb-4">
+                                    <img src="img/snflk-icon6.svg"
+                                        alt="CloudChillies Managed Snowflake Services icon 6">
+                                    <h2 class="bold text-start">Managed Snowflake Services
+                                    </h2>
+                                </div>
+                                <p>
+                                    Continuously optimise performance, control costs, and maintain data quality —
+                                    ensuring your Snowflake platform scales with your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="call-to-action si d-flex align-items-center justify-content-between">
+
+                        <div class=" flex-column">
+                            <h2 class="bold text-start">
+                                <div><span class="lightWeight">Let’s unlock the</span> full potential of</div>
+                                <div> Snowflake <span class="lightWeight">for your business</span>
+                                </div>
+                            </h2>
+                        </div>
+
+                        <a href="/snowflake" class="btn btn-primary btnStarted " data-bs-toggle="modal"
+                            data-bs-target="#contactUsPopup" onclick="gtag('event', 'cta_click', {
+     'event_category': 'CTA', 'event_label': 'CTA - Show Me How' });" data-subject="Finicial Service Page"
+                            data-section="Snowflake Service Offerings">Show Me How
+                            <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
@@ -1015,16 +1108,18 @@
             <div class="row clientSlider">
                 <div class="owl-carousel clientFeeback owl-theme p-0">
 
+
+
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/dnCH_qoqaAo?si=2RM6crqZFKUVlRrd"
+                                src="https://www.youtube.com/embed/G2lQODLUJOM?si=bidtizyVJrAGRV8A"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-
 
                     <div class="item">
                         <div class="iframe-container">
@@ -1035,6 +1130,30 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VBegos8PdiU?si=xy052w6cUZGBBvbx"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=qbXB1dJCwvxQqqs2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
@@ -1044,19 +1163,21 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/GCGEs6DdkHY?si=7KQkEN7cRUvLPPIG"
+                                src="https://www.youtube.com/embed/NfQBeDdTZmQ?si=f8ONR_ABgEEUqNfD"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+
                     <div class="item">
                         <div class="iframe-container">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/b9COwfiylxA?si=lXRByMRr1piOmr40"
+                                src="https://www.youtube.com/embed/GCGEs6DdkHY?si=7KQkEN7cRUvLPPIG"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -1079,7 +1200,7 @@
                         <div class="sliderItem">
                             <img src="img/ss/fs-ss-banner-1.jpg">
                             <div class="sliderContent bg-1 ">
-                               <!-- <div class="ss-shape">
+                                <!-- <div class="ss-shape">
                                     <img src="img/ss-shape.svg" alt="">
                                 </div> -->
                                 <div class="sliderContentInner">
@@ -1242,8 +1363,8 @@
                         </div>
                         </h2>
                         <button class="btn btnStarted position-relative" data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup" data-subject="Salesforce page"
-                            data-section="Show me">Show Me
+                            data-bs-target="#contactUsPopup" data-subject="Salesforce page" data-section="Show me">Show
+                            Me
                             How
                             <img src="img/arrow-white.png" alt="arrow icon" class="ml-2">
                         </button>
@@ -1345,8 +1466,8 @@
                 <div class="innerSection d-flex bannerHeight margin0">
                     <div class="lightWeight left">Want to <span class="bold">Achieve Results </span>like these?
                     </div>
-                    <button class="btn btn-primary btnStarted" data-bs-toggle="modal"
-                        data-bs-target="#contactUsPopup"  data-subject="Financial Services Page" data-section="Want to Achieve Results">Let’s Talk
+                    <button class="btn btn-primary btnStarted" data-bs-toggle="modal" data-bs-target="#contactUsPopup"
+                        data-subject="Financial Services Page" data-section="Want to Achieve Results">Let’s Talk
                         <img src="img/users-group.png" alt="">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
@@ -1366,13 +1487,15 @@
     <!-- Why Choose Start -->
     <!------------------------------>
     <section class="position-relative why-choose section">
-
         <div class="container">
             <div class="row">
                 <div class="sectionTitle text-center aos-init aos-animate  mb-5" data-aos="fade-up">
-                    <span class="lightWeight">Why Choose Us as Your </span> <span class="bold text-gradient">Salesforce
+                    <span class="lightWeight">Why Choose Us as Your </span> <span class="bold text-gradient">Technology
                         Partner?
                 </div>
+
+
+
                 <div class="wrap-layout">
                     <div class="d-flex flex-column a">
                         <div class="d-flex">
@@ -1380,15 +1503,15 @@
                                 <div class="gridInner">
                                     <div class="gridInner-content">
                                         <div class="gridTitle">
-                                            Finance-Focused Expertise
-
+                                            Sector-Focused Experts
                                         </div>
                                         <p>
-                                            Specialized Salesforce solutions for financial enterprises
+                                            Specialized teams for Finance & Nonprofits & other industries -no
+                                            one-size-fits-all solutions.
                                         </p>
 
                                     </div>
-                                    <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                    <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                                             viewBox="0 0 60 60" fill="none">
@@ -1411,13 +1534,13 @@
                                 <div class="gridInner">
                                     <div class="gridInner-content">
                                         <div class="gridTitle">
-                                            20+ Years of Experience
+                                            20+ Years of Industry Experience
                                         </div>
-                                        <p>Proven track record in global financial services
-                                        </p>
+                                        <p>Deep domain knowledge and implementation success across global financial
+                                            enterprises and mission-driven NPOs.</p>
 
                                     </div>
-                                    <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                    <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="63"
                                             viewBox="0 0 64 63" fill="none">
@@ -1433,13 +1556,13 @@
                             <div class="gridInner flex-row">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        100+ Salesforce Certifications
+                                        200+ Certifications and Trusted Salesforce & Snowflake Partners
                                     </div>
                                     <p>
-                                        Expertise spanning strategy, execution & support
+                                        From architecture to support certified pros aligned with your goals.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="55" viewBox="0 0 54 55"
                                         fill="none">
@@ -1456,13 +1579,14 @@
                             <div class="gridInner">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        AI-Powered Impact
+                                        AI-Driven Solutions
                                     </div>
                                     <p>
-                                        Purpose-built automations & Solutions for financial enterprises
+                                        Smart automations and predictive insights — purpose-built for lending, donor
+                                        journeys, grant tracking & more.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63"
                                         fill="none">
@@ -1486,13 +1610,14 @@
                             <div class="gridInner">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        Trusted Salesforce Partner
+                                        Trusted Salesforce & Snowflake Partner
                                     </div>
                                     <p>
-                                        Certified Partner with Deep platform expertise for financial institutions
+                                        Proven track record with purpose-aligned tech for finance and social impact
+                                        organizations.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
                                         fill="none">
@@ -1512,10 +1637,10 @@
                             <div class="gridInner flex-row">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        Certified Salesforce Experts
+                                        Certified Implementation Teams
                                     </div>
                                     <p>
-                                        200+ certifications & Skilled across core and industry-specific clouds
+                                        Expert consultants across Salesforce Cloud, Snowflake & Other Technologies.
                                     </p>
 
                                 </div>
@@ -1562,10 +1687,11 @@
                                         ISO 27001 certified
                                     </div>
                                     <p>
-                                        Enterprise-grade security built by design
+                                        Enterprise-Grade Security — essential for regulated sectors and donor data
+                                        protection.
                                     </p>
                                 </div>
-                                <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61"
                                         fill="none">
@@ -1587,11 +1713,11 @@
                                         Flexible Engagement Models
                                     </div>
                                     <p>
-                                        Scale teams up or down based on your demand
+                                        Scale your team up/down with our dedicated or shared resource models.
                                     </p>
 
                                 </div>
-                                <!-- <div class="no"><img src="img/one.svg"></div> -->
+                                <!-- <div class="no"><img src="<?php echo $base_url ?>img/one.svg"></div> -->
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="45" viewBox="0 0 44 45"
                                         fill="none">
@@ -1645,7 +1771,7 @@
                             <div>For your Unique Finance Business</div>
                             <div>let us build Cutting-Edge Tailored Solutions Powered by </div>
                         </div>
-                        <img src="img/ai-sf-footer.png" alt="icon">
+                         <img src="img/salesforce_snowflake_ai.svg" alt="icon">
                         <div class="talkAbout d-flex align-items-center flex-wrap aos-init aos-animate mt-4"
                             data-aos="fade-right">
                             <a href="/contact" class="btn btn-primary btnStarted" data-bs-toggle="modal"
@@ -1653,13 +1779,14 @@
      'event_category': 'CTA',
      'event_label': 'CTA - Contact Us Now'
    });">Contact Us Now
-                                <img src="img/users-group.png" alt="" srcset="">
+                               <img src="img/users-group.png"
+                                    alt="CloudChillies team collaboration on fintech and AI platform" srcset="">
                                 <img src="img/arrow-white.svg" alt="arrow icon" class="ml-2"></a>
                         </div>
                     </div>
                 </div>
                 <div class="right aos-init aos-animate col-md-5" data-aos="zoom-in">
-                    <img src="img/talkPeople.png" alt="talk people">
+                     <img src="img/snowflake_contactUs.webp" alt="talk people">
                 </div>
             </div>
         </div>
@@ -1697,9 +1824,11 @@
                         </div>
                     </div>
                     <div class="footerBox2 d-flex align-items-center gap-4">
-                        <img src="img/iso-img.jpg" alt="salesforce partner">
-                        <img src="img/salesforce-partner.svg" alt="salesforce partner">
+                        <img src="img/iso-img.jpg" alt="salesforce partner"> 
+                        <img src="img/snf-partner-logo.webp" alt="snowflake partner">
+                         <img width="120px" src="img/sf-partner-logo.png" alt="salesforce partner">
                     </div>
+                     
                 </div>
             </div>
 
@@ -1758,7 +1887,7 @@
 <?php include '../component/contact-modal.php'; ?>
 
 <!-- SS modal -->
- 
+
 <!-- SS modal -->
 <div class="modal fade" id="ss-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
@@ -1834,104 +1963,104 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/wow.min.js"></script>
 <script>
-AOS.init({
-    disable: 'mobile',
-    duration: 1200,
-    once: true
-});
+    AOS.init({
+        disable: 'mobile',
+        duration: 1200,
+        once: true
+    });
 
-//=====  WOW active
+    //=====  WOW active
 
-new WOW().init();
+    new WOW().init();
 
 
-$(".home-banner").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: false,
-    autoPlaySpeed: 50000,
-    autoPlayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
+    $(".home-banner").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: false,
+        autoPlaySpeed: 50000,
+        autoPlayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            },
         },
-        600: {
-            items: 1,
-        },
-        1000: {
-            items: 1,
-        },
-    },
-});
+    });
 
 
-$('.clientFeeback').owlCarousel({
-    loop: true,
-    center: true,
-    nav: true,
-    dot: true,
-    margin: 30,
-    responsive: {
-        0: {
-            items: 1,
+    $('.clientFeeback').owlCarousel({
+        loop: true,
+        center: true,
+        nav: true,
+        dot: true,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            500: {
+                items: 1,
+            },
+            1000: {
+                items: 3,
+            },
         },
-        500: {
-            items: 1,
-        },
-        1000: {
-            items: 3,
-        },
-    },
-});
+    });
 
-$(".full-slider").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: false,
+    $(".full-slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: false,
 
-    responsive: {
-        0: {
-            items: 1,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            },
         },
-        600: {
-            items: 1,
-        },
-        1000: {
-            items: 1,
-        },
-    },
-});
+    });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const modals = document.querySelectorAll('.modal');
+    document.addEventListener("DOMContentLoaded", function () {
+        const modals = document.querySelectorAll('.modal');
 
-    modals.forEach(modal => {
-        // Pause YouTube iframe when modal is hidden
-        modal.addEventListener('hidden.bs.modal', function() {
-            const iframes = modal.querySelectorAll('iframe');
-            iframes.forEach(iframe => {
-                iframe.contentWindow.postMessage(
-                    '{"event":"command","func":"pauseVideo","args":""}', '*');
+        modals.forEach(modal => {
+            // Pause YouTube iframe when modal is hidden
+            modal.addEventListener('hidden.bs.modal', function () {
+                const iframes = modal.querySelectorAll('iframe');
+                iframes.forEach(iframe => {
+                    iframe.contentWindow.postMessage(
+                        '{"event":"command","func":"pauseVideo","args":""}', '*');
+                });
             });
-        });
 
-        // Remove autoplay=1 on open (optional safety)
-        modal.addEventListener('show.bs.modal', function() {
-            const iframes = modal.querySelectorAll('iframe');
-            iframes.forEach(iframe => {
-                let src = iframe.getAttribute('src');
-                if (src.includes("autoplay=1")) {
-                    iframe.setAttribute('src', src.replace("autoplay=1",
-                        "autoplay=0"));
-                }
+            // Remove autoplay=1 on open (optional safety)
+            modal.addEventListener('show.bs.modal', function () {
+                const iframes = modal.querySelectorAll('iframe');
+                iframes.forEach(iframe => {
+                    let src = iframe.getAttribute('src');
+                    if (src.includes("autoplay=1")) {
+                        iframe.setAttribute('src', src.replace("autoplay=1",
+                            "autoplay=0"));
+                    }
+                });
             });
         });
     });
-});
 </script>
 
 </html>

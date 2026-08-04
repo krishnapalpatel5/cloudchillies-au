@@ -67,136 +67,9 @@ gtag('config', 'AW-17533579353');
     <!-- They Trust US -->
     <!------------------------------>
 
-    <section class="client-section ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 ">
-                    <div class="sectionTitle text-center  mb-4">
-                        <span class="lightWeight"> They </span> <span class="bold">Trust Us</span>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="trustLogo ">
-                                <ul class="d-flex align-items-center flex-wrap justify-content-center">
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/smartGroup.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo2.png" alt="logo"
-                                            class="capify-logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo1.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/compareClub.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo4.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo6.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo3.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/lifeInsurance.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/autopia.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo13.png" alt="logo">
-                                    </li>
-
-
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo7.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo10.png" alt="logo">
-                                    </li>
-
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo17.png" alt="logo"
-                                            class="blend">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo21.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo22.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo16.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo19.png" alt="logo">
-                                    </li>
-
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/flexEquip.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo14.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/paySmart.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/treysta.png" alt="logo"
-                                            class="blend">
-                                    </li>
-
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo20.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo15.png" alt="logo"
-                                            class="blend">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/bullrun.png" alt="logo">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo9.png" alt="logo">
-                                    </li>
-
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/cellulant.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/crcleBlack.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/homeVestors.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/nomupay.png" alt="logo"
-                                            class="blend">
-                                    </li>
-
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/pennCapital.png" alt="logo"
-                                            style="mix-blend-mode: darken;">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo $base_url?>img/trust-us/logo18.png" alt="logo"
-                                            class="blend">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-    </section>
+   <div class="container-fluid logoBx">
+        <?php include 'component/client-logo-slider.php';?>
+    </div>
 
     <section class="industry-focus">
         <div class="container">
@@ -245,7 +118,7 @@ gtag('config', 'AW-17533579353');
     <!-- Work Smarter. Scale Faster. -->
     <!------------------------------>
 
-    <div class="robotBx">
+   <div class="robotBx">
         <div class="robotBxInner">
             <div class="container">
                 <div class="row">
@@ -257,162 +130,259 @@ gtag('config', 'AW-17533579353');
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="industry">
-                            <!-- Feature 1 -->
-                            <div class="industry-box">
-                                <div class="d-flex innderIndustryBx">
-                                    <div class="industry-icon">
-                                        <img src="<?php echo $base_url?>img/ai_page/icon1.svg" alt="arrow icon">
+                    <div class="d-flex flex-column">
+
+                        <div class="industry-wrap">
+
+
+
+                            <div class="industry">
+                                <!-- Feature 1 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon1.svg" alt="arrow icon">
+                                        </div>
+                                        <h3>Lead Scoring That's Actually Predictive</h3>
                                     </div>
-                                    <h3>Lead Scoring That's Actually Predictive</h3>
+                                    <ul>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Score leads using your real sales or donor
+                                                data</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>
+                                                Prioritise follow-ups based on intent, not guesswork</span></li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Score leads using your real sales or donor data</span>
-                                    </li>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>
-                                            Prioritise follow-ups based on intent, not guesswork</span></li>
-                                </ul>
+
+                                <!-- industry 2 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon2.svg"
+                                                alt="CloudChillies AI automation services for workflow and Salesforce optimization icon">
+                                        </div>
+                                        <h3>Smart Approvals & Risk Logic</h3>
+                                    </div>
+                                    <ul>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Auto-decision flows for loans, grants, or
+                                                purchases</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>AI checks against dynamic thresholds and
+                                                patterns</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- industry 3 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon3.svg"
+                                                alt="CloudChillies machine learning solutions for Snowflake and AI data processing icon">
+                                        </div>
+                                        <h3>Einstein GPT + Custom LLM Workflows</h3>
+                                    </div>
+                                    <ul>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Generate personalised responses, content, or
+                                                summaries</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Automate data updates and trigger flows with natural
+                                                language</span></li>
+                                    </ul>
+                                </div>
+                                <!-- industry 4 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon4.svg"
+                                                alt="CloudChillies AI chatbot development for customer support and Salesforce icon">
+                                        </div>
+                                        <h3>Data Privacy</h3>
+                                    </div>
+                                    <ul>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Instantly retrieve answers from internal docs</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Suggest best responses for faster support
+                                                handling</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- industry 5 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon5.svg"
+                                                alt="CloudChillies AI data services for Snowflake and enterprise intelligence icon">
+                                        </div>
+                                        <h3>Auto-Created Dashboards in Tableau</h3>
+                                    </div>
+                                    <ul>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Instantly retrieve answers from internal docs</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>AI suggests what to track — no manual setup
+                                                needed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- industry 6 -->
+                                <div class="industry-box agent-bot">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon6.svg"
+                                                alt="CloudChillies cloud AI integration solutions for scalable Salesforce and Snowflake systems icon">
+                                        </div>
+                                        <h3>Agent Assist Bots</h3>
+                                    </div>
+                                    <ul>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Instantly retrieve answers from internal docs</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Suggest best responses for faster support
+                                                handling</span>
+                                        </li>
+                                    </ul>
+                                    <a href="<?php echo $base_url?>book-demo" class="watch-demo b">
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                      
+                                        <path
+                                            d="M6.51 18.87a1 1 0 0 0 1-.01l10-6c.3-.18.49-.51.49-.86s-.18-.68-.49-.86l-10-6a.99.99 0 0 0-1.01-.01c-.31.18-.51.51-.51.87v12c0 .36.19.69.51.87ZM8 7.77 15.06 12 8 16.23z">
+                                        </path>
+                                    </svg> -->
+                                        Watch Demo
+                                    </a>
+                                </div>
+
+
+
                             </div>
 
-                            <!-- industry 2 -->
-                            <div class="industry-box">
-                                <div class="d-flex innderIndustryBx">
-                                    <div class="industry-icon">
-                                        <img src="<?php echo $base_url?>img/ai_page/icon2.svg">
+                            <!-- Highlighted Section with Background Overlay -->
+                            <div class="featured-section-overlay">
+                                <!-- industry 7 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon7.svg"
+                                                alt="CloudChillies predictive AI tools for decision-making in Snowflake and Salesforce icon">
+                                        </div>
+                                        <h3>Snowflake Cortex AI</h3>
                                     </div>
-                                    <h3>Smart Approvals & Risk Logic</h3>
+                                    <ul class="featured-list">
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Run LLM-powered functions like summarisation,
+                                                classification, and generation directly on your data</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Build predictive models for forecasting, risk
+                                                scoring,
+                                                and trend analysis</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Auto-decision flows for loans, grants, or
-                                            purchases</span>
-                                    </li>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>AI checks against dynamic thresholds and patterns</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- industry 3 -->
-                            <div class="industry-box">
-                                <div class="d-flex innderIndustryBx">
-                                    <div class="industry-icon">
-                                        <img src="<?php echo $base_url?>img/ai_page/icon3.svg">
+
+                                <!-- industry 8 -->
+                                <div class="industry-box">
+                                    <div class="d-flex innderIndustryBx">
+                                        <div class="industry-icon">
+                                            <img src="<?php echo $base_url?>img/ai_page/icon8.svg"
+                                                alt="CloudChillies AI decision support solutions for enterprise workflow icon">
+                                        </div>
+                                        <h3>Real-Time Data Intelligence</h3>
                                     </div>
-                                    <h3>Einstein GPT + Custom LLM Workflows</h3>
+                                    <ul class="featured-list">
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Analyse large-scale and streaming data in Snowflake
+                                                for
+                                                instant insights</span>
+                                        </li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
+                                                        fill="#142E63" />
+                                                </svg></span><span>Detect anomalies, patterns, and business risks as
+                                                they
+                                                happen</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Generate personalised responses, content, or
-                                            summaries</span>
-                                    </li>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Automate data updates and trigger flows with natural
-                                            language</span></li>
-                                </ul>
                             </div>
-                            <!-- industry 4 -->
-                            <div class="industry-box">
-                                <div class="d-flex innderIndustryBx">
-                                    <div class="industry-icon">
-                                        <img src="<?php echo $base_url?>img/ai_page/icon4.svg">
-                                    </div>
-                                    <h3>Data Privacy</h3>
-                                </div>
-                                <ul>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Instantly retrieve answers from internal docs</span>
-                                    </li>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Suggest best responses for faster support handling</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- industry 5 -->
-                            <div class="industry-box">
-                                <div class="d-flex innderIndustryBx">
-                                    <div class="industry-icon">
-                                        <img src="<?php echo $base_url?>img/ai_page/icon5.svg">
-                                    </div>
-                                    <h3>Auto-Created Dashboards in Tableau</h3>
-                                </div>
-                                <ul>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Instantly retrieve answers from internal docs</span>
-                                    </li>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>AI suggests what to track — no manual setup needed</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- industry 6 -->
-                            <div class="industry-box">
-                                <div class="d-flex innderIndustryBx">
-                                    <div class="industry-icon">
-                                        <img src="<?php echo $base_url?>img/ai_page/icon6.svg">
-                                    </div>
-                                    <h3>Agent Assist Bots</h3>
-                                </div>
-                                <ul>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Instantly retrieve answers from internal docs</span>
-                                    </li>
-                                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                viewBox="0 0 21 21" fill="none">
-                                                <path
-                                                    d="M10.499 0.0419922C16.253 0.0419922 20.9578 4.74607 20.958 10.5C20.9578 16.2539 16.253 20.959 10.499 20.959C4.74521 20.9588 0.0412152 16.2538 0.0410156 10.5C0.0411929 4.74617 4.7452 0.0421695 10.499 0.0419922ZM10.499 1.79199C5.7117 1.79217 1.79119 5.71267 1.79102 10.5C1.79122 15.2873 5.71171 19.2088 10.499 19.209C15.2865 19.209 19.2078 15.2874 19.208 10.5C19.2078 5.71256 15.2865 1.79199 10.499 1.79199ZM13.9551 7.16895C14.297 6.82761 14.851 6.82813 15.1924 7.16992C15.5337 7.51194 15.5334 8.06584 15.1914 8.40723L9.75781 13.8311C9.41612 14.1721 8.86298 14.1722 8.52148 13.8311L5.80859 11.1191C5.46711 10.7776 5.46739 10.2236 5.80859 9.88184C6.1503 9.54013 6.70517 9.54013 7.04688 9.88184L9.13965 11.9746L13.9551 7.16895Z"
-                                                    fill="#142E63" />
-                                            </svg></span><span>Suggest best responses for faster support handling</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- End of Highlighted Section -->
+
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -422,26 +392,28 @@ gtag('config', 'AW-17533579353');
              </div>
         </div> -->
         </div>
-    </div>
-    <div class="showToHowContainer">
-        <div class="container section3 showToHow">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="innerSection d-flex">
-                        <div class="lightWeight left">Bring <span class="bold">AI-Powered </span>Intelligence to Your
-                            <span class="bold">Salesforce</span>.
+        <div class="showToHowContainer">
+            <div class="container section3 showToHow">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="innerSection d-flex">
+                            <div class="lightWeight left">Bring <span class="bold">AI-Powered </span>Intelligence to
+                                Your
+                                <span class="bold">Technology</span>.
+                            </div>
+                            <button class="btn btn-primary btnStarted" data-bs-toggle="modal"
+                                data-bs-target="#contactUsPopup" data-subject="AI Page" data-section="AI Section">Show
+                                Me
+                                How<span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
+                                        fill="none">
+                                        <path
+                                            d="M0.690674 0.690674C1.41418 -0.032833 2.58631 -0.0328331 3.30981 0.690674L13.7659 11.1467C14.489 11.8703 14.4893 13.0425 13.7659 13.7659L3.30981 24.2219C2.58642 24.9453 1.4142 24.9451 0.690674 24.2219C-0.0328294 23.4984 -0.0328215 22.3263 0.690674 21.6028L9.83716 12.4563L0.690674 3.30981C-0.032833 2.58631 -0.0328331 1.41418 0.690674 0.690674Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
                         </div>
-                        <button class="btn btn-primary btnStarted" data-bs-toggle="modal"
-                            data-bs-target="#contactUsPopup" data-subject="AI Page" data-section="AI Section">Show Me
-                            How<span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
-                                    fill="none">
-                                    <path
-                                        d="M0.690674 0.690674C1.41418 -0.032833 2.58631 -0.0328331 3.30981 0.690674L13.7659 11.1467C14.489 11.8703 14.4893 13.0425 13.7659 13.7659L3.30981 24.2219C2.58642 24.9453 1.4142 24.9451 0.690674 24.2219C-0.0328294 23.4984 -0.0328215 22.3263 0.690674 21.6028L9.83716 12.4563L0.690674 3.30981C-0.032833 2.58631 -0.0328331 1.41418 0.690674 0.690674Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -452,7 +424,7 @@ gtag('config', 'AW-17533579353');
     <!------------------------------>
     <!-- See What Our Clients Have Achieved -->
     <!------------------------------>
-    <section class="sectionNineContainer">
+    <!-- <section class="sectionNineContainer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -563,8 +535,119 @@ gtag('config', 'AW-17533579353');
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
+
+    <!------------------------------>
+    <!-- Client Love Us Start -->
+    <!------------------------------>
+    <section class="sectionSix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sectionFiveHeading text-center mb-3"><span class="lightWeight">Clients</span><span
+                        class="text-gradient"> Love Us</span></div>
+                <div class="sectionFiveSubHeading text-center mb-5">Don't Just Take Our Words, Hear From Them</div>
+            </div>
+            <div class="row clientSlider">
+                <div class="owl-carousel clientFeeback owl-theme p-0">
+
+
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/G2lQODLUJOM?si=bidtizyVJrAGRV8A"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/bxDlPhTMGEQ?si=E5ccjETouaxRnu1S"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/skIZ--vTJ84?si=VD9on_1hNJV-zQ_2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/v5Ju3rcgh0s?si=_x8kG9RnYeCfLvtG"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VBegos8PdiU?si=xy052w6cUZGBBvbx"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/QGjOKUj8fu8?si=qbXB1dJCwvxQqqs2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Z4TTjm6lz7g?si=IXpPMLcR_HwbXjX3"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/NfQBeDdTZmQ?si=f8ONR_ABgEEUqNfD"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/GCGEs6DdkHY?si=7KQkEN7cRUvLPPIG"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!------------------------------>
     <!-- Success Stories Start -->
     <!------------------------------>
@@ -712,13 +795,55 @@ gtag('config', 'AW-17533579353');
     <!-- Why Choose Start -->
     <!------------------------------>
     <section class="position-relative why-choose section">
-
         <div class="container">
             <div class="row">
                 <div class="sectionTitle text-center aos-init aos-animate mt-5 mb-5" data-aos="fade-up">
-                    <span class="lightWeight">When you Choose </span> <span class="bold text-gradient">
-                        CloudChillies,</span>
-                    <span class="lightWeight">You Get</span>
+                    <span class="lightWeight">Why Choose Us as Your </span> <span class="bold text-gradient">Technology
+                        Partner?
+                </div>
+                <div class="grid-container mb-5">
+                    <div class="items">
+
+                        <p class="ben-ponits dark-blue bold">
+                            <span class="light-blue "> Manual Workload </span> <span class="lightWeight">will</span>
+                            reduce
+                        </p>
+                        <div class="ben-result dark-blue bold">
+                            <span class="lightWeight">Up to </span> 70% <img
+                                src="<?php echo $base_url?>img/arrow-down.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="items">
+                        <p class="ben-ponits dark-blue bold">
+                            <span class="light-blue "> Operational Cost </span> <span class="lightWeight">will</span>
+                            decrease
+                        </p>
+                        <div class="ben-result dark-blue bold">
+                            <span class="lightWeight">Up to </span> 20% <img
+                                src="<?php echo $base_url?>img/arrow-down.png" alt="">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <p class="ben-ponits dark-blue bold">
+                            <span class="light-blue "> Process Efficiency </span> <span class="lightWeight">will</span>
+                            increase
+                        </p>
+                        <div class="ben-result dark-blue bold">
+                            <span class="lightWeight">Up to </span> 83% <img
+                                src="<?php echo $base_url?>img/arrow-up.png" alt="">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <p class="ben-ponits dark-blue bold">
+                            <span class="light-blue "> Time-to-Market </span> <span class="lightWeight">will</span>
+                            reduce
+                        </p>
+                        <div class="ben-result dark-blue bold">
+                            <span class="lightWeight">Up to </span> 30% <img
+                                src="<?php echo $base_url?>img/arrow-down.png" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="wrap-layout">
@@ -731,18 +856,26 @@ gtag('config', 'AW-17533579353');
                                             AI-First Solutions That Deliver
                                         </div>
                                         <p>
-                                            Custom GPT + Einstein workflows embedded inside Salesforce — not just AI
-                                            buzzwords.
+                                            Custom GPT + Einstein and Snowflake Cortex workflows embedded inside
+                                            Salesforce — not just AI buzzwords.
                                         </p>
 
                                     </div>
                                     <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
                                     <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="61"
-                                            viewBox="0 0 62 61" fill="none">
-                                            <path
-                                                d="M48.835 34.1738C48.9568 34.1737 49.0759 34.2101 49.1768 34.2783C49.2778 34.3467 49.3562 34.4443 49.4014 34.5576L51.5771 40.042C51.9636 41.0193 52.546 41.9073 53.2891 42.6504C54.0322 43.3935 54.9202 43.9759 55.8975 44.3623L61.418 46.5381C61.5315 46.583 61.6295 46.6608 61.6982 46.7617C61.7669 46.8627 61.8037 46.9824 61.8037 47.1045C61.8037 47.2267 61.7669 47.3462 61.6982 47.4473C61.6295 47.5483 61.5316 47.627 61.418 47.6719L55.8975 49.8467C54.9201 50.2331 54.0322 50.8164 53.2891 51.5596C52.5462 52.3025 51.9635 53.19 51.5771 54.167L49.4014 59.6514C49.3572 59.7658 49.2798 59.865 49.1787 59.9346C49.0776 60.0041 48.9576 60.0416 48.835 60.042C48.7123 60.0416 48.5923 60.0041 48.4912 59.9346C48.3901 59.865 48.3118 59.7659 48.2676 59.6514L46.0928 54.167C45.7074 53.1894 45.1248 52.3017 44.3818 51.5586C43.6386 50.8154 42.7503 50.2322 41.7725 49.8467L36.2881 47.6719C36.1744 47.627 36.0765 47.5483 36.0078 47.4473C35.9391 47.3462 35.9023 47.2267 35.9023 47.1045C35.9024 46.9824 35.9391 46.8627 36.0078 46.7617C36.0765 46.6608 36.1745 46.583 36.2881 46.5381L41.7725 44.3623C42.7502 43.9768 43.6387 43.3945 44.3818 42.6514C45.125 41.9082 45.7073 41.0198 46.0928 40.042L48.2676 34.5576C48.3127 34.4442 48.3911 34.3468 48.4922 34.2783C48.5932 34.2099 48.7129 34.1737 48.835 34.1738ZM42.5586 0C44.0132 -0.00240302 45.4542 0.281976 46.7988 0.836914C48.1435 1.39192 49.366 2.20666 50.3955 3.23438C51.425 4.26217 52.2416 5.4834 52.7988 6.82715C53.3561 8.17096 53.6436 9.61163 53.6436 11.0664V27.5869C53.6474 27.8036 53.5946 28.0175 53.4912 28.208C53.3876 28.3987 53.2359 28.56 53.0518 28.6748C52.8677 28.7894 52.657 28.8542 52.4404 28.8633C52.2237 28.8723 52.0085 28.8246 51.8154 28.7256C50.8853 28.2656 49.8609 28.0281 48.8232 28.0312C48.4908 28.0395 48.1687 27.9157 47.9268 27.6875C47.6848 27.4592 47.5424 27.1449 47.5312 26.8125V11.0664C47.5313 9.74762 47.0077 8.48233 46.0752 7.5498C45.1427 6.61729 43.8774 6.09375 42.5586 6.09375H11.0664C9.74762 6.09375 8.48233 6.61729 7.5498 7.5498C6.61728 8.48233 6.09375 9.74762 6.09375 11.0664V42.5586C6.09375 43.8774 6.61729 45.1427 7.5498 46.0752C8.48233 47.0077 9.74762 47.5313 11.0664 47.5312H28.7988C29.0619 47.5351 29.3177 47.6198 29.5312 47.7734C29.7448 47.9271 29.9059 48.1425 29.9932 48.3906C30.5376 49.5564 31.3059 50.6038 32.2539 51.4736C32.4297 51.6504 32.5495 51.8755 32.5977 52.1201C32.6458 52.3648 32.6203 52.6184 32.5244 52.8486C32.4286 53.0786 32.2668 53.2749 32.0596 53.4131C31.852 53.5513 31.6077 53.6253 31.3584 53.625H11.0664C8.13145 53.625 5.31654 52.4591 3.24121 50.3838C1.1659 48.3085 0 45.4935 0 42.5586V11.0664C0 8.13145 1.16589 5.31654 3.24121 3.24121C5.31653 1.1659 8.13146 0 11.0664 0H42.5586ZM22.2539 13.8574C22.4363 13.8589 22.6139 13.9188 22.7598 14.0283C22.9056 14.138 23.0123 14.2919 23.0645 14.4668L30.377 37.2822C30.4184 37.4097 30.4293 37.5454 30.4082 37.6777C30.387 37.81 30.3349 37.9358 30.2559 38.0439C30.1768 38.1521 30.0728 38.2395 29.9531 38.2998C29.8334 38.3602 29.7005 38.3914 29.5664 38.3906H27.5195C27.3368 38.3901 27.1588 38.3305 27.0127 38.2207C26.8667 38.1109 26.7602 37.9566 26.709 37.7812L25.5264 34.125H15.582L14.4355 37.7812C14.3843 37.9567 14.2779 38.1109 14.1318 38.2207C13.9859 38.3304 13.8086 38.39 13.626 38.3906H11.5781C11.4441 38.3892 11.312 38.3562 11.1934 38.2939C11.0748 38.2317 10.9728 38.1416 10.8955 38.0322C10.8183 37.9228 10.7681 37.7966 10.749 37.6641C10.73 37.5315 10.7428 37.3962 10.7861 37.2695L18.0986 14.4551C18.1511 14.2851 18.2555 14.1355 18.3975 14.0283C18.5397 13.9211 18.7126 13.861 18.8906 13.8574H22.2539ZM38.7559 13.8633C39.227 13.8633 39.6094 14.2456 39.6094 14.7168V37.5312C39.6094 38.0024 39.227 38.3848 38.7559 38.3848H36.8066C36.3355 38.3848 35.9531 38.0024 35.9531 37.5312V14.7168C35.9531 14.2456 36.3355 13.8633 36.8066 13.8633H38.7559ZM16.8008 30.4688H24.375L20.5723 18.7266L16.8008 30.4688Z"
-                                                fill="#33384B" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                            viewBox="0 0 60 60" fill="none">
+                                            <g clip-path="url(#clip0_160_320)">
+                                                <path
+                                                    d="M34.0898 14.0253C32.6697 13.636 31.1953 13.4387 29.7076 13.4387C20.5865 13.4387 13.166 20.8592 13.166 29.9803C13.166 39.1014 20.5865 46.5219 29.7076 46.5219C38.8287 46.5219 46.2492 39.1014 46.2492 29.9803C46.2492 28.4926 46.0518 27.0182 45.6626 25.598C45.3951 24.6224 45.9693 23.6147 46.9449 23.3473C47.9199 23.08 48.9282 23.654 49.1956 24.6296C49.6713 26.3653 49.9126 28.1655 49.9126 29.9803C49.9126 41.1213 40.8486 50.1853 29.7076 50.1853C18.5665 50.1853 9.50255 41.1213 9.50255 29.9803C9.50255 18.8392 18.5665 9.77526 29.7076 9.77526C31.5225 9.77526 33.3226 10.0165 35.0582 10.4923C35.8719 10.7153 36.4063 11.4532 36.4061 12.258C36.4061 12.4182 36.3848 12.581 36.3405 12.743C36.0732 13.7186 35.0657 14.2931 34.0898 14.0253ZM55.5368 20.4142C54.5668 20.7014 54.0131 21.7204 54.3004 22.6905C54.9979 25.0466 55.3515 27.4991 55.3515 29.9803C55.3515 44.1204 43.8477 55.6242 29.7076 55.6242C15.5675 55.6242 4.06363 44.1204 4.06363 29.9803C4.06363 15.8402 15.5675 4.33634 29.7076 4.33634C32.1889 4.33634 34.6414 4.68997 36.997 5.3874C37.9671 5.67475 38.9861 5.12088 39.2733 4.15099C39.3246 3.97755 39.3491 3.80274 39.3491 3.63067C39.3494 2.84017 38.8336 2.11058 38.0369 1.87463C35.3434 1.07715 32.5411 0.672916 29.7076 0.672916C21.8793 0.672916 14.5195 3.72145 8.98406 9.25677C3.44875 14.7923 0.400208 22.152 0.400208 29.9803C0.400208 37.8086 3.44875 45.1684 8.98406 50.7038C14.5194 56.2392 21.8793 59.2877 29.7076 59.2877C37.5359 59.2877 44.8955 56.2391 50.4311 50.7038C55.9664 45.1684 59.0149 37.8086 59.0149 29.9803C59.0149 27.147 58.6106 24.3445 57.8131 21.6506C57.526 20.6806 56.5067 20.1274 55.5368 20.4142ZM29.7076 22.6534C29.977 22.6534 30.249 22.6683 30.5162 22.6976C31.5222 22.8083 32.4265 22.0822 32.5367 21.0767C32.647 20.0711 31.9213 19.1664 30.9157 19.0562C30.5162 19.0122 30.1099 18.99 29.7076 18.99C23.6475 18.99 18.7173 23.9202 18.7173 29.9803C18.7173 36.0404 23.6475 40.9706 29.7076 40.9706C35.7677 40.9706 40.6978 36.0404 40.6978 29.9803C40.6978 28.9686 39.8778 28.1486 38.8661 28.1486C37.8545 28.1486 37.0344 28.9686 37.0344 29.9803C37.0344 34.0204 33.7476 37.3071 29.7076 37.3071C25.6675 37.3071 22.3807 34.0204 22.3807 29.9803C22.3807 25.9402 25.6675 22.6534 29.7076 22.6534ZM39.0601 18.0376L39.9725 8.88516C40.0144 8.4641 40.2008 8.07074 40.4999 7.7716L47.0624 1.20938C47.5679 0.70394 48.321 0.538743 48.9917 0.786138C49.6622 1.03353 50.1277 1.64853 50.1837 2.36118L50.704 8.98396L57.3267 9.50416C58.0393 9.56015 58.6543 10.0256 58.9017 10.6962C59.1491 11.3668 58.9839 12.1201 58.4785 12.6255L51.9162 19.1877C51.6171 19.4869 51.2237 19.6733 50.8027 19.7152L41.6504 20.628L31.0028 31.2755C30.6451 31.6332 30.1764 31.812 29.7076 31.812C29.2387 31.812 28.7701 31.6332 28.4124 31.2754C27.697 30.5601 27.697 29.4003 28.4124 28.685L39.0601 18.0376ZM42.8625 16.8256L49.7882 16.1348L53.0778 12.8452L48.8571 12.5137C47.9586 12.443 47.2451 11.7294 47.1744 10.831L46.8429 6.60995L43.553 9.8997L42.8625 16.8256Z"
+                                                    fill="#33384B" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_160_320">
+                                                    <rect width="58.6147" height="58.6147" fill="white"
+                                                        transform="translate(0.400391 0.67334)" />
+                                                </clipPath>
+                                            </defs>
                                         </svg>
                                     </div>
                                 </div>
@@ -751,9 +884,10 @@ gtag('config', 'AW-17533579353');
                                 <div class="gridInner">
                                     <div class="gridInner-content">
                                         <div class="gridTitle">
-                                            20+ Years of Proven Experience
+                                            20+ Years Of Proven Experience
                                         </div>
-                                        <p> Decades of solving real operational problems — now elevated with AI.</p>
+                                        <p> Decades of solving real operational problems — now elevated with AI.
+                                        </p>
 
                                     </div>
                                     <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
@@ -772,10 +906,11 @@ gtag('config', 'AW-17533579353');
                             <div class="gridInner flex-row">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        200+ Salesforce Certifications
+                                        200+ Certifications
                                     </div>
                                     <p>
-                                        Certified across Sales, Service, Experience, Marketing, Tableau & NPSP.
+                                        Certified across Sales, Service, Experience, Marketing, Tableau, Snowflake, Data
+                                        & NPSP.
                                     </p>
                                 </div>
                                 <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
@@ -798,7 +933,9 @@ gtag('config', 'AW-17533579353');
                                         Purpose-Built AI Integrations
                                     </div>
                                     <p>
-                                        Purpose-Built AI Integrations
+                                        Purpose-Built AI Integrations with Custom GPTs, Snowflake Cortex AI and
+                                        Agentforce
+
                                     </p>
                                 </div>
                                 <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
@@ -829,6 +966,7 @@ gtag('config', 'AW-17533579353');
                                     </div>
                                     <p>
                                         Recognised for reliable delivery and deep ecosystem alignment.
+
                                     </p>
                                 </div>
                                 <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
@@ -851,7 +989,7 @@ gtag('config', 'AW-17533579353');
                             <div class="gridInner flex-row">
                                 <div class="gridInner-content">
                                     <div class="gridTitle">
-                                        Team of Certified Salesforce + AI Experts
+                                        Team Of Certified AI Experts
                                     </div>
                                     <p>
                                         No middle layers. Just seasoned consultants who ship solutions.
@@ -901,8 +1039,8 @@ gtag('config', 'AW-17533579353');
                                         ISO 27001 certified
                                     </div>
                                     <p>
-                                        Enterprise-Grade Security — essential for regulated sectors and donor data
-                                        protection.
+                                        Enterprise-Grade Security — essential for regulated sectors and data protection.
+
                                     </p>
                                 </div>
                                 <!-- <div class="no"><img src="<?php echo $base_url?>img/one.svg"></div> -->
@@ -927,7 +1065,8 @@ gtag('config', 'AW-17533579353');
                                         Flexible Engagement Models
                                     </div>
                                     <p>
-                                        Scale up or down — full project delivery or embedded AI/CRM teams.
+                                        Scale up or down — full project delivery or embedded AI/CRM/Data teams.
+
                                     </p>
 
                                 </div>
@@ -1012,25 +1151,27 @@ gtag('config', 'AW-17533579353');
     <!------------------------------>
     <!-- Lets Talk Start -->
     <!------------------------------>
-    <section class="section9">
+     <section class="section9 mt-0">
         <div class="container contactUs position-relative">
             <div class="row">
 
                 <div class="left col-md-7 pt-4">
                     <div class="leftInner">
                         <div class="title ">
-                            Want to Know How We Do This Through Salesforce & AI?
+                            Want to Know How Do We Do This?
                         </div>
                         <div class="helpPara bold">
-                            <div>Let’s Build You An AI-First Salesforce Experience! </div>
+                            <div>For your Unique Business</div>
+                            <div>let us build Cutting-Edge Tailored Solutions Powered by</div>
+                            <!-- <div>Let’s Build You An AI-First Salesforce+Snowflake Experience! </div> -->
                         </div>
-                        <img src="<?php echo $base_url?>img/ai-sf-footer.png" alt="icon" class="ai-sf-logo-footer">
+                        <img src="<?php echo $base_url?>img/salesforce_snowflake_ai.svg" alt="icon"
+                            class="salesforce Snowflake AI logo">
 
                         <div class="talkAbout d-flex align-items-center flex-wrap aos-init mt-4">
                             <a href="/contact" class="btn  btnStarted" data-bs-toggle="modal" data-subject="AI Page"
-                                data-section="Let's Talk" data-bs-target="#contactUsPopup">Talk to Our Salesforce +
-                                AI Experts
-                                <img src="img/users-group.png" alt="" srcset="">
+                                data-section="Let's Talk" data-bs-target="#contactUsPopup">Talk to Our Experts
+                                <img src="img/users-group.webp" alt="" srcset="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
                                     fill="none">
                                     <path
@@ -1042,7 +1183,8 @@ gtag('config', 'AW-17533579353');
                 </div>
 
                 <div class="right col-md-5">
-                    <img src="<?php echo $base_url?>img/talkPeople.png" alt="talk people">
+                    <img src="<?php echo $base_url?>img/snowflake_contactUs.webp"
+                        alt="Snowflake and salesforce trailblazer experts with years of expertise">
                 </div>
 
 

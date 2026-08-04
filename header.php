@@ -145,12 +145,17 @@ var zi = document.createElement('script');
 
             <span class="overlay"></span>
 
+
             <nav class="navbar" id="navbar">
                 <ul class="menu" id="menu">
 
                     <li class="menu-item">
                         <a class="nav-link <?php echo ($currentnav === 'Salesforce') ? 'active' : ''; ?>"
                             href="<?php echo $base_url?>salesforce">Salesforce</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="nav-link <?php echo ($currentnav === 'Snowflake') ? 'active' : ''; ?>"
+                            href="<?php echo $base_url?>snowflake">Snowflake</a>
                     </li>
 
                     <li class="menu-item">
